@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<config>
+	<sampling>10000</sampling>
+	<hysteresis>1000</hysteresis>
+	<debug_enable>0</debug_enable>
+	<y_int>5350</y_int>
+	<threshold>100000</threshold>
+	<sensor_list>
+		<sensor>
+			<name>sys-therm-2</name>
+			<slope>0.998</slope>
+		</sensor>
+		<sensor>
+			<name>sys-therm-4</name>
+			<slope>-0.202</slope>
+		</sensor>
+		<sensor>
+			<name>sys-therm-6</name>
+			<slope>0.1</slope>
+		</sensor>
+	</sensor_list>
+</config>

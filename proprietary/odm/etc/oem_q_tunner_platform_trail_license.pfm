@@ -1,0 +1,102 @@
+{
+    "INCLUDE_EXPIRATION_EXTENSION": 1,
+    "cbor_extension": "ojoAAVfFohkLYPUZC2H1OgABV8SCAQA=",
+    "chipset_labels": [
+        "SM8845 (0xA022)"
+    ],
+    "chipset_names": [
+        "SM8845"
+    ],
+    "deviceFileName": "2912-2913-Dec-2025-674791305.pfm",
+    "extraDataBinaryValue": "TnVtVHVuZXJzIDI=",
+    "extraDataString": "NumTuners 2",
+    "featureBundles": [],
+    "featureRanges": [],
+    "features": [
+        "Qualcomm Antenna Tuner AI-ESB (ACL, AAT, MAAT, ACM)",
+        "Qualcomm Antenna Tuner Open Loop"
+    ],
+    "filename": "platform_RSA_SM8845_license_a40d6d61-a91f-4268-9353-d86bc5e21cac",
+    "graceCount": 0,
+    "gracePeriod": 0,
+    "licenseCategory": "CHIPSET_OEM",
+    "licenseExpiration": [
+        "1970-01-01T00:00:00Z",
+        "2025-12-31T00:00:00Z"
+    ],
+    "licenseFeaturesIds": [
+        "2912:2913"
+    ],
+    "licenseHardwareVersions": [
+        "0xA022"
+    ],
+    "licenseOEMIDs": 51,
+    "licensePKHashes": [
+        "0x20ad2b40d37cef5ab987b493e16399cdc042f3875aa7d4d95b708e4f46f75bfa"
+    ],
+    "licenseType": "EVALUATION",
+    "licenseeName": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
+    "requestMetadata": {
+        "bindToOem": true,
+        "customer": "Guangdong OPPO Mobile Telecommunications Corp., Ltd."
+    },
+    "signature_type": "RSA"
+}
+
+-----BEGIN CERTIFICATE-----
+MIIFWjCCBA6gAwIBAgIUZXoBpLt5A0MRzvkDAAABmJsTdmowQQYJKoZIhvcNAQEK
+MDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEF
+AKIDAgEgMG8xJDAiBgNVBAoMG1F1YWxjb21tIFRlY2hub2xvZ2llcywgSW5jLjEq
+MCgGA1UECwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhpYyBPcGVyYXRpb25zMRswGQYD
+VQQDDBJDSExTRSBTaWduaW5nIENlcnQwHhcNNzAwMTAxMDAwMDAxWhcNMjUxMjMx
+MjM1OTU5WjCBkTE9MDsGA1UEAww0R3Vhbmdkb25nIE9QUE8gTW9iaWxlIFRlbGVj
+b21tdW5pY2F0aW9ucyBDb3JwLiwgTHRkLjEkMCIGA1UECgwbUXVhbGNvbW0gVGVj
+aG5vbG9naWVzLCBJbmMuMSowKAYDVQQLDCFRdWFsY29tbSBDcnlwdG9ncmFwaGlj
+IE9wZXJhdGlvbnMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCKhYZn
+sTxFQc/dUNPwfNAjwNy7dz0tnEiMrcsNYehwPLLgZpQtsCAwlPuqsdeAfvDQvTvU
+LgXycWQx7Ep28W8/9yYdQcha7/Cz7V/g1Os85pT0x51ntGHtJnGmKV/mKdx8k/5w
+lXOXbweFkTi28y4DXbRz/GiScW6xz1zu9blEn8l0e3rKq2S7M4r15wcVKn1aAzpS
+U7jQQvxUBBSb58XDTTUziKz7CKtn7QK6ZE+5JssPABiTx7amu7Wa5VpzAwV2z+nU
+AWPOJICbP22n9nRhXYI4VvxdFPAu7BslE86Z8rm1ETdwXhGT//pNWfO0XDV7KT0c
+IR6xuq/oD4y/XT37AgMBAAGjggFhMIIBXTAfBgNVHSMEGDAWgBSHFOk3Mn69tij8
+MGpgJBAw2L3nbjAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIFoDAZBgkrBgEE
+AYspDAEEDAAAAAEAAAtgAAALYTAWBgorBgEEAYspCwEBBAgAAAAAAAAAUTAjBggr
+BgEEAYspDQQXojoAAVfFohkLYPUZC2H1OgABV8SCAQAwGAYJKwYBBAGLKQwGBAtO
+dW1UdW5lcnMgMjAWBgorBgEEAYspCwECBAgAAAAAAACgIjAZBgkrBgEEAYspDAIE
+DAAAAAEAAAABaVW4/zAxBgkrBgEEAYspDAgEJAAAAAEAAAAAAAAAAQAAAABpVbj/
+AAAAAAAAAAAAAAAAAAAAADAtBgkrBgEEAYspDAUEICCtK0DTfO9auYe0k+Fjmc3A
+QvOHWqfU2Vtwjk9G91v6MBUGCSsGAQQBiykMCQQIAAAAAGiaYzAwQQYJKoZIhvcN
+AQEKMDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQME
+AgEFAKIDAgEgA4IBAQDkbiFLC8dDBNWrC2Bto+tBHUIUhWQXGYUlpGOVfgam4mqc
+YWkYqV8jcoMdIQeEc9dv1+/s7g8AbD45yM+LtrVGALs8Caea9lTTnNju/JzoDvAu
+VtG35PmgRuyHtw3SXLWGh0Ot1jyVn0Vwyi1y0ETo3D+h+mB2Pg+ZJUMOkMo8LJuV
+lA33Y6yfe6W+GqR8VJs1rfnbWYmmLgqhHoKaSR6/XXKL0yfVgliK56qTlo5Csayx
+6HtofwKRNFj7R0iw5lOJ87+mhIDHu/OPJl+9nmb3NBjuGUmVkTtHCnNAx+h8ZOeF
+im8k2/DqfhUwDLN++YWJkJopjkVTbbcBH6nW2Aad
+-----END CERTIFICATE-----
+
+-----BEGIN CERTIFICATE-----
+MIIERTCCAv2gAwIBAgIVdqMEQ1j41p18D3AfzC1TDxRDgyKzMD0GCSqGSIb3DQEB
+CjAwoA0wCwYJYIZIAWUDBAIBoRowGAYJKoZIhvcNAQEIMAsGCWCGSAFlAwQCAaID
+AgEgMIGAMSQwIgYDVQQKDBtRdWFsY29tbSBUZWNobm9sb2dpZXMsIEluYy4xKjAo
+BgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMgT3BlcmF0aW9uczEsMCoGA1UE
+AwwjRmVhdHVyZSBMaWNlbnNlIEF0dGVzdGF0aW9uIFJvb3QgQ0EwHhcNMTgxMjE0
+MDAwMDAxWhcNMjgxMjEzMjM1OTU5WjBvMSQwIgYDVQQKDBtRdWFsY29tbSBUZWNo
+bm9sb2dpZXMsIEluYy4xKjAoBgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMg
+T3BlcmF0aW9uczEbMBkGA1UEAwwSQ0hMU0UgU2lnbmluZyBDZXJ0MIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7TyI/YJ2Mfipye29tcEW/jtWS/6sCgKK
+ogvkmeHBM07h3CwYDFBOBg+MqgqzNUpygj3wJ5ahLkG/HmxNg3CSXeIVlTt+cEZh
+ie0TW+s/rxi4ODLQ9v+UAoDszB0bk8gOd8HGs6CtKXCONDx/W3PSGn/+hTWpqE2G
+PsH4EqjI2uegyw4xMxO78iC9adn7fOGZFec1HaL4KmrWe+Vqg1KLIYx55ZrQFq5h
+/vP+hKlWSZP/HtY3knlQ2DcqickRAhz//C8wsxso+pjKdHHfDers0W02kzL0Cljk
+OpJedpnjd+JHLprysuEShJQ5vDIC48fsj5qwy315uyfpXOYcII2qOQIDAQABo2Yw
+ZDASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIChDAdBgNVHQ4EFgQU
+hxTpNzJ+vbYo/DBqYCQQMNi9524wHwYDVR0jBBgwFoAU8kGYj4IIg0uJcAYVO7al
+Tpt5aAgwPQYJKoZIhvcNAQEKMDCgDTALBglghkgBZQMEAgGhGjAYBgkqhkiG9w0B
+AQgwCwYJYIZIAWUDBAIBogMCASADggEBAIlYDO7RnIdPDozvWshfuvQ3VawcjGSm
+KLJGp11MxM2Kd5SPTVT+uisLntJ6CY+FNdCc7zF2F9Va36rlIKYzqNBsmtOHF6Nf
+RBEssoJb5Tq81ZYDM5wsG+CMtS8wZ09M0ObkixzZFePidF/NIfPx1cj/FXEyosZ8
+lC0VXF8DG90waxrhY5W/ziBJTy7BTFNlgdMFw/wP+Wm+1PzqPESnDcgKr2D8lYGY
+kyP2AUNEmQkr/P2wqjYmFwUl8Fu6vyfXXLrBD3DN+MprdUP2d+fxr6kcVfjikzfU
+ZkHrvWqUb3z63I2NMPXnoDq3ZcN+1eE15JqfFk68Z6gNh3qjcFyaI0g=
+-----END CERTIFICATE-----

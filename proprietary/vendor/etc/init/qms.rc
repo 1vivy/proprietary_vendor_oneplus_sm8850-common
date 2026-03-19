@@ -1,0 +1,30 @@
+
+on post-fs-data
+      mkdir /data/vendor/qms 0700 radio radio
+      mkdir /data/vendor/qms_logs 0700 radio radio
+      mkdir /data/vendor/qms_logs/main 0700 radio radio
+      mkdir /data/vendor/qms_logs/other 0700 radio radio
+      mkdir /data/vendor/qms_logs/config 0700 radio radio
+
+on property:sys.boot_completed=1
+    # dingjiayu@NETWORK.RF, 2025/07/02, Add official SNS DSDA license for SM8850
+    copy /vendor/etc/SNS_DSDA_official_license_for_SM8850.pfm /mnt/vendor/persist/data/pfm/licenses/SNS_DSDA_official_license_for_SM8850.pfm
+    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/SNS_DSDA_official_license_for_SM8850.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/SNS_DSDA_official_license_for_SM8850.pfm
+    # YiYutian@NETWORK.DATA, 2025/09/05, Add official SNS&SDA license for SM8845
+    copy /vendor/etc/SNS_official_license_for_SM8845.pfm /mnt/vendor/persist/data/pfm/licenses/SNS_official_license_for_SM8845.pfm
+    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/SNS_official_license_for_SM8845.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/SNS_official_license_for_SM8845.pfm
+    copy /vendor/etc/SDA_official_license_for_SM8845.pfm /mnt/vendor/persist/data/pfm/licenses/SDA_official_license_for_SM8845.pfm
+    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/SDA_official_license_for_SM8845.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/SDA_official_license_for_SM8845.pfm
+
+on boot
+      chown system system /sys/module/microdump_collector/parameters/enable_microdump
+      chown system system /sys/module/microdump_collector/parameters/start_qcomdump
+
+
+service vendor.qms /vendor/bin/qms
+      class main
+      user root
+      group radio wakelock wifi inet net_admin
