@@ -1052,4 +1052,18 @@
 			</Attribute>
 		</Attribute>
 	</VendorCmd>
+
+	<VendorCmd name="ADJUST_TX_POWER" ID="241">
+		<Attribute name="BAND_CONFIG" ID="1" TYPE="NESTED" ATTR_MAX="3">
+		<Attribute name="BAND_INDEX" ID="1" TYPE="U8"/>
+		<Attribute name="BAND_CHAIN_CONFIG" ID="2" TYPE="NESTED" ATTR_MAX="12">
+		<Attribute name="CHAIN_INDEX" ID="1" TYPE="U8"/>
+		<Attribute name="CHAIN_RATE_CONFIG" ID="2" TYPE="NESTED" ATTR_MAX="288">
+		<Attribute name="RATE_TYPE" ID="1" TYPE="U8"/>
+		<Attribute name="RATE_VALUE" ID="2" TYPE="U8"/>
+		<Attribute name="RATE_POWER_VALUE" ID="3" TYPE="U8"/>
+		</Attribute>
+		</Attribute>
+		</Attribute>
+	</VendorCmd>
 </WCN_VenTool>

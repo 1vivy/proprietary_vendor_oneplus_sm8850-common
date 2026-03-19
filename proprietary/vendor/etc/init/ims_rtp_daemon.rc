@@ -6,13 +6,13 @@
 # imsdatadaemon starts with root and UID will be downgraded to RADIO.
 
 on property:sys.boot_completed=1
-    # LiDonghong@NETWORK.CALL.9558976, 2025/07/15, Add trial SDS license for SM8850
-    copy /vendor/etc/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm /mnt/vendor/persist/data/pfm/licenses/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm
-    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm
-    copy /vendor/etc/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm /mnt/vendor/persist/data/pfm/licenses/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm
-    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm
+    # LiDonghong@NETWORK.CALL.10944041, 2026/01/26, Add official SDS license for DE9.0
+    copy /vendor/etc/SDS_official_license_SM8845.pfm /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8845.pfm
+    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8845.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8845.pfm
+    copy /vendor/etc/SDS_official_license_SM8850.pfm /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8850.pfm
+    chmod 0644 /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8850.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/SDS_official_license_SM8850.pfm
 
 service vendor.ims_rtp_daemon /vendor/bin/ims_rtp_daemon
     class main

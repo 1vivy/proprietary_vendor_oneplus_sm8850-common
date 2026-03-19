@@ -1,0 +1,99 @@
+{
+    "INCLUDE_EXPIRATION_EXTENSION": 1,
+    "cbor_extension": "ojoAAVfFphkEX/UZBHD1GQR49RkEe/UZBHz1GQR/9ToAAVfEggEA",
+    "chipset_labels": [
+        "SM8850 - KAANAPALI (0xA01B)"
+    ],
+    "chipset_names": [
+        "SM8850 - KAANAPALI"
+    ],
+    "deviceFileName": "1119-1151-no-exp-175571101.pfm",
+    "featureBundles": [
+        "Smart Services Package"
+    ],
+    "featureRanges": [],
+    "features": [],
+    "filename": "1261d349-e3ac-491d-8b41-87088a5c0380_2026-01-22_platform_RSA_license_51293430131786271972581517230595509390.pfm",
+    "graceCount": 0,
+    "gracePeriod": 0,
+    "licenseCategory": "CHIPSET_OEM",
+    "licenseFeaturesIds": [
+        "1147:1148",
+        "1119",
+        "1136",
+        "1144",
+        "1151"
+    ],
+    "licenseHardwareVersions": [
+        "0xA01B"
+    ],
+    "licenseOEMIDs": "0x51",
+    "licensePKHashes": [
+        "0x31313EC6F0C237B69004D153B2EC2D3DDF1D826D0F60A952D039D5DED862AB0E515E4819D1844FDC91242304C685F202"
+    ],
+    "licenseType": "PRODUCTION",
+    "licenseeName": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
+    "requestMetadata": {
+        "bindToOem": true,
+        "customer": "Guangdong OPPO Mobile Telecommunications Corp., Ltd."
+    },
+    "signature_type": "RSA"
+}
+
+-----BEGIN CERTIFICATE-----
+MIIE9DCCA6igAwIBAgIQJpbBW5xE5T/YLvBJ3XoMjjBBBgkqhkiG9w0BAQowNKAP
+MA0GCWCGSAFlAwQCAQUAoRwwGgYJKoZIhvcNAQEIMA0GCWCGSAFlAwQCAQUAogMC
+ASAwgYQxJDAiBgNVBAoMG1F1YWxjb21tIFRlY2hub2xvZ2llcywgSW5jLjEqMCgG
+A1UECwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhpYyBPcGVyYXRpb25zMTAwLgYDVQQD
+DCdRQ1dFUyBQbGF0Zm9ybSBMaWNlbnNlIFJTQSBTaWduaW5nIENlcnQwIhgPMTk3
+MDAxMDEwMDAwMDFaGA85OTk5MTIzMTIzNTk1OVowPzE9MDsGA1UEAww0R3Vhbmdk
+b25nIE9QUE8gTW9iaWxlIFRlbGVjb21tdW5pY2F0aW9ucyBDb3JwLiwgTHRkLjCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAP//////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8C
+AwH//6OCATgwggE0MB0GA1UdDgQWBBSgSE8//y4rTXtQ4zysas/EMel/zDAfBgNV
+HSMEGDAWgBR2xLIFLqtQDYOjVvZN/0ZKdsD8lDAMBgNVHRMBAf8EAjAAMA4GA1Ud
+DwEB/wQEAwIFoDAWBgorBgEEAYspCwEBBAgAAAAAAAAAUTAWBgorBgEEAYspCwEC
+BAgAAAAAAACgGzApBgkrBgEEAYspDAEEHAAAAAEAAAR7AAAEfAAABF8AAARwAAAE
+eAAABH8wLQYJKwYBBAGLKQwFBCAxMT7G8MI3tpAE0VOy7C093x2CbQ9gqVLQOdXe
+2GKrDjAzBggrBgEEAYspDQQnojoAAVfFphkEX/UZBHD1GQR49RkEe/UZBHz1GQR/
+9ToAAVfEggEAMBUGCSsGAQQBiykMCQQIAAAAAGlyXEMwQQYJKoZIhvcNAQEKMDSg
+DzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEFAKID
+AgEgA4IBAQAIGEj2prWB7O8aDSEoR7hvqjrKSvddaXkCOHBaF49v9T3IHgxREjMq
+H8yIlZcSbBiP8f57Bx7qGR18D6LCfwv/cQ+Z1nGOV3nU7qZtYnB4MJn1TcXapsbG
+rn1xAgFePc6yCqTSNjm9HH5Luml7kr9pVafdn4+GLz23t4A3yjrobZrvA5YgZ65i
+S+Rxka6EuuldMJFsQ8P4uX5CmRnP+k2Shs7phzaaoVFslHl+IJj72tLuwsnSOmxN
+xWOemF9AMD4iyPCnTuu6zwkg6TfE88QUT/ZgPFeZVRL05AAp81l+BcrMlZExmFjX
+67Zuilcygo/u/zJ9Tom91cWZluIQ/qq8
+-----END CERTIFICATE-----
+
+
+-----BEGIN CERTIFICATE-----
+MIIEWzCCAxOgAwIBAgIVdqMEQ1j41p18D3AfzC1TDxRDgyLHMD0GCSqGSIb3DQEB
+CjAwoA0wCwYJYIZIAWUDBAIBoRowGAYJKoZIhvcNAQEIMAsGCWCGSAFlAwQCAaID
+AgEgMIGAMSQwIgYDVQQKDBtRdWFsY29tbSBUZWNobm9sb2dpZXMsIEluYy4xKjAo
+BgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBoaWMgT3BlcmF0aW9uczEsMCoGA1UE
+AwwjRmVhdHVyZSBMaWNlbnNlIEF0dGVzdGF0aW9uIFJvb3QgQ0EwHhcNMjUxMDE2
+MDAwMDAxWhcNMzAxMjMxMjM1OTU5WjCBhDEkMCIGA1UECgwbUXVhbGNvbW0gVGVj
+aG5vbG9naWVzLCBJbmMuMSowKAYDVQQLDCFRdWFsY29tbSBDcnlwdG9ncmFwaGlj
+IE9wZXJhdGlvbnMxMDAuBgNVBAMMJ1FDV0VTIFBsYXRmb3JtIExpY2Vuc2UgUlNB
+IFNpZ25pbmcgQ2VydDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAIhJ
+QtDGJ93gs/7lX2IxAgRBl9pfhbI9W0GM9ED9jRWs7cK4tRnjvwPqRQPm52SfQlM5
++vH6zs5IvpROylcTwwdGZxLKmVrRL4IDcxrO2cbmyjStBHt+l+yxPioDYs55hu7h
+oDFiBkWbmlJEg+p4XZmzaod7swK/N6bBu320/tqFfoOUm82TUmzY7LQKoW760JUF
+tjD4onnKlbLXnpi2qmZyKqYiCEorMfBkcLo79PO7ByJQJV1+G6Agjn106W0H8tqn
+evwP0pfcA/Xu4Yxdkf9kPJG1Z1iqKsnw1iMeHkAEu0Hrw3Zo5icPixb6JT1epSmM
+701/T/6FW1hy3Xko8h8CAwEAAaNmMGQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNV
+HQ8BAf8EBAMCAoQwHQYDVR0OBBYEFHbEsgUuq1ANg6NW9k3/Rkp2wPyUMB8GA1Ud
+IwQYMBaAFPJBmI+CCINLiXAGFTu2pU6beWgIMD0GCSqGSIb3DQEBCjAwoA0wCwYJ
+YIZIAWUDBAIBoRowGAYJKoZIhvcNAQEIMAsGCWCGSAFlAwQCAaIDAgEgA4IBAQAy
+OF91W0KN3c2hSFh8bFsPSzGVmW9qTBK1WHMgEwM0It0FVMb/lDkiKDeOgdMoxsMS
+GvaJ4ZyPtG35LmClJSVXBgbJoJx7nmEwI/q4iCO2InNYX7k0oZhcZwzYQQxxm7cP
+rUPlAXmCrIC75moP4osGE1EkBCkrErAn4DLGTvdz8nIm6HS+v6NCbj0IfqT0Vd4A
+XSMpW4Cqq/JhsKMkfH6IlkrY/4enumUGwjYz9SpmQh8OFNjwK0mJf6dDytZ3OY1H
+MuCSU9w19PDBrMICeoIHI28t7stb3nz7XndhA83/SLTJC9XC3M6/BRk04gqPfM0i
+9zAFInzunLxBdqXGFAty
+-----END CERTIFICATE-----

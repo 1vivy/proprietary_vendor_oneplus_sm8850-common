@@ -1231,17 +1231,18 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-07-01_platform_RSA_SM8850_license_trial_SDS.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-09-17_platform_RSA_SM8845_license_trial_SDS.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/IPACM_Filter_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_Filter_cfg.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SDA_official_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDA_official_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SDA_official_license_for_SM8845.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDA_official_license_for_SM8845.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SDS_official_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDS_official_license.pfm \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/SDS_official_license_SM8845.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDS_official_license_SM8845.pfm \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/SDS_official_license_SM8850.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDS_official_license_SM8850.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SNS_DSDA_official_license_for_SM8850.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SNS_DSDA_official_license_for_SM8850.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SNS_official_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SNS_official_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/SNS_official_license_for_SM8845.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SNS_official_license_for_SM8845.pfm \
@@ -1593,7 +1594,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.subsys-V5-ndk \
-    vendor.oplus.hardware.subsys_radio-V8-ndk \
+    vendor.oplus.hardware.subsys_radio-V9-ndk \
     CACertService \
     CneApp \
     IWlanService \

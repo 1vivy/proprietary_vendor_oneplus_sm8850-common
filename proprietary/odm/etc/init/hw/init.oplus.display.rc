@@ -73,6 +73,7 @@ on post-fs-data
     copy /vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
-    copy /vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm
-    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm
+
+    copy /vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
