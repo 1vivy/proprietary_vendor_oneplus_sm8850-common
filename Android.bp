@@ -2816,8 +2816,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libaudioserviceexampleimpl.so",
             ],
             shared_libs: [
-                "libaudioutils_shim",
                 "libbluetooth_audio_session_aidl_shim",
+                "libaudioutils_shim",
                 "android.hardware.bluetooth.audio-V5-ndk",
                 "android.hardware.audio.core.sounddose-V3-ndk",
                 "android.hardware.audio.core-V4-ndk",
@@ -3067,6 +3067,40 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libbtnv.so",
             ],
             shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamerapoweroptfeature",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamerapoweroptfeature.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder",
+                "libtinyxml2-v36",
+                "libpowercore",
+                "libdisplayconfig.qti",
+                "libhidlbase",
+                "libbinder_ndk",
+                "vendor.qti.hardware.display.config-V5-ndk",
                 "libc++",
                 "libc",
                 "libm",
