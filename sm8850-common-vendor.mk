@@ -190,7 +190,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v3.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/conv_detection.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/conv_detection.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
