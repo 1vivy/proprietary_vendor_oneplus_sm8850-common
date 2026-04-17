@@ -1346,7 +1346,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sysconfig/cacert-oem-defined-uids.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/cacert-oem-defined-uids.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
+    vendor/oneplus/sm8850-common/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PACKAGES += \
     cellularSecurityModule \
