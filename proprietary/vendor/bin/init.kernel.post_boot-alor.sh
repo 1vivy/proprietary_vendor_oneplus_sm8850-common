@@ -65,5 +65,6 @@ case "$variant" in
 	;;
 	*)
 	echo "***WARNING***: Postboot script not present for the variant ${variant}"
+	fallback_setting
 	;;
 esac

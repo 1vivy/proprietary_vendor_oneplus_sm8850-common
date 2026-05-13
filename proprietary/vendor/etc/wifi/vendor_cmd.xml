@@ -420,8 +420,8 @@
 		<Attribute name="CONFIG_ANT_DIV_WLAN_RSSI_DIFF" ID="128" TYPE="u16"/>
 		<Attribute name="CONFIG_ANT_DIV_BT_RSSI_DIFF" ID="129" TYPE="u16"/>
 		<Attribute name="CONFIG_DFS_NO_WAIT_SUPPORT" ID="131" TYPE="u8"/>
-		<Attribute name="CONFIG_TX_CHAIN_MASK_2GHZ" ID="136" TYPE="u8"/>
-		<Attribute name="CONFIG_TX_CHAIN_MASK_5GHZ" ID="137" TYPE="u8"/>
+		<Attribute name="CONFIG_TX_CHAIN_MASK_2GHZ" ID="137" TYPE="u8"/>
+		<Attribute name="CONFIG_TX_CHAIN_MASK_5GHZ" ID="138" TYPE="u8"/>
 	</VendorCmd>
 	<!-- QCA_NL80211_VENDOR_SUBCMD_GET_WIFI_CONFIGURATION = 75 -->
 	<VendorCmd name="GET_WIFI_CONFIG" ID="75">

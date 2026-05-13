@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+    <nv_items>
+        1
+        1943
+        4678
+        6853
+        6855
+        6860
+        6861
+        4212
+        4954
+    </nv_items>
+    <efs_items>
+        /nvm/num/50006
+        /nvm/context1/50006
+        /nvm/num/50007
+        /nv/item_files/mcs/tcxomgr/factory_cal_version
+        /nv/item_files/mcs/tcxomgr/xo_factory_cal_data
+        /nv/item_files/mcs/tcxomgr/xo_factory_cal_debug
+        /nv/item_files/mcs/tcxomgr/dcc_data
+        /nv/item_files/mcs/tcxomgr/tcxo_mode
+        /nv/item_files/mcs/tcxomgr/xo_crystal_type
+        /nv/item_files/rfnv/00022982
+        /nv/item_files/rfnv/00029650
+        /nv/item_files/rfnv/00029618
+        /nv/item_files/rfnv/00029620
+        /nv/item_files/rfnv/00029622
+        /nv/item_files/rfnv/00029720
+        /nv/item_files/rfnv/00030006
+        /nv/item_files/rfnv/00030008
+        /nv/item_files/rfnv/00030010
+        /nv/item_files/rfnv/00030016
+    </efs_items>
+</items>

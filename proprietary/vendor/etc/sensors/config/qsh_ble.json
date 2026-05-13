@@ -5,7 +5,7 @@
     "owner": "qsh_ble",
 
     "passive_or_active_scan":{ "type": "str", "ver": "0",
-        "data": "passive"
+        "data": "active"
     },
 
     "scan_mode_low_power":{ "type": "str", "ver": "0",

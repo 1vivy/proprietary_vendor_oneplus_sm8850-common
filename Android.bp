@@ -5,9 +5,9 @@
 soong_namespace {
     imports: [
         "device/oneplus/sm8850-common",
+        "hardware/oplus",
         "hardware/qcom-caf/sm8850",
         "hardware/qcom-caf/wlan",
-        "hardware/oplus",
         "vendor/qcom/opensource/commonsys/display",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/dataservices",
@@ -29175,34 +29175,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.appradio@1.0",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.communicationcenter-V2-ndk",
     owner: "oneplus",
     strip: {
@@ -31054,6 +31026,34 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "mdm_feature",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/mdm_feature",
+            ],
+            shared_libs: [
+                "libbase",
+                "libxml2",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "subsys_daemon",
     owner: "oneplus",
     target: {
@@ -31228,6 +31228,34 @@ install_symlink {
     system_ext_specific: true,
     installed_location: "priv-app/ims/lib/arm64/libimsmedia_jni.so",
     symlink_target: "/system_ext/lib64/libimsmedia_jni.so",
+}
+
+install_symlink {
+    name: "vendor_etc_hal_uuid_map_7_xml",
+    soc_specific: true,
+    installed_location: "etc/hal_uuid_map_7.xml",
+    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
+}
+
+install_symlink {
+    name: "vendor_etc_hal_uuid_map_15_xml",
+    soc_specific: true,
+    installed_location: "etc/hal_uuid_map_15.xml",
+    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
+}
+
+install_symlink {
+    name: "vendor_etc_hal_uuid_map_23_xml",
+    soc_specific: true,
+    installed_location: "etc/hal_uuid_map_23.xml",
+    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
+}
+
+install_symlink {
+    name: "vendor_etc_hal_uuid_map_31_xml",
+    soc_specific: true,
+    installed_location: "etc/hal_uuid_map_31.xml",
+    symlink_target: "/vendor/etc/hal_uuid_map_config.xml",
 }
 
 filegroup {

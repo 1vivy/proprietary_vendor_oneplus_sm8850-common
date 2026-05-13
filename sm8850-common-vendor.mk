@@ -1197,6 +1197,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.network.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.network.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_ODM)/etc/init/lowi-server.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/mdm_feature.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mdm_feature.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
@@ -1208,6 +1209,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_q_tunner_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_q_tunner_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_trail_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/oplusdycnvbk_items.xml:$(TARGET_COPY_OUT_ODM)/etc/oplusdycnvbk_items.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
@@ -1284,6 +1286,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/hal_uuid_map_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/hal_uuid_map_config.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -1584,7 +1587,6 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
-    vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.subsys-V5-ndk \
     vendor.oplus.hardware.subsys_radio-V9-ndk \
@@ -1689,6 +1691,7 @@ PRODUCT_PACKAGES += \
     tcmd \
     commcenterd \
     android.hardware.secure_element-service.qti \
+    mdm_feature \
     subsys_daemon \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
@@ -1697,6 +1700,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_etc_hal_uuid_map_7_xml \
+    vendor_etc_hal_uuid_map_15_xml \
+    vendor_etc_hal_uuid_map_23_xml \
+    vendor_etc_hal_uuid_map_31_xml
 
 endif
