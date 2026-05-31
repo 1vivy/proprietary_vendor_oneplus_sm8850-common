@@ -151,7 +151,6 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x3" Cluster="1" Exception="Cant compare. Node written as decimal read as binary with spaces." />
         <Minor OpcodeValue="0x4" Cluster="0" WVal="1" RVal="1" />
         <Minor OpcodeValue="0x5" Cluster="0" WVal="50" RVal="50" />
-        <Minor OpcodeValue="0x6" Cluster="0" WVal="0" RVal="0" />
     <!-- core hotplug major end-->
 
     <!-- interactive major start -->
@@ -299,9 +298,6 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x10" WVal="0x1" RVal="1" />
         <Minor OpcodeValue="0x11" WVal="200" RVal="200" />
         <Minor OpcodeValue="0x12" WVal="" RVal="" />   <!-- not supported -->
-        <Minor OpcodeValue="0x13" WVal="" RVal="" />   <!-- not supported -->
-        <Minor OpcodeValue="0x14" WVal="" RVal="" />   <!-- not supported -->
-        <Minor OpcodeValue="0x15" WVal="" RVal="" />   <!-- not supported -->
         <Minor OpcodeValue="0x16" Exception="MultiValuedNode" />
         <Minor OpcodeValue="0x17" WVal="1" RVal="1" />
         <Minor OpcodeValue="0x18" WVal="144" RVal="144" />
@@ -335,6 +331,8 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x12" WVal="0x43" />
         <Minor OpcodeValue="0x13" Exception="MultiValuedNode" />
         <Minor OpcodeValue="0x14" Exception="MultiValuedNode" />
+        <Minor OpcodeValue="0x15" WVal="" RVal="" />   <!-- not supported -->
+        <Minor OpcodeValue="0x16" WVal="" RVal="" />   <!-- not supported -->
     <!-- llcbw hwmon major end -->
 
     <!-- memlat major start -->
@@ -368,7 +366,7 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x19" WVal="0x18C" RVal="396" />
         <Minor OpcodeValue="0x1A" WVal="0x4" RVal="4" />
         <Minor OpcodeValue="0x1B" WVal="0x25F" RVal="547000" />
-        <Minor OpcodeValue="0x1C" WVal="0xAF" RVal="282000" />
+        <Minor OpcodeValue="0x1C" WVal="0xAF" RVal="300000" />
         <Minor OpcodeValue="0x1D" WVal="0x61A9" RVal="25001" />
         <Minor OpcodeValue="0x1E" WVal="0x1A0FE0" RVal="0x1A0FE0" />
         <Minor OpcodeValue="0x1F" WVal="0x1A0FE0" RVal="0x1A0FE0" />
@@ -422,7 +420,6 @@ Cluster 2=> Prime
         <Minor OpcodeValue="0x16" WVal="" RVal="" />    <!-- not supported -->
         <Minor OpcodeValue="0x18" WVal="1" RVal="1" />
         <Minor OpcodeValue="0x19" Exception="MultiValuedNode" />
-        <Minor OpcodeValue="0x1A" WVal="" RVal="" />    <!-- not supported -->
         <Minor OpcodeValue="0x1B" WVal="1" RVal="1" />
         <Minor OpcodeValue="0x1C" WVal="" RVal="" />    <!-- not supported -->
         <Minor OpcodeValue="0x1D" Exception="MultiValuedNode" />

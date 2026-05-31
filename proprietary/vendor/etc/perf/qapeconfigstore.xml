@@ -62,10 +62,6 @@ ________________________________________________________________________________
 
         <Configs Target="canoe,alor_interposer,alor" Weight="0,1,2">
             <GamePowerOptFeature>1</GamePowerOptFeature>
-            <GFR_FLAG>1</GFR_FLAG>
-            <GFR_JANK_THRESHOLDS>1.2;1.5;2.0</GFR_JANK_THRESHOLDS>
-            <PhrMinRate>0</PhrMinRate>
-            <HighFpsPhrMinRate>0</HighFpsPhrMinRate>
         </Configs>
 
         <Prop Name="vendor.qape.enable.engine" Value="true" Target="canoe,alor_interposer,alor"/>

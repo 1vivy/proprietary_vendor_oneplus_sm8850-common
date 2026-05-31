@@ -12,10 +12,6 @@
             "enc_csc_custom_matrix": false,
             // encoder csc enable
             "enc_csc_enable": false,
-            // HDR10Plus HW stats gen feature
-            // false: Feature is disabled by default.
-            // true:  HDR10+ HW Stats is enabled.
-            "enc_enable_hdr10plus_stats_gen": false,
             // true: do not override transfer value to 170M if bitstream contains unspecified transfer
             // false: override transfer value to 170M if bitstream contains unspecified transfer
             "dec_transfer_value_override" : false

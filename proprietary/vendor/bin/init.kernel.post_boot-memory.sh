@@ -130,19 +130,19 @@ function configure_vm_params() {
 	let RamSizeGB="( $MemTotal / 1048576 ) + 1"
 
 	# Set the min_free_kbytes and watermark_scale_factor
-	if [ $RamSizeGB -gt 8 ] && [ $RamSizeGB -le 16 ]; then
+	if [ $RamSizeGB -ge 12 ]; then
 		# 12GB, 16GB
 		MinFreeKbytes=11584
 		WatermarkScale=30
-	elif [ $RamSizeGB -gt 6 ] && [ $RamSizeGB -le 8 ]; then
+	elif [ $RamSizeGB -ge 8 ]; then
 		# 8GB
 		MinFreeKbytes=11584
 		WatermarkScale=40
-	elif [ $RamSizeGB -gt 3 ] && [ $RamSizeGB -le 6 ]; then
+	elif [ $RamSizeGB -ge 4 ]; then
 		# 4GB, 6GB
 		MinFreeKbytes=8192
 		WatermarkScale=50
-	elif [ $RamSizeGB -gt 1 ] && [ $RamSizeGB -le 3 ]; then
+	elif [ $RamSizeGB -ge 2 ]; then
 		# 2GB, 3GB
 		MinFreeKbytes=5792
 		WatermarkScale=50
@@ -181,27 +181,12 @@ function configure_memory_parameters() {
 	# huge pages is not as necessary.
 	echo 0 > /proc/sys/vm/compaction_proactiveness
 
-
-	if [ -f /sys/devices/soc0/soc_id ]; then
-		platformid=`cat /sys/devices/soc0/soc_id`
-	fi
-
-
 	#Set per-app max kgsl reclaim limit and per shrinker call limit
-	if [ "$platformid" -eq 685 ]; then
-		if [ -f /sys/class/kgsl/kgsl/page_reclaim_per_call ]; then
-			echo 19200 > /sys/class/kgsl/kgsl/page_reclaim_per_call
-		fi
-		if [ -f /sys/class/kgsl/kgsl/max_reclaim_limit ]; then
-			echo 25600 > /sys/class/kgsl/kgsl/max_reclaim_limit
-		fi
-	else
-		if [ -f /sys/class/kgsl/kgsl/page_reclaim_per_call ]; then
-			echo 38400 > /sys/class/kgsl/kgsl/page_reclaim_per_call
-		fi
-		if [ -f /sys/class/kgsl/kgsl/max_reclaim_limit ]; then
-			echo 51200 > /sys/class/kgsl/kgsl/max_reclaim_limit
-		fi
+	if [ -f /sys/class/kgsl/kgsl/page_reclaim_per_call ]; then
+		echo 38400 > /sys/class/kgsl/kgsl/page_reclaim_per_call
+	fi
+	if [ -f /sys/class/kgsl/kgsl/max_reclaim_limit ]; then
+		echo 51200 > /sys/class/kgsl/kgsl/max_reclaim_limit
 	fi
 }
 

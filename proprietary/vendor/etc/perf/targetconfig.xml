@@ -58,7 +58,7 @@
              Target="canoe"
              NumClusters="2"
              TotalNumCores="8"
-             SocIds="660,661,743"
+             SocIds="660"
              SynCore="1"
              CoreCtlCpu="4"
              MinCoreOnline="0"

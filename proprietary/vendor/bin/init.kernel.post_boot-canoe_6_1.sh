@@ -49,39 +49,11 @@ if [ -d /proc/sys/walt ]; then
 	# configure maximum frequency when CPUs are partially halted
 	echo 2147483647 > /proc/sys/walt/sched_max_freq_partial_halt
 
-	# Core control parameters for gold
-	echo 4 > /sys/devices/system/cpu/cpu0/core_ctl/min_cpus
-	echo 60 > /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres
-	echo 30 > /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres
-	echo 100 > /sys/devices/system/cpu/cpu0/core_ctl/offline_delay_ms
-	echo 6 > /sys/devices/system/cpu/cpu0/core_ctl/task_thres
-	echo 0 0 1 1 0 0 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
-	echo 0x7F > /sys/devices/system/cpu/cpu0/core_ctl/nrrun_cpu_mask
-	echo 0x00 > /sys/devices/system/cpu/cpu0/core_ctl/nrrun_cpu_misfit_mask
-	echo 0x00 > /sys/devices/system/cpu/cpu0/core_ctl/assist_cpu_mask
-	echo 0x00 > /sys/devices/system/cpu/cpu0/core_ctl/assist_cpu_misfit_mask
+	# Disable core control for gold
+	echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
 
-	# Core control parameters for gold+
-	echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/min_cpus
-	echo 60 > /sys/devices/system/cpu/cpu6/core_ctl/busy_up_thres
-	echo 30 > /sys/devices/system/cpu/cpu6/core_ctl/busy_down_thres
-	echo 100 > /sys/devices/system/cpu/cpu6/core_ctl/offline_delay_ms
-	echo 1 > /sys/devices/system/cpu/cpu6/core_ctl/task_thres
-	echo 0 0 > /sys/devices/system/cpu/cpu6/core_ctl/not_preferred
-	echo 0x40 > /sys/devices/system/cpu/cpu6/core_ctl/nrrun_cpu_mask
-	echo 0x3F > /sys/devices/system/cpu/cpu6/core_ctl/nrrun_cpu_misfit_mask
-	echo 0x00 > /sys/devices/system/cpu/cpu6/core_ctl/assist_cpu_mask
-	echo 0x3F > /sys/devices/system/cpu/cpu6/core_ctl/assist_cpu_misfit_mask
-
-
-	#Core control for gold
-	echo 1 > /sys/devices/system/cpu/cpu0/core_ctl/enable
-
-	#Core control for gold+
-	echo 1 > /sys/devices/system/cpu/cpu6/core_ctl/enable
-
-	#Disable big task rotation
-	echo 0 > /proc/sys/walt/sched_walt_rotate_big_tasks
+	# Disable core control for gold+
+	echo 0 > /sys/devices/system/cpu/cpu6/core_ctl/enable
 
 	# Configure Single Boost Thread
 	echo 0 > /proc/sys/walt/sched_sbt_delay_windows
@@ -118,16 +90,12 @@ if [ -d /proc/sys/walt ]; then
 	echo $gold_early_downmigrate > /proc/sys/walt/sched_early_downmigrate
 	echo $gold_early_upmigrate > /proc/sys/walt/sched_early_upmigrate
 
-	# Enable 2 Gold CPUs and 1 Prime CPU for pipeline
-	echo 112 > /proc/sys/walt/sched_pipeline_cpus
-	# Enable config 1 by default for pipeline
-	echo 1 > /proc/sys/walt/sched_pipeline_force_config
+	# Enable Gold CPUs for pipeline
+	echo 56 > /proc/sys/walt/sched_pipeline_cpus
 
 	# set the threshold for low latency task boost feature which prioritize
 	# binder activity tasks
 	echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
-
-	echo 105 > /proc/sys/walt/sched_topapp_weight_pct
 
 	# configure maximum frequency of large and medium cluster for
 	# different smart freq ipc reasons
@@ -156,8 +124,6 @@ if [ -d /proc/sys/walt ]; then
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy6/walt/pl
 
-	echo 2611200 90 > /sys/devices/system/cpu/cpufreq/policy0/walt/zone_max_util_pct
-
 	if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 		echo 787200 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
 		echo 864000 > /sys/devices/system/cpu/cpufreq/policy6/walt/rtg_boost_freq
@@ -182,9 +148,9 @@ if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 	echo 864000 > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
 	echo "0:614400 6:864000" > /data/vendor/perfd/default_scaling_min_freq
 else
-	echo 787200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+	echo 614400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 	echo 864000 > /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq
-	echo "0:787200 6:864000" > /data/vendor/perfd/default_scaling_min_freq
+	echo "0:614400 6:864000" > /data/vendor/perfd/default_scaling_min_freq
 fi
 
 # Reset the RT boost, which is 1024 (max) by default.
@@ -215,7 +181,6 @@ do
 	echo 250 > $llccbw/up_scale
 	echo 1600 > $llccbw/idle_mbps
 	echo 806000 > $llccbw/max_freq
-	echo 25000 > $llccbw/max_freq_max_mbps
 	echo 70 > $llccbw/ab_scale
 	echo 40 > $llccbw/window_ms
 done
@@ -225,7 +190,6 @@ do
 	echo 120 > $llccbw/io_percent
 	echo 180 > $llccbw/low_power_io_percent
 	echo "1017600 1017600" > $llccbw/max_low_power_cluster_freqs
-	echo 40000 > $llccbw/max_freq_max_mbps
 	echo 1350000 > $llccbw/sched_boost_freq
 	echo 1 > $llccbw/use_sched_boost
 done

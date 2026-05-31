@@ -131,6 +131,9 @@ config_dcc_qup()
     echo 0x19C1200 3 > $DCC_PATH/config
     echo 0x19C1300 3 > $DCC_PATH/config
     echo 0x19C1400 3 > $DCC_PATH/config
+    echo 0x19C1500 3 > $DCC_PATH/config
+    echo 0x19C1600 3 > $DCC_PATH/config
+    echo 0x19C1700 3 > $DCC_PATH/config
     echo 0x8C0008 1  > $DCC_PATH/config
     echo 0x8C0100 3 > $DCC_PATH/config
     echo 0x8C0110 1  > $DCC_PATH/config
@@ -142,7 +145,8 @@ config_dcc_qup()
     echo 0x8C1400 3 > $DCC_PATH/config
     echo 0x8C1500 3 > $DCC_PATH/config
     echo 0x8C1600 3 > $DCC_PATH/config
-    echo 0x8C1700 3 > $DCC_PATH/config
+    echo 0x8C170 1  > $DCC_PATH/config
+    echo 0x8C1700 2 > $DCC_PATH/config
     echo 0xAC0008 1  > $DCC_PATH/config
     echo 0xAC0100 3 > $DCC_PATH/config
     echo 0xAC0110 1  > $DCC_PATH/config
@@ -165,7 +169,7 @@ config_dcc_smmu()
     echo 0x03da2634 1  > $DCC_PATH/config
     echo 0x03de0010 1  > $DCC_PATH/config
     echo 0x03de0038 1  > $DCC_PATH/config
-    echo 0x03de0040 1  > $DCC_PATH/config
+    echo 0x03de004 1  > $DCC_PATH/config
     echo 0x03de8008 1  > $DCC_PATH/config
     echo 0x03de8020 1  > $DCC_PATH/config
     echo 0x15000000 1  > $DCC_PATH/config
@@ -1584,8 +1588,6 @@ adjust_permission()
     chmod 660 /sys/bus/coresight/devices/*/enable_source
     chgrp shell /sys/bus/coresight/devices/*/enable_sink
     chmod 660 /sys/bus/coresight/devices/*/enable_sink
-    chgrp shell /sys/bus/coresight/devices/ete*/reset
-    chmod 660 /sys/bus/coresight/devices/ete*/reset
 }
 
 enable_cti_flush_for_etf()

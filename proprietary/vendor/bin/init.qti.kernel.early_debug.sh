@@ -1,5 +1,5 @@
 #=============================================================================
-# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# Copyright (c) 2024-2025 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -35,7 +35,7 @@ if [ -f /sys/devices/soc0/soc_id ]; then
 fi
 
 case "$platformid" in
-    "660"|"661"|"704"|"685"|"722"|"723"|"727"|"743")
+    "660"|"661"|"704"|"685"|"722"|"723"|"727")
 		/vendor/bin/sh /vendor/bin/init.qti.kernel.early_debug-canoe.sh
 		;;
 

@@ -1,5 +1,5 @@
 #=============================================================================
-# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# Copyright (c) 2020-2025 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -65,11 +65,6 @@ if [ -d /proc/sys/walt ]; then
 	echo 95 85 > /proc/sys/walt/cluster0/sched_other_cgroup_updownmigrate
 	echo 95 85 > /proc/sys/walt/cluster0/sched_topapp_updownmigrate
 
-	# configure maximum frequency of large and medium cluster for
-	# different smart freq ipc reasons
-	echo 2400000 2400000 2700000 3000000 2147483647 > /proc/sys/walt/cluster0/smart_freq/ipc_freq_levels
-	echo 3513600 3800000 4100000 4200000 2147483647 > /proc/sys/walt/cluster1/smart_freq/ipc_freq_levels
-
 	# By setting group upmigrate/downmigrate to 0, colocation is disabled.
 	echo 0 > /proc/sys/walt/sched_group_downmigrate
 	echo 0 > /proc/sys/walt/sched_group_upmigrate
@@ -97,16 +92,13 @@ if [ -d /proc/sys/walt ]; then
 
 	# Enable Gold CPUs for pipeline
 	echo 28 > /proc/sys/walt/sched_pipeline_cpus
-	echo 1 > /proc/sys/walt/sched_pipeline_force_config
+
 	# set the threshold for low latency task boost feature which prioritize
 	# binder activity tasks
 	echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/walt/sched_boost
-
-	echo 0 2611200 6 2611200 7 2611200 8 2611200 10 2611200 > /proc/sys/walt/cluster0/smart_freq/legacy_freq_levels
-	echo 0 3244800 6 3244800 7 3244800 8 3244800 10 3244800 > /proc/sys/walt/cluster1/smart_freq/legacy_freq_levels
 
 	# configure input boost settings
 	if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
@@ -127,11 +119,19 @@ if [ -d /proc/sys/walt ]; then
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 	echo 1 > /sys/devices/system/cpu/cpufreq/policy5/walt/pl
 
-	echo 806400 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
-	echo 806400 > /sys/devices/system/cpu/cpufreq/policy5/walt/rtg_boost_freq
-	echo 1267200 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
-	echo 2112000 > /sys/devices/system/cpu/cpufreq/policy5/walt/hispeed_freq
-
+	if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
+		echo 787200 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
+		echo 864000 > /sys/devices/system/cpu/cpufreq/policy5/walt/rtg_boost_freq
+		echo 1747200 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
+		echo 1996800 > /sys/devices/system/cpu/cpufreq/policy5/walt/hispeed_freq
+		echo 8500000 8500000 8500000 8500000 8500000 8500000 > /proc/sys/walt/sched_util_busy_hyst_cpu_ns
+		echo 0 0 0 0 0 0 > /proc/sys/walt/sched_util_busy_hyst_cpu_util
+	else
+		echo 787200 > /sys/devices/system/cpu/cpufreq/policy0/walt/rtg_boost_freq
+		echo 864000 > /sys/devices/system/cpu/cpufreq/policy5/walt/rtg_boost_freq
+		echo 1747200 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
+		echo 1996800 > /sys/devices/system/cpu/cpufreq/policy5/walt/hispeed_freq
+	fi
 else
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
 	echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy5/scaling_governor
@@ -139,13 +139,13 @@ else
 fi
 
 if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
-	echo 556000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-	echo 806400 > /sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq
-	echo "0:556000 5:806400" > /data/vendor/perfd/default_scaling_min_freq
+	echo 614400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+	echo 864000 > /sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq
+	echo "0:614400 5:864000" > /data/vendor/perfd/default_scaling_min_freq
 else
-	echo 556000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
-	echo 806400 > /sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq
-	echo "0:556000 5:806400" > /data/vendor/perfd/default_scaling_min_freq
+	echo 614400 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+	echo 864000 > /sys/devices/system/cpu/cpufreq/policy5/scaling_min_freq
+	echo "0:614400 5:864000" > /data/vendor/perfd/default_scaling_min_freq
 fi
 
 # Reset the RT boost, which is 1024 (max) by default.
@@ -176,7 +176,6 @@ do
 	echo 250 > $llccbw/up_scale
 	echo 1600 > $llccbw/idle_mbps
 	echo 806000 > $llccbw/max_freq
-	echo 25000 > $llccbw/max_freq_max_mbps
 	echo 70 > $llccbw/ab_scale
 	echo 40 > $llccbw/window_ms
 done
@@ -186,7 +185,6 @@ do
 	echo 120 > $llccbw/io_percent
 	echo 180 > $llccbw/low_power_io_percent
 	echo "1017600 1017600" > $llccbw/max_low_power_cluster_freqs
-	echo 40000 > $llccbw/max_freq_max_mbps
 	echo 1350000 > $llccbw/sched_boost_freq
 	echo 1 > $llccbw/use_sched_boost
 done
@@ -196,8 +194,6 @@ do
 	echo "2086 5161 7980 12157 14060 16113 18234 20343" > $ddrbw/mbps_zones
 	echo 4 > $ddrbw/sample_ms
 	echo 120 > $ddrbw/io_percent
-	echo 180 > $ddrbw/low_power_io_percent
-	echo "1017600 1017600" > $ddrbw/max_low_power_cluster_freqs
 	echo 20 > $ddrbw/hist_memory
 	echo 5 > $ddrbw/hyst_length
 	echo 1 > $ddrbw/idle_length
@@ -212,30 +208,24 @@ done
 
 for latfloor in $bus_dcvs/*/*latfloor
 do
-	echo 300000 > $latfloor/ipm_ceil
+	echo 25000 > $latfloor/ipm_ceil
 done
 
 for qosgold in $bus_dcvs/DDRQOS/*gold
 do
-	echo 700 > $qosgold/ipm_ceil
+	echo 50 > $qosgold/ipm_ceil
 done
 
 for qosprime in $bus_dcvs/DDRQOS/*prime
 do
-	echo 350 > $qosprime/ipm_ceil
+	echo 100 > $qosprime/ipm_ceil
 done
 
 for ddrprime in $bus_dcvs/DDR/*prime
 do
-	echo 13000 > $ddrprime/ipm_ceil
 	echo 25 > $ddrprime/freq_scale_pct
 	echo 1500 > $ddrprime/freq_scale_floor_mhz
 	echo 2800 > $ddrprime/freq_scale_ceil_mhz
-done
-
-for ddrgold in $bus_dcvs/DDR/*gold
-do
-	echo 3000 > $ddrgold/ipm_ceil
 done
 
 echo s2idle > /sys/power/mem_sleep

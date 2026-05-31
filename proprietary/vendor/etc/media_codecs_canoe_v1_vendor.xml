@@ -188,39 +188,6 @@
             <Limit name="performance-point-7680x4320" value="30" />
             <Limit name="performance-point-8192x4320" value="29" />
         </MediaCodec>
-        <!-- Yuxuan.Zhang@MULTIMEDIA.MEDIASERVER 2025/10/20 remove mvhevc.decode support
-        <MediaCodec name="c2.qti.mvhevc.decoder" type="video/x-mvhevc" >
-            <Alias name="OMX.qcom.video.decoder.mvhevc"/>
-            <Limit name="size" min="96x96" max="4096x4096" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="72-69120" />
-            <Limit name="blocks-per-second" min="72" max="2073600" />
-            <Limit name="bitrate" range="1-160000000" />
-            <Limit name="frame-rate" range="1-60" />
-            <Feature name="adaptive-playback" />
-            <Limit name="concurrent-instances" max="8" />
-            <Limit name="performance-point-1920x1080" value="60" />
-            <Limit name="performance-point-4096x2160" value="30" />
-            <Feature name="special-codec" required="true" />
-        </MediaCodec>
-        <MediaCodec name="c2.qti.mvhevc.decoder.secure" type="video/x-mvhevc" >
-            <Alias name="OMX.qcom.video.decoder.mvhevc.secure"/>
-            <Limit name="size" min="96x96" max="4096x4096" />
-            <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="72-69120" />
-            <Limit name="blocks-per-second" min="72" max="2073600" />
-            <Limit name="bitrate" range="1-40000000" />
-            <Limit name="frame-rate" range="1-60" />
-            <Feature name="adaptive-playback" />
-            <Feature name="secure-playback" required="true" />
-            <Feature name="low-latency" />
-            <Limit name="concurrent-instances" max="1" />
-            <Limit name="performance-point-1920x1080" value="60" />
-            <Limit name="performance-point-4096x2160" value="30" />
-            <Feature name="special-codec" required="true" />
-        </MediaCodec> -->
         <!-- WeiHu@MULTIMEDIA.MEDIASERVER 2025/09/18 remove apv support on infiniti
         <MediaCodec name="c2.qti.apv.decoder" type="video/apv" >
             <Alias name="OMX.qcom.video.decoder.apv"/>
@@ -249,7 +216,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="block-count" range="36-36864" />
             <Limit name="blocks-per-second" min="36" max="4423680" />
-            <Limit name="bitrate" range="1-100000000" />
+            <Limit name="bitrate" range="1-10000000" />
             <Limit name="frame-rate" range="1-120" />
             <Feature name="adaptive-playback" />
             <Feature name="dynamic-color-aspects" />
@@ -493,7 +460,7 @@
             <Limit name="frame-rate" range="1-480" />
             <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
-            <Feature name="bitrate-modes" value="VBR,CQ" />
+            <Feature name="bitrate-modes" value="VBR" />
             <Feature name="encoding-statistics" />
             <Limit name="performance-point-1920x1080" value="480" />
             <Limit name="performance-point-1920x1080" value="240" />

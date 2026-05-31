@@ -6,12 +6,6 @@
   {
     "owner":"diag_filter_sensor",
 
-    "electro_neuro_graph":
-    {
-      "type" : "int",
-      "ver" : "0",
-      "data" : "1"
-    },
     "geomag_rv":
     {
       "type" : "int",

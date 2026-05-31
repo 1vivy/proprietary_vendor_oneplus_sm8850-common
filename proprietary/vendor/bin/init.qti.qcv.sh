@@ -18,11 +18,8 @@ setprop ro.vendor.qti.soc_model $chip_id
 # and store it in ro.vendor.qti.soc_name.
 if [ "$soc_id" -eq 707 ] || [ "$soc_id" -eq 708 ] ; then
     setprop ro.vendor.qti.soc_name art
-elif [ "$soc_id" -eq 660 ] || [ "$soc_id" -eq 661 ] || [ "$soc_id" -eq 704 ] || [ "$soc_id" -eq 743 ]; then
+elif [ "$soc_id" -eq 660 ] || [ "$soc_id" -eq 661 ] || [ "$soc_id" -eq 704 ]; then
     setprop ro.vendor.qti.soc_name canoe
-    setprop ro.vendor.media_performance_class 35
-elif [ "$soc_id" -eq 722 ] || [ "$soc_id" -eq 723 ]; then
-    setprop ro.vendor.qti.soc_name whale
     setprop ro.vendor.media_performance_class 35
 elif [ "$soc_id" -eq 685 ] || [ "$soc_id" -eq 727 ]; then
     setprop ro.vendor.qti.soc_name alor
