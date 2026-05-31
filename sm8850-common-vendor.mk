@@ -276,16 +276,25 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_default_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_dynamic_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_fcal_mmc56x3x_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_hdk_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_hdk_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_hdk_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_hdk_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_irq.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lps22df_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mmc56x3x_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mtp_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mtp_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mtp_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mtp_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_power_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_default_sensors.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_lsm6dsv_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_mmc56x3x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_tmd3765_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_sht4x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_sht4x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_sx932x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_tmd3765_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_mmc56x3x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/oplus_camera_aon.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/oplus_camera_aon.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
@@ -321,6 +330,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/javalibs/odpmanagerlib-aar:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/javalibs/odpmanagerlib-aar \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/ssg/c2pa_enroll_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/c2pa_enroll_config.json \
@@ -367,6 +377,7 @@ PRODUCT_PACKAGES += \
     libaudiocorehal.default \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
+    libbcs \
     libqtigatekeeper \
     libsoundtriggerhal.qti \
     mapper.qti \
@@ -406,6 +417,7 @@ PRODUCT_PACKAGES += \
     libQshSession \
     libTxPwrJni \
     libVirtClientInterface \
+    libVoiceSdk \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
@@ -743,6 +755,7 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libsystem_health_mon2 \
     libtaautoload \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
@@ -855,6 +868,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.qvirt-V2-ndk \
+    vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices-V2-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
@@ -908,10 +922,12 @@ PRODUCT_PACKAGES += \
     libGaiaClient_vnd \
     libPanelChaplin \
     libc2filterplugin \
+    libdisplayadfr2minfps_qcom \
     libdisplayaidlapis \
     libdisplayfossfeature_nature \
     libdolbydecoderprocessor \
     libdolbyeglcore \
+    libdolbyencoderprocessor \
     libdolbyottcameracontrol \
     libdolbyproxyandroid \
     libdpaservice \
@@ -921,6 +937,7 @@ PRODUCT_PACKAGES += \
     libosensenativeproxy_client \
     libpwirisfeature \
     libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
     libsensorbridge \
     libstc_color_feature \
     vendor.oplus.hardware.cwb-V2-ndk \
@@ -1130,6 +1147,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.modem.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.modem.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.network.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.network.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_ODM)/etc/init/lowi-server.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/mdm_feature.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mdm_feature.rc \

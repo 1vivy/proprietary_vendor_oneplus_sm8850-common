@@ -453,6 +453,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libutils",
                 "libcutils",
+                "libbcs",
                 "liblog",
                 "libhidlbase",
                 "android.hardware.bluetooth.ranging-V2-ndk",
@@ -722,6 +723,35 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "libutils",
                 "libtinyxml2-v36",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbcs",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/libbcs.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqcbor",
+                "libminksocket_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -1918,6 +1948,34 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libVoiceSdk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libVoiceSdk.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdl",
+                "libEGL",
+                "libGLESv2",
+                "libGLESv3",
+                "libtensorflowlite_c_vendor",
+                "libm",
+                "libc",
             ],
         },
     },
@@ -3145,6 +3203,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libVoiceSdk",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -5567,6 +5627,8 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libVoiceSdk",
+                "libtensorflowlite_c_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -12147,6 +12209,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtensorflowlite_c_vendor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite_c_vendor.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtestutils",
     owner: "oneplus",
     strip: {
@@ -15368,6 +15454,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.snapdragonServices-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.snapdragonServices-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.snapdragonServices-V2-ndk",
     owner: "oneplus",
     strip: {
@@ -16881,6 +16992,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdisplayadfr2minfps_qcom",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdisplayadfr2minfps_qcom.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder",
+                "libbinder_ndk",
+                "libtinyxml2-v36",
+                "libdtlm",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdisplayaidlapis",
     owner: "oneplus",
     strip: {
@@ -16996,6 +17138,39 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
+                "libui",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdolbyencoderprocessor",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdolbyencoderprocessor.so",
+            ],
+            shared_libs: [
+                "libdolbyeglcore",
+                "libnativewindow",
+                "liblog",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyottcameracontrol",
+                "libutils",
+                "libcutils",
                 "libui",
                 "libc++",
                 "libc",
@@ -17280,6 +17455,44 @@ cc_prebuilt_library_shared {
                 "libdolbydecoderprocessor",
                 "libstagefright_foundation",
                 "libnativewindow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqcodec2_dolbyencoderfilter",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libqcodec2_dolbyencoderfilter.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libcodec2_vndk",
+                "libqcodec2_base",
+                "libqcodec2_utils",
+                "libqcodec2_basecodec",
+                "libqcodec2_filterbase",
+                "libqcodec2_platform",
+                "qti.video.utils.videobufferlayout",
+                "libnativewindow",
+                "libEGL",
+                "libGLESv3",
+                "libdolbyencoderprocessor",
                 "libc++",
                 "libc",
                 "libm",
@@ -19094,7 +19307,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.qti.hardware.perf2-hal-service",
             ],
             shared_libs: [
-                "vendor.qti.snapdragonServices-V2-ndk",
+                "vendor.qti.snapdragonServices-V1-ndk",
                 "vendor.qti.snapdragonServices.qape-V1-ndk",
                 "liblog",
                 "libq-perflog",
@@ -20706,6 +20919,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libwpa_client",
+                "libtensorflowlite_c_vendor",
                 "libminksocket_vendor",
                 "libqcbor",
                 "libc++",

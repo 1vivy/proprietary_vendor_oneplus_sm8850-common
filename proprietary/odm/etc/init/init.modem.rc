@@ -1,0 +1,12 @@
+#Weifeng.He@NETWORK.ARCH, 2025-9-21, add for Infiniti XTS test
+on boot
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc0/coredump enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc0/recovery enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc1/coredump enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc1/recovery enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc2/coredump enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc2/recovery enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc3/coredump enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc3/recovery enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc4/coredump enabled
+    write /sys/devices/platform/soc/4080000.remoteproc-mss/remoteproc/remoteproc4/recovery enabled
