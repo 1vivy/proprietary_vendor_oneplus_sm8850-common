@@ -35,7 +35,7 @@
 
         <!-- Type="1", main launch boost of 0.6sec -->
         <Config
-            Id="0x00001081" Type="1" Enable="false" Timeout="600" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="1" Enable="false" Timeout="600" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
@@ -50,11 +50,6 @@
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
         <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
-        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
-        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
-        <!-- LPM Bias resource opcode, value-->
         <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
         <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
         <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
@@ -66,21 +61,19 @@
         <!-- LLCCBW resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ_PRIME resource opcode, value-->
         <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
-        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS resource opcode for gold, values-->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS resource opcode for prime, values -->
-        <!-- Type="1", main launch of 1sec -->
+        <!-- Type="1", main launch of 2sec -->
 
         <Config
             Id="0x00001081" Type="1" Enable="false" Timeout="1000" Target="alor"
-            Resources="0x40C00000, 0x5, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
-                       0x40800000, 0xCE6, 0x40800200, 0xFE6, 0x43488000, 0x383E70,
-                       0x40C74000, 0xFF, 0x40408000, 0x63, 0x4080C000, 2360000, 0x4080C200, 2460000,
-                       0x40808000, 1747200, 0x40808200, 1651200,
-                       0x40814000, 1401600, 0x40814200, 1248000,
+            Resources="0x40C00000, 0x2, 0x40804000, 0xFFF, 0x40804200, 0xFFF,
+                       0x4080C000, 2360000, 0x4080C200, 2460000,
+                       0x40808000, 2010000, 0x40808200, 1990000,
+                       0x40814000, 1750000, 0x40814200, 1650000,
                        0x42C10000, 0x1, 0x4303C000, 0xC3500, 0x41844000, 0xE3C88,
-                       0x43458000, 0x148200, 0x42834000, 1, 0x4100C000, 0x3, 0x63C5C000, 2, 0, 2918000,
-                       0x63C5C200, 2, 0, 3072000" />
+                       0x43458000, 0x148200, 0x42834000, 1, 0x63C5C000, 2, 0, 2840000,
+                       0x63C5C200, 2, 0, 2980000" />
 
     <!-- Lightening_Launches_Lite App Launch (default) boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -101,7 +94,7 @@
 
         <!-- Type="2", Main App Launch Boost -->
         <Config
-            Id="0x00001081" Type="2" Enable="false" Timeout="2000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="2" Enable="false" Timeout="2000" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x5,
                       0x40C74000, 0xFF, 0x40408000, 0x10,
                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
@@ -110,31 +103,21 @@
                       0x42834000, 1, 0x4100C000, 0x3" />
 
     <!-- Lightning Launches Lite App Launch boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- LPM Bias resource opcode, value-->
-        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
+        <!-- SCHED_GROUP_UP_DOWN MIGRATE resource opcode, value -->
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value-->
-        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
-        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value-->
-        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
         <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
         <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
-        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <!-- Type="2", Main App launch Boost : Duration governed by LAL -->
         <Config
-             Id="0x00001081" Type="2" Enable="false" Timeout="15000" Target="alor"
-             Resources="0x40C00000, 0x5, 0x40408000, 0x10 , 0x43488000, 0x14A528,
-                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
-                        0x4080C000, 2361600, 0x4080C200, 2476800,
-                        0x40808000, 1824000, 0x40808200, 1651200, 0x40814000, 1401600 , 0x40814200, 1248000,
-                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
+            Id="0x00001081" Type="2" Enable="false" Timeout="15000" Target="alor"
+            Resources="0x40CF4000, 0x00640055, 0x40C74000, 0xFC,
+                       0x4080C000, 2480000, 0x40808000, 2010000, 0x40814000, 1750000,
+                       0x4080C200, 2460000, 0x40808200, 1990000, 0x40814200, 1650000"
+            IgnoreHints="0x00001083" />
 
     <!-- Lightening_Launches_Lite Game Launch (default) boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -157,7 +140,7 @@
 
         <!-- Type="3", Main Game Launch Boost -->
         <Config
-            Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x1,
                        0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x42C10000, 0x1,
@@ -169,8 +152,9 @@
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
 
-        <!-- Lightning Launches Lite Game Launch boost -->
+    <!-- Lightning Launches Lite Game Launch boost -->
         <!-- SCHEDBOOST resource opcode, value-->
+        <!-- SCHED_GROUP_UP_DOWN MIGRATE resource opcode, value -->
         <!-- SLB_BIG, val-->
         <!-- SLB_PRIME, val-->
         <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
@@ -182,21 +166,15 @@
         <!-- CPU_DOWN_FREQ_THRESHOLD_US BIG, val us -->
         <!-- CPU_DOWN_FREQ_THRESHOLD_US PRIME, val us -->
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
-        <!-- LPM Bias resource opcode, value-->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
         <!-- Type="3", Main Game Launch Boost : Duration governed by LGL -->
-         <Config
-             Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="alor"
-             Resources="0x40C00000, 0x1, 0x40C68000, 60,
-                        0x40C68200, 60, 0x4080C000, 2016000, 0x4080C200, 1824000,
-                        0x40808000, 1670400, 0x40808200, 1440000,
-                        0x40814000, 1401600, 0x40814200, 1017000, 0x41448000, 20000,
-                        0x41448200, 20000, 0x40C74000, 0xFC , 0x40408000, 0x63,
-                        0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x42C10000, 0x1" />
+        <Config
+            Id="0x00001081" Type="3" Enable="false" Timeout="15000" Target="alor"
+            Resources="0x40C00000, 0x3, 0x40CF4000, 0x00640055, 0x40C68000, 60,
+                       0x40C68200, 60, 0x4080C000, 2010000, 0x4080C200, 1990000,
+                       0x40808000, 1750000, 0x40808200, 1650000,
+                       0x40814000, 1400000, 0x40814200, 1250000, 0x41448000, 20000,
+                       0x41448200, 20000, 0x40C74000, 0xFC"
+            IgnoreHints="0x00001083" />
 
     <!-- Per App Launch Base (default) boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -206,38 +184,21 @@
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
         <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
-        <!-- GOLD_CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- GOLD_CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
-        <!-- LLCC_DDR_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
         <!-- STORAGE CLK SCALING resource opcode, value-->
+        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
         <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
         <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM Bias resource opcode, value-->
-        <!-- SCHED_LEGACY_FREQ_LEVELS BIG Core resource opcode, value-->
-        <!-- SCHED_LEGACY_FREQ_LEVELS PRIME Core resource opcode, value-->
-        <!-- SCHED_IPC_LEVELS BIG Core resource opcode, value-->
-        <!-- SCHED_IPC_LEVELS PRIME Core resource opcode, value-->
-        <!-- SCHED_WALT_FEATURES resource opcode, value-->
-        <!-- FDCVS_PROFILE_INDEX opcode, value-->
-        <!-- SCHED_SBT_ENABLE opcode, value-->
 
         <!-- Type="5", main launch boost of 0.6sec, revisit on next project.-->
         <Config
-            Id="0x00001081" Type="5" Enable="true" Timeout="600" Target="canoe,alor"
+            Id="0x00001081" Type="5" Enable="true" Timeout="600" Target="canoe"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
-                       0x40800000, 0xCE6, 0x40800200, 0xFE6,
-                       0x41848000, 0x927C0, 0x41844000, 0x927C0, 0x41868000, 0x44D90, 0x41864000, 0x44D90, 0x4303C000, 0x858B8, 0x43040000, 0x858B8, 0x42C10000, 0x1,
-                       0x42834000, 1, 0x4100C000, 0x3,
-                       0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x63C5C000, 16, 1, 3302400, 2, 3302400, 3, 3302400, 4, 3302400, 5, 3302400, 6, 3302400, 7, 3302400, 8, 3302400,
-                       0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
-                       0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
-                       0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647,
-                       0x43C88000, 12,
-                       0x42C5C000, 4,
-                       0x43C90000, 0" />
+                       0x40800000, 0xEFFF, 0x40800200, 0xEFFF,
+                       0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
+                       0x43488000, 0x516008, 0x42834000, 1, 0x4100C000, 0x3,
+                       0x40C74000, 0xFF, 0x40408000, 0x63" />
 
     <!--Activity lauch boost-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -259,7 +220,7 @@
 
         <!-- Type="10", main launch boost of 2sec -->
         <Config
-            Id="0x00001081" Type="10" Enable="false" Timeout="2000" Target="canoe,alor_interposer"
+            Id="0x00001081" Type="10" Enable="false" Timeout="2000" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x1, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
                        0x40800000, 0xCE6, 0x40800200, 0xFE6,
                        0x41848000, 0x149970, 0x41844000, 0x149970,
@@ -269,38 +230,6 @@
                        0x63C5C200, 16, 1, 4070400, 2, 4070400, 3, 4070400, 4, 4070400, 5, 4070400, 6, 4070400, 7, 4070400, 8, 4070400,
                        0x63C50000, 5, 3302400, 3302400, 2147483647, 2147483647, 2147483647,
                        0x63C50200, 5, 4070400, 4070400, 4185600, 4300800, 2147483647" />
-
-    <!--Activity lauch boost-->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MAX_FREQ PRIME Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value-->
-        <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
-        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- CPU_LLCC_BW_MIN_FREQ_V2 resource opcode, value-->
-        <!-- STORAGE CLK SCALING resource opcode, value-->
-        <!-- LLCC DDR LAT GOLD MIN FREQ resource opcode, value-->
-        <!-- GPU_TOUCH_WAKEUP resource opcode, value-->
-        <!-- CPU_CORE_CONTROL_CPU_NOT_PREFERRED resource opcode, value-->
-        <!-- SCHED_TASK_BOOST resource opcode, value-->
-        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
-        <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
-        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
-        <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
-        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
-        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
-        <!-- STORAGE_BOOST_MIN_THRESHOLD resource opcode, value-->
-        <!-- Type="10", main launch boost of 2sec -->
-        <Config
-            Id="0x00001081" Type="10" Enable="false" Timeout="2000" Target="alor"
-            Resources="0x40C00000, 0x5, 0x40804000, 0xEFFF, 0x40804200, 0xEFFF,
-                       0x40800000, 0xEFFF, 0x40800200, 0xEFFF,
-                       0x41848000, 0xE3C88, 0x41844000, 0xE3C88,
-                       0x42C10000, 0x1, 0x43488000, 0x383E70,
-                       0x42834000, 1, 0x4100C000, 0x3, 0x40C80000, 0x0 ,
-                       0x4080C000, 2188000, 0x4080C200, 2227200,
-                       0x40808000, 1747200, 0x40808200, 1824000,
-                       0x40814000, 1401600, 0x40814200, 1440000, 0x42C50000, 0x3FF" />
 
 
     <!--app launch boost (attach application) -->
@@ -697,30 +626,30 @@
         <!-- CPUBOOST_MIN_FREQ BIG Core resource opcode, value -->
         <!-- GPU_MIN_POWER_LEVEL resource opcode,value -->
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="30"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="30"
                 Resources="0x40800000, 500" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="60"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="60"
                 Resources="0x40800000, 500" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="90"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="90"
                 Resources="0x40800000, 1000, 0x42804000, 12" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="120"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="120"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="144"
-                Resources="0x40800000, 1500, 0x42804000, 5" />
-
-        <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="180"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="144"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
 
         <Config
-                Id="0x00001097" Type="0" Enable="false" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="240"
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="180"
+                Resources="0x40800000, 1500, 0x42804000, 5" />
+
+        <Config
+                Id="0x00001097" Type="0" Enable="true" Timeout="5000" Target="canoe,alor_interposer,alor" Fps="240"
                 Resources="0x40800000, 1500, 0x42804000, 5" />
 
     <!--HDR Content Hint -->
@@ -749,7 +678,7 @@
 
         <!-- Type 1 Heavy Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -776,7 +705,7 @@
 
         <!-- Type 1 Heavy Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer,alor" Fps="90"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -784,7 +713,7 @@
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80" />
         <Config
-            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="1" Enable="false" Target="canoe,alor_interposer,alor" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -800,38 +729,33 @@
         <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
         <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
         <!-- SCHED_BOOST resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
         <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
         <!-- LPM_BIAS_HYST resource opcode resource opcode, value-->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
+        <!-- CORE_CTL_ENABLE_BIG resource opcode, value-->
+        <!-- CORE_CTL_ENABLE_PRIME  resource opcode, value-->
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS BIG -->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS PRIME -->
-        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
         <!-- Type 1 Heavy Scrolls : Horizontal and Verical -->
         <Config
             Id="0x00001080" Type="1" Enable="false" Target="alor"
-            Resources="0x4303C000, 0xA6428, 0x4080C000, 2188000, 0x40808000, 1747200, 0x40814000, 1036800,
-                       0x4080C200, 1248000, 0x40808200, 1017000, 0x40814200, 806400,
-                       0x40C00000, 2, 0x43480000, 0xC9900,
-                       0x40C74000, 0xFC, 0x40408000, 0x27,
-                       0x41848000, 0xE3C88 , 0x41000000, 6, 0x41000200, 1, 0x40C78000, 51, 0x40C7C000, 35" />
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2360000, 0x40808000, 2010000, 0x40814000, 1400000,
+                       0x4080C200, 1650000, 0x40808200, 1250000, 0x40814200, 1250000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41008200, 0,
+                       0x41848000, 0xE3C88" />
 
         <Config
             Id="0x00001080" Type="1" Enable="false" Target="alor" Fps="120, 144, 180, 240"
-            Resources="0x4303C000, 0xA6428, 0x4080C000, 2361600, 0x40808000, 2016000, 0x40814000, 1036800,
-                       0x4080C200, 1651200, 0x40808200, 1248000, 0x40814200, 806400,
-                       0x40C00000, 2, 0x43480000, 0xC9900, 0x40C74000, 0xFC, 0x40408000, 0x27,
-                       0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055, 0x41848000, 0xE3C88,
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2360000, 0x40808000, 2190000, 0x40814000, 1400000,
+                       0x4080C200, 1990000, 0x40808200, 1650000, 0x40814200, 1250000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xAAE60,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41008200, 0,
+                       0x41848000, 0xE3C88,
                        0x63C5C200, 12, 0, 3400000, 2, 3400000, 3, 3400000, 6, 3400000, 7, 3400000, 8, 3400000,
-                       0x63C5C000, 12, 0, 3120000, 2, 3120000, 3, 3120000, 6, 3120000, 7, 3120000, 8,
-                       3120000 , 0x41000000, 6, 0x41000200, 1, 0x40C78000, 51, 0x40C7C000, 35"/>
+                       0x63C5C000, 12, 0, 3120000, 2, 3120000, 3, 3120000, 6, 3120000, 7, 3120000, 8, 3120000"/>
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
@@ -845,7 +769,7 @@
 
         <!-- Type 2 Medium Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -868,7 +792,7 @@
 
         <!-- Type 2 Medium Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer,alor" Fps="90"
             Resources="
                        0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
@@ -876,48 +800,36 @@
                        0x41000200, 1,
                        0x6081C000, 2, 2611200, 80" />
         <Config
-            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="2" Enable="false" Target="canoe,alor_interposer,alor" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
                        0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80" />
 
-       <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
-       <!-- SCHED_BOOST resource opcode, value-->
-       <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
-       <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
-       <!-- LPM_BIAS_HYST resource opcode, value-->
-       <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-       <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value -->
-       <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST, value -->
-       <!-- MPCTLV3_SCHED_BOOST, value -->
-       <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-       <!-- Type 2 Medium Scrolls : Horizontal and Verical -->
-       <Config
-           Id="0x00001080" Type="2" Enable="false" Target="alor"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 1900000, 0x40808000, 1401600, 0x40814000, 1036800,
-                      0x4080C200, 1440000, 0x40808200, 806400,
-                      0x40C00000, 2, 0x43480000, 0xC9900,
-                      0x40C74000, 0xFC, 0x40408000, 0x27, 0x41848000, 0xE3C88,
-                      0x41000000, 6, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35" />
+        <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- SCHED_BOOST resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK resource opcode, value-->
+        <!-- LPM_BIAS_HYST resource opcode, value-->
+        <!-- CORE_CTL_ENABLE_BIG resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- Type 2 Medium Scrolls : Horizontal and Verical -->
+        <Config
+            Id="0x00001080" Type="2" Enable="false" Target="alor"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2190000, 0x40808000, 1750000, 0x40814000, 1030000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41848000, 0xE3C88" />
 
-       <Config
-           Id="0x00001080" Type="2" Enable="false" Target="alor" Fps="120, 144, 180, 240"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 2016000, 0x40808000, 1555200, 0x40814000, 1036800,
-                      0x4080C200, 1651200, 0x40808200, 806400,
-                      0x40C00000, 2, 0x43480000, 0xC9900,
-                      0x40C74000, 0xFC, 0x40408000, 0x27, 0x41848000, 0xE3C88,
-                      0x41000000, 6, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35,
-                      0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055 "/>
+        <Config
+            Id="0x00001080" Type="2" Enable="false" Target="alor" Fps="120, 144, 180, 240"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2190000, 0x40808000, 2010000, 0x40814000, 1400000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41848000, 0xE3C88" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
@@ -927,7 +839,7 @@
 
         <!-- Type 3 Light Scrolls : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer"
+            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer,alor"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
             0x6081C000, 2, 2611200, 80" />
 
@@ -948,48 +860,34 @@
 
         <!-- Type 3 Light Scrolls : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer" Fps="90"
+            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer,alor" Fps="90"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
                        0x41000200, 1,
                        0x6081C000, 2, 2611200, 80"/>
         <Config
-            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer" Fps="120, 144, 180, 240"
+            Id="0x00001080" Type="3" Enable="false" Target="canoe,alor_interposer,alor" Fps="120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
                        0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80"/>
 
-       <!-- SCHED_BOOST resource opcode, value-->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value-->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value-->
-       <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-       <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-       <!-- Type 3 Light Scrolls : Horizontal and Verical -->
-       <Config
-           Id="0x00001080" Type="3" Enable="false" Target="alor"
-           Resources="0x40C00000, 2, 0x4080C000, 1670400, 0x40808000, 1036800, 0x40814000, 806400,
-                      0x4080C200, 1401600, 0x40808200, 806400,
-                      0x41848000, 0xE3C88 ,
-                      0x41000000, 4, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35" />
-       <Config
-           Id="0x00001080" Type="3" Enable="false" Target="alor" Fps="120, 144, 180, 240"
-           Resources="0x40C00000, 2, 0x4080C000, 1747200, 0x40808000, 1228800, 0x40814000, 902400,
-                      0x4080C200, 1651200, 0x40808200, 806400,
-                      0x41848000, 0xE3C88, 0x41000000, 4, 0x41000200, 0, 0x40C78000, 51,
-                      0x40C7C000, 35 , 0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055" />
+        <!-- SCHED_BOOST resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- Type 3 Light Scrolls : Horizontal and Verical -->
+        <Config
+            Id="0x00001080" Type="3" Enable="false" Target="alor"
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x40808000, 1400000, 0x40814000, 1030000,
+                       0x41848000, 0xE3C88" />
+        <Config
+            Id="0x00001080" Type="3" Enable="false" Target="alor" Fps="120, 144, 180, 240"
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x40808000, 1400000, 0x40814000, 1400000,
+                       0x41848000, 0xE3C88" />
 
     <!-- Silky Scrolls Lite: Prefling boost (default)-->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -1007,7 +905,7 @@
 
         <!-- Type 1 Heavy pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1035,7 +933,7 @@
 
         <!-- Type 1 Heavy pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1043,40 +941,35 @@
                        0x40C74000, 0xFF, 0x40408000, 0x63, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80" />
 
-       <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
-       <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
-       <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
-       <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
-       <!-- SCHED_BOOST resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-       <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
-       <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK, value-->
-       <!-- LPM_BIAS_HYST resource opcode, value-->
-       <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-       <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-       <!-- Type 1 Heavy Pre-fling : Horizontal and Verical -->
-       <Config
-           Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="alor"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 2188000, 0x40808000, 1670400, 0x40814000, 902400,
-                      0x4080C200, 1651200, 0x40808200, 1248000, 0x40814200, 806400,
-                      0x40C00000, 2, 0x41000000, 6, 0x41000200, 1 ,0x40C78000, 51, 0x40C7C000, 35,
-                      0x43480000, 0xC9900, 0x40C74000, 0xFC, 0x40408000, 0x27, 0x41848000, 0xE3C88" />
-       <Config
-           Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="alor" Fps="120, 144, 180, 240"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 2361600, 0x40808000, 1824000, 0x40814000, 1036800,
-                      0x4080C200, 1651200, 0x40808200, 1248000, 0x40814200, 806400,
-                      0x40C00000, 2, 0x41000000, 6, 0x41000200, 1 , 0x40C78000, 51, 0x40C7C000, 35,
-                      0x43480000, 0xC9900, 0x40C74000, 0xFC, 0x40408000, 0x27,
-                      0x41848000, 0xE3C88, 0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055" />
+        <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
+        <!-- MPCTLV3_WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
+        <!-- SCHED_BOOST resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK, value-->
+        <!-- LPM_BIAS_HYST resource opcode, value-->
+        <!-- CORE_CTL_ENABLE_BIG resource opcode, value-->
+        <!-- CORE_CTL_ENABLE_PRIME  resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- Type 1 Heavy Pre-fling : Horizontal and Verical -->
+        <Config
+            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="alor"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2360000, 0x40808000, 2010000, 0x40814000, 1400000,
+                       0x4080C200, 1990000, 0x40808200, 1650000, 0x40814200, 1250000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41008200, 0,
+                       0x41848000, 0xE3C88" />
+        <Config
+            Id="0x000010A6" Type="1" Enable="false" Timeout="100" Target="alor" Fps="120, 144, 180, 240"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2360000, 0x40808000, 2190000, 0x40814000, 1400000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xAAE60,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41008200, 0,
+                       0x41848000, 0xE3C88" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
@@ -1090,7 +983,7 @@
 
         <!-- Type 2 Medium pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 998000, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1113,44 +1006,35 @@
 
         <!-- Type 2 Medium pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
                        0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x6081C000, 2, 2611200, 80" />
 
-       <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
-       <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
-       <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
-       <!-- SCHED_BOOST resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-       <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-       <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-       <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
-       <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK, value-->
-       <!-- LPM_BIAS_HYST resource opcode, value-->
-       <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-       <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-       <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
-       <!-- Type 2 Medium Pre-fling : Horizontal and Verical -->
-       <Config
-           Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="alor"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 2016000, 0x40808000, 1401600, 0x40814000, 902400,
-                      0x40C00000, 2, 0x41000000, 6, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35,
-                      0x43480000, 0xC9900,
-                      0x40C74000, 0xFC, 0x40408000, 0x27, 0x41848000, 0xE3C88" />
-       <Config
-           Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="alor" Fps="120, 144, 180, 240"
-           Resources="0x4303C000, 0xA6428, 0x4080C000, 2016000, 0x40808000, 1555200, 0x40814000, 1036800,
-                      0x40C00000, 2, 0x41000000, 6, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35,
-                      0x43480000, 0xC9900,
-                      0x40C74000, 0xFC, 0x40408000, 0x27, 0x41848000, 0xE3C88 ,
-                      0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055" />
+        <!-- LLCC_DDR_BW_MIN_FREQ_V2 resource opcode, value-->
+        <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
+        <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
+        <!-- SCHED_BOOST resource opcode, value-->
+        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
+        <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value-->
+        <!-- SCHED_BUSY_HYSTERSIS_CPU_MASK, value-->
+        <!-- LPM_BIAS_HYST resource opcode, value-->
+        <!-- CORE_CTL_ENABLE_BIG resource opcode, value-->
+        <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
+        <!-- Type 2 Medium Pre-fling : Horizontal and Verical -->
+        <Config
+            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="alor"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2190000, 0x40808000, 1750000, 0x40814000, 1030000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41848000, 0xE3C88" />
+        <Config
+            Id="0x000010A6" Type="2" Enable="false" Timeout="100" Target="alor" Fps="120, 144, 180, 240"
+            Resources="0x4303C000, 0xA6428, 0x4080C000, 2190000, 0x40808000, 2010000, 0x40814000, 1400000,
+                       0x40C00000, 2, 0x41000000, 3, 0x43480000, 0xC9900,
+                       0x40C74000, 0xFC, 0x40408000, 0x27, 0x41008000, 0, 0x41848000, 0xE3C88" />
 
         <!-- SCHEDBOOST resource opcode, value-->
         <!-- MIN_ONLINE_CPU_CLUSTER_BIG opcode, value-->
@@ -1160,7 +1044,7 @@
 
         <!-- Type 3 Light pre-fling : Horizontal and Vertical 60 FPS -->
         <Config
-            Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="60"
+            Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="60"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
             0x6081C000, 2, 2611200, 80" />
 
@@ -1181,7 +1065,7 @@
 
         <!-- Type 3 Light pre-fling : Horizontal and Vertical 90+ FPS -->
         <Config
-            Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="canoe,alor_interposer" Fps="90, 120, 144, 180, 240"
+            Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="canoe,alor_interposer,alor" Fps="90, 120, 144, 180, 240"
             Resources="0x40C00000, 0x2, 0x41000000, 4, 0x40C78000, 0, 0x40C7C000, 0,
                        0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1193,25 +1077,16 @@
         <!-- WALT_ADAPTIVE_LOW_FREQ_BIG resource opcode, value -->
         <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
         <!-- Type 3 Light Pre-fling : Horizontal and Verical -->
         <Config
             Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="alor"
-            Resources="0x40C00000, 2, 0x4080C000, 1228800, 0x40808000, 1036800, 0x40814000, 806400,
-                       0x41848000, 0xE3C88 , 0x41000000, 4, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35" />
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x40808000, 1400000, 0x40814000, 1030000,
+                       0x41848000, 0xE3C88" />
 
         <Config
             Id="0x000010A6" Type="3" Enable="false" Timeout="100" Target="alor" Fps="120, 144, 180, 240"
-            Resources="0x40C00000, 2, 0x4080C000, 1401600, 0x40808000, 1036800, 0x40814000, 902400,
-                       0x41848000, 0xE3C88 , 0x41000000, 4, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35,
-                       0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055" />
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x40808000, 1400000, 0x40814000, 1030000,
+                       0x41848000, 0xE3C88" />
 
     <!-- HEIF Decode or Encode boost -->
         <!-- SCHEDBOOST resource opcode, value-->
@@ -1237,7 +1112,7 @@
 
         <!-- Type 1 Heavy Drags, 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="60,90"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40808000, 600000, 0x40808200, 800000,
@@ -1263,7 +1138,7 @@
 
         <!-- Type=1 Heavy Drags, 120 FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="120"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="120"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 2, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1289,7 +1164,7 @@
 
         <!-- Type=1 Heavy Drags, 144 and higher FPS -->
         <Config
-            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="144,180,240"
+            Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="144,180,240"
             Resources="0x4080C000, 1300000, 0x4080C200, 1300000,
                        0x40C00000, 0x2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 2, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1302,21 +1177,14 @@
         <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
         <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
         <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
-        <!-- SCHEDBOOST resource opcode, value-->
-        <!-- MPCTLV3_SCHED_BUSY_HYSTERSIS_CPU_MASK, value -->
-        <!-- MPCTLV3_LPM_BIAS_HYST, value -->
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
         <!-- Type 1 Heavy Drags -->
         <Config
              Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="alor"
-             Resources="0x4080C000, 1824000, 0x4080C200, 1248000,
-                        0x40808000, 1670400, 0x40808200, 1017000,
-                        0x40814000, 1228800, 0x40814200, 806400, 0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63,
-                        0x41848000, 0xE3C88 , 0x41000000, 6, 0x41000200, 1, 0x40C78000, 51, 0x40C7C000, 35" />
+             Resources="0x4080C000, 2010000, 0x4080C200, 1250000,
+                        0x40808000, 2010000, 0x40808200, 1250000,
+                        0x40814000, 1750000, 0x40814200, 810000,
+                        0x41848000, 0xE3C88" />
 
         <!-- WALT_ADAPTIVE_HIGH_FREQ_BIG resource opcode, value -->
         <!-- WALT_ADAPTIVE_HIGH_FREQ_PRIME resource opcode, value -->
@@ -1328,25 +1196,15 @@
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
         <!-- L3_MEMLAT_MIN_FREQ_GOLD resource opcode, value -->
         <!-- CPU_LLCC_BW_MAX_FREQ_V2 resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
-        <!-- MIN_ONLINE_CPU_CLUSTER_PRIME opcode, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value-->
-        <!-- SCHED_MIN_TASK_UTIL_FOR_BOOST, value-->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS BIG -->
         <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS PRIME -->
         <!-- Type 1 Heavy Drags -->
         <Config
              Id="0x00001087" Type="1" Enable="false" Timeout="0" Target="alor" Fps="120, 144, 180, 240"
-             Resources="0x4080C000, 2361600, 0x4080C200, 1440000,
-                        0x40808000, 2188000, 0x40808200, 1248000,
-                        0x40814000, 1900000, 0x40814200, 806400,
+             Resources="0x4080C000, 2360000, 0x4080C200, 1250000,
+                        0x40808000, 2360000, 0x40808200, 1250000,
+                        0x40814000, 2190000, 0x40814200, 810000,
                         0x40C00000, 2, 0x4303C000, 0xA6428, 0x43480000, 0x114900, 0x41848000, 0xE3C88,
-                        0x41000000, 6, 0x41000200, 1, 0x40C78000, 51, 0x40C7C000, 35 ,
-                        0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055,
                         0x63C5C200, 12, 0, 3400000, 2, 3400000, 3, 3400000, 6, 3400000, 7, 3400000, 8, 3400000,
                         0x63C5C000, 12, 0, 3120000, 2, 3120000, 3, 3120000, 6, 3120000, 7, 3120000, 8, 3120000"/>
 
@@ -1363,7 +1221,7 @@
 
         <!-- Type 2 Medium Drags, 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="60,90"
             Resources="0x4080C000, 998000, 0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0,
                        0x40C00000, 2, 0x4080C200, 998000,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1387,7 +1245,7 @@
 
         <!-- Type 2 Medium Drags, 120 FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="120"
+            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="120"
             Resources="0x4080C000, 902400, 0x4080C200, 902400, 0x40C00000, 2, 0x41000000, 6,
                        0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
                        0x40808000, 600000, 0x40808200, 800000,
@@ -1412,7 +1270,7 @@
 
         <!-- Type 2 Medium Drags, 144 and higher FPS -->
         <Config
-            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="144,180,240"
+            Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="144,180,240"
             Resources="0x4080C000, 1000000, 0x4080C200, 1000000,
                        0x40C00000, 2, 0x40C74000, 0xFF, 0x40408000, 0x63,
                        0x41000000, 6, 0x40C78000, 0, 0x40C7C000, 0, 0x41000200, 1, 0x43C74000, 0x0023000A, 0x43C78000, 0x0023000A, 0x43C7C000, 0x0023000A, 0x43C80000, 0x0023000A,
@@ -1426,24 +1284,17 @@
         <!-- WALT_ADAPTIVE_LOW_FREQ_PRIME resource opcode, value -->
         <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_BIG resource opcode, value -->
         <!-- WALT_ADAPTIVE_LEVEL_1_FREQ_PRIME resource opcode, value -->
-        <!-- MPCTLV3_SCHED_BG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_FG_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_OT_UPDOWNMIGRATE, value -->
-        <!-- MPCTLV3_SCHED_TA_UPDOWNMIGRATE, value -->
         <!-- Type 2 Medium Drags: -->
         <Config
             Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="alor"
-            Resources="0x40C00000, 2, 0x4080C000, 1401600, 0x4080C200, 1017000,
-                       0x40808000, 902400, 0x40808200, 1017000,
-                       0x40814000, 806400, 0x40814200, 806400, 0x41000000, 6, 0x41000200, 0, 0x40C78000,
-                       51, 0x40C7C000, 35" />
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x4080C200, 1250000,
+                       0x40808000, 1400000, 0x40808200, 1250000,
+                       0x40814000, 1030000, 0x40814200, 810000" />
         <Config
             Id="0x00001087" Type="2" Enable="false" Timeout="0" Target="alor" Fps="120, 144, 180, 240"
-            Resources="0x40C00000, 2, 0x4080C000, 1401600, 0x4080C200, 1017000,
-                       0x40808000, 1401600, 0x40808200, 1017000,
-                       0x40814000, 902400, 0x40814200, 806400,
-                       0x41000000, 6, 0x41000200, 0, 0x40C78000, 51, 0x40C7C000, 35 ,
-                       0x43C74000, 0x005F0055, 0x43C78000, 0x005F0055, 0x43C7C000, 0x005F0055, 0x43C80000, 0x005F0055 " />
+            Resources="0x40C00000, 2, 0x4080C000, 1750000, 0x4080C200, 1250000,
+                       0x40808000, 1750000, 0x40808200, 1250000,
+                       0x40814000, 1400000, 0x40814200, 810000" />
 
         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value -->
         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST, value -->
@@ -1452,7 +1303,7 @@
         <!-- MPCTLV3_ZONE_MAX_UTIL_PCT, NumOfValues, Freq, Percent -->
         <!-- Type 3 Light Drags: 90 and lower FPS -->
         <Config
-            Id="0x00001087" Type="3" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="60,90"
+            Id="0x00001087" Type="3" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="60,90"
             Resources="0x40C78000, 0, 0x40C7C000, 0, 0x40C00000, 2, 0x41000000, 4,
             0x6081C000, 2, 2611200, 80" />
 
@@ -1463,17 +1314,16 @@
         <!-- MPCTLV3_ZONE_MAX_UTIL_PCT, NumOfValues, Freq, Percent -->
         <!-- Type 3 Light Drags: 120 and higher FPS -->
         <Config
-            Id="0x00001087" Type="3" Enable="false" Timeout="0" Target="canoe,alor_interposer" Fps="120,144,180,240"
+            Id="0x00001087" Type="3" Enable="false" Timeout="0" Target="canoe,alor_interposer,alor" Fps="120,144,180,240"
             Resources="0x40C78000, 0, 0x40C7C000, 0, 0x40C00000, 2, 0x41000000, 4,
             0x6081C000, 2, 2611200, 80" />
 
         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_COLOCATION, value -->
         <!-- MPCTLV3_SCHED_MIN_TASK_UTIL_FOR_BOOST, value -->
-        <!-- MIN_ONLINE_CPU_CLUSTER_BIG resource opcode, value-->
         <!-- MPCTLV3_SCHED_BOOST, value -->
         <!-- Type 3 Light Drags: -->
         <Config
             Id="0x00001087" Type="3" Enable="false" Timeout="0" Target="alor"
-            Resources="0x40C78000, 51, 0x40C7C000, 35, 0x41000000, 4, 0x40C00000, 2" />
+            Resources="0x40C78000, 0, 0x40C7C000, 0, 0x40C00000, 2" />
     </PerfBoost>
 </BoostConfigs>

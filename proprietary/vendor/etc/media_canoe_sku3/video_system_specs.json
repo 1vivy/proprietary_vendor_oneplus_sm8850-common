@@ -12,10 +12,6 @@
             "enc_csc_custom_matrix": false,
             // encoder csc enable
             "enc_csc_enable": false,
-            // HDR10Plus HW stats gen feature
-            // false: Feature is disabled by default.
-            // true:  HDR10+ HW Stats is enabled.
-            "enc_enable_hdr10plus_stats_gen": false,
             // true: do not override transfer value to 170M if bitstream contains unspecified transfer
             // false: override transfer value to 170M if bitstream contains unspecified transfer
             "dec_transfer_value_override" : false
@@ -73,13 +69,7 @@
             //  0x1: 8 bit: enable.  10 bit: disable
             //  0x2: 8 bit: disable. 10 bit: enable
             //  0x3: 8 bit: enable.  10 bit: enable
-            //#ifndef OPLUS_BUG_COMPATIBILITY
-            //Wei.Hu@MULTIMEDIA.MEDIASERVER.RECORD,2025/04/27,
-            //Disable CAC on 8850 platform
-            //"enc_bitrate_savings": 3,
-            //#else /*OPLUS_BUG_COMPATIBILITY*/
-            "enc_bitrate_savings": 0,
-            //#endif /*OPLUS_BUG_COMPATIBILITY*/
+            "enc_bitrate_savings": 3,
             // max input work count, max output work done in one dump file
             // if frame count in dump file is larger than max work count,
             // will dump in a new file
@@ -108,11 +98,7 @@
             // Default value of this wait time is 150ms, even if this value is not set in this file.
             // Lower wait time might increase the thread activity in some corner cases.
             // Higher wait time might affect stop latency in some cases.
-            "dec_bufferpool_fence_wait_time_ms": 150,
-            // #ifdef OPLUS_BUG_COMPATIBILITY
-            // SunQinhua@MULTIMEDIA.MEDIASERVER.PLAYER, output 4K video without color info as BT.709
-            "default_primaries_override":1
-            // #endif OPLUS_BUG_COMPATIBILITY
+            "dec_bufferpool_fence_wait_time_ms": 150
         },
 
         "ProsightModeBitrateTable": [
@@ -122,32 +108,21 @@
             [8640, 32420, 245]
          ],
 
-        // #ifdef OPLUS_FEATURE_DOLBY_VISION_DPU
-        // WangZhikun@MULTIMEDIA.MEDIASERVER.PLAYER, Add for dolby vision(DPU) integration
-        "DolbyVision": {
-            "profiles": [5, 8],
-            "max_main_tier_level": 11,
-            "max_high_tier_level": 11
-        },
-        // #endif /*OPLUS_FEATURE_DOLBY_VISION_DPU*/
+        // "DolbyVision": {
+        //     "profiles": [5, 8, 9],
+        //     "max_main_tier_level": 9,
+        //     "max_high_tier_level": 9
+        // },
 
         // list of codec plugin libraries to be loaded into codec registry
         "QC2CodecPlugins": [
-            "libqcodec2_imgtxrfilter.so",
-            // #ifdef OPLUS_FEATURE_DOLBY_VISION_DPU
-            // WangZhikun@MULTIMEDIA.MEDIASERVER.PLAYER, Add for dolby vision(DPU) integration
-            "libqcodec2_dolbydecoderfilter.so"
-            // #endif /*OPLUS_FEATURE_DOLBY_VISION_DPU*/
+            "libqcodec2_imgtxrfilter.so"
         ],
 
         "QC2PreProcessingFilters": [
             "libqcodec2_imgtxrfilter.so",
             "libqcodec2_cvpfilter.so",
             "libqcodec2_streaminteg_filter.so"
-        ],
-
-        "QC2EncPostProcessingFilters": [
-            "libqcodec2_encpostprocfilter.so"
         ],
 
         //
@@ -157,11 +132,6 @@
         // "c2.qti.dv.encoder"
         //
         "OptionalCodecs": [
-            // #ifdef OPLUS_FEATURE_DOLBY_VISION_DPU
-            // WangZhikun@MULTIMEDIA.MEDIASERVER.PLAYER, Add for dolby vision(DPU) integration
-            "c2.qti.dv.decoder",
-            "c2.qti.dv.decoder.secure"
-            // #endif /*OPLUS_FEATURE_DOLBY_VISION_DPU*/
         ]
     }
 }

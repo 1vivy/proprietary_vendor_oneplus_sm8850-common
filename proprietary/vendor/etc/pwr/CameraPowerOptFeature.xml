@@ -29,8 +29,6 @@
         <UTIL_LEVEL3>323</UTIL_LEVEL3>
         <UTIL_LEVEL4>394</UTIL_LEVEL4>
         <CUSTOM_HINT_ID>0x00001331,30,0x00001335,30</CUSTOM_HINT_ID>
-        <!-- optional: close hint id list,eg.skip snapshot-->
-        <CUSTOM_CLOSE_HINT_ID>0x00001339</CUSTOM_CLOSE_HINT_ID>
    </Configs>
    <Profiles>
         <Profile>

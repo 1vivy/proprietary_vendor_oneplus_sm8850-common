@@ -60,20 +60,11 @@ on property:sys.boot_completed=1
     chown system system /mnt/vendor/persist/data/pfm/licenses/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm
 #endif /* OPLUS_FEATURE_LTM */
 
-#ifdef OPLUS_FEATURE_LTM
-#Alvin.Liu@MM.Display.Tuning, 2025/09/25, add for SM8845 LTM license
-on property:sys.boot_completed=1
-    copy /vendor/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm /mnt/vendor/persist/data/pfm/licenses/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm
-    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm
-#endif /* OPLUS_FEATURE_LTM */
-
 #Six.Xu@MM.Display.LCD, 2025/08/20, add SM8850 AP Demura production lisence
 on post-fs-data
     copy /vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm
-
-    copy /vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
-    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
-    chown system system /mnt/vendor/persist/data/pfm/licenses/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm
+    copy /vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm

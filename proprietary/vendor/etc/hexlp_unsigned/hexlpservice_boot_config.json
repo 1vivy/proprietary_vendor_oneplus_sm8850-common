@@ -34,7 +34,6 @@
                 },
                 "other_capabilities":
                 {
-                    "vulkan.qnn_version": "qaisw-v2.36.0.250627101419_123260"
                 }
             }
         }

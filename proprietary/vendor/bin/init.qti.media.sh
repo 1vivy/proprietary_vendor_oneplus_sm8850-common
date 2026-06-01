@@ -67,10 +67,6 @@ case "$target" in
         setprop vendor.mm.target.enable.qcom_parser 0
         setprop vendor.media.target_variant "_anorak"
         ;;
-    "hamoa")
-        setprop vendor.mm.target.enable.qcom_parser 0
-        setprop vendor.media.target_variant "_hamoa"
-        ;;
     "kalama")
         setprop vendor.mm.target.enable.qcom_parser 0
         setprop vendor.media.target_variant "_kalama"
@@ -116,25 +112,6 @@ case "$target" in
                 ;;
             685|727)
                 setprop vendor.media.target_variant "_canoe_sku3"
-                setprop vendor.netflix.bsp_rev "Q8845-41954-1"
-                ;;
-            743)
-                setprop vendor.media.target_variant "_canoe_v2"
-                setprop vendor.netflix.bsp_rev 0
-                ;;
-            722|723)
-                setprop vendor.media.target_variant "_canoe_v3"
-                setprop vendor.netflix.bsp_rev 0
-                sku_ver=`cat /sys/devices/platform/soc/2000000.qcom,vidc/sku_version` 2> /dev/null
-                if [ $sku_ver -eq 1 ]; then
-                    setprop vendor.media.target_variant "_canoe_sku1"
-                fi
-                if [ $sku_ver -eq 2 ]; then
-                    setprop vendor.media.target_variant "_canoe_sku2"
-                fi
-                if [ $sku_ver -eq 3 ]; then
-                    setprop vendor.media.target_variant "_canoe_sku3"
-                fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_canoe_v2"

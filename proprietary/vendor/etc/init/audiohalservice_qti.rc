@@ -38,9 +38,3 @@ on post-fs-data
 
 on property:sys.boot_completed=1
     chown media audio /sys/kernel/aud_dev/state
-
-#ifdef OPLUS_ARCH_EXTENDS
-#YeWenliang@MULTIMEDIA.AUDIODRIVER.HAL, 2026/03/05, add for update card_state node permission
-on property:vendor.audio.hal.card_state_perm=1
-    chown media audio /sys/kernel/snd_card/card_state
-#endif

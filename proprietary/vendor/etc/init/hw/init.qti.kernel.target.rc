@@ -3,7 +3,6 @@
 # All rights reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #=============================================================================
-
 on post-fs-data
     wait_for_prop vendor.all.modules.ready 1
 

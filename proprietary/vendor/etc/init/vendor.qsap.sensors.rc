@@ -29,12 +29,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on property:vendor.qesdk.ready=1
-start vendor.qsap.sensors
-
 service vendor.qsap.sensors /vendor/bin/qsap_sensors
     class core
     user system
     group system wakelock
     capabilities BLOCK_SUSPEND
-    disabled

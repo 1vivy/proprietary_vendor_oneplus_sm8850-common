@@ -47,7 +47,7 @@ do
 	#ifdef OPLUS_FEATURE_WIFI_FTM
 	#lixiong2@CONNECTIVITY.HARDWARE.WIFI.FTM.9122126, disable wifi driver in ftm mode
 	if [ "$(cat /sys/systeminfo/ftmmode)" == "3" ]; then
-		blocklist_expr+=" -e qca_cld3_peach_v2 -e qca_cld3_wcn7750"
+		blocklist_expr+=" -e qca_cld3_peach_v2"
 	fi
 	#endif OPLUS_FEATURE_WIFI_FTM
 
