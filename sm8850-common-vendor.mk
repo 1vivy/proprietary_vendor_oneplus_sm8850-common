@@ -595,7 +595,7 @@ PRODUCT_PACKAGES += \
     libprekill \
     libprocomp \
     libpsmoptfeature \
-    libpwirisfeature_vendor \
+    libpwirisfeature \
     libpwirishal \
     libpwirishalwrapper \
     libpwirishardware_ext \
@@ -805,12 +805,12 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
-    vendor.pixelworks.hardware.display@1.0_vendor \
-    vendor.pixelworks.hardware.display@1.1_vendor \
-    vendor.pixelworks.hardware.display@1.2_vendor \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.display@1.2 \
     vendor.pixelworks.hardware.feature-V2-ndk \
-    vendor.pixelworks.hardware.feature@1.0_vendor \
-    vendor.pixelworks.hardware.feature@1.1_vendor \
+    vendor.pixelworks.hardware.feature@1.0 \
+    vendor.pixelworks.hardware.feature@1.1 \
     vendor.pixelworks.hardware.feature@1.2 \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.diaghal-V1-ndk_vendor \
@@ -935,7 +935,6 @@ PRODUCT_PACKAGES += \
     liboplus_service \
     libosenseaidlhalclient \
     libosensenativeproxy_client \
-    libpwirisfeature \
     libqcodec2_dolbydecoderfilter \
     libqcodec2_dolbyencoderfilter \
     libsensorbridge \
@@ -943,11 +942,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb-V2-ndk \
     vendor.oplus.hardware.display.MixLut3D-V1-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
-    vendor.pixelworks.hardware.display@1.0 \
-    vendor.pixelworks.hardware.display@1.1 \
-    vendor.pixelworks.hardware.display@1.2 \
-    vendor.pixelworks.hardware.feature@1.0 \
-    vendor.pixelworks.hardware.feature@1.1 \
     com.google.android.widevine.nonupdatable \
     TimeService \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
