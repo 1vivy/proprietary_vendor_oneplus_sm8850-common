@@ -819,8 +819,6 @@ PRODUCT_PACKAGES += \
     libquasar \
     libvolumelistener \
     sva_plugin \
-    vendor.oplus.hardware.cwb-V2-ndk_vendor \
-    vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
@@ -954,9 +952,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbydecoderfilter \
     libsensorbridge \
     libstc_color_feature \
-    vendor.oplus.hardware.cwb-V1-ndk \
-    vendor.oplus.hardware.cwb-V2-ndk \
-    vendor.oplus.hardware.display.MixLut3D-V1-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
@@ -1471,11 +1466,6 @@ PRODUCT_PACKAGES += \
     vendor.libdpmframework \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
-    vendor.oplus.hardware.appradioaidl-V1-ndk \
-    vendor.oplus.hardware.communicationcenter-V2-ndk_vendor \
-    vendor.oplus.hardware.ims-V1-ndk \
-    vendor.oplus.hardware.subsys-V5-ndk_vendor \
-    vendor.oplus.hardware.subsys_imsrtp-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk_vendor \
     vendor.qti.ImsRtpService-aidl-Impl \
     vendor.qti.data.factoryservice-V2-ndk \
@@ -1559,9 +1549,6 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
-    vendor.oplus.hardware.communicationcenter-V2-ndk \
-    vendor.oplus.hardware.subsys-V5-ndk \
-    vendor.oplus.hardware.subsys_radio-V9-ndk \
     CACertService \
     CneApp \
     IWlanService \
