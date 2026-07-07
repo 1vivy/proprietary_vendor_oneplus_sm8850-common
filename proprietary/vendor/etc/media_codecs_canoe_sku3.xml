@@ -420,4 +420,5 @@
             <Limit name="performance-point-16384x8192" value="3" />
         </MediaCodec>
     </Encoders>
+    <Include href="media_codecs_dolby_vision.xml" />
 </MediaCodecs>
