@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8850-common
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/hw/init.oplus.wifi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.wifi.rc \
@@ -29,11 +28,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-05-09_platform_RSA_SM8850-KAANAPALI_license_44de0851-4860-4b27-93ce-888ddb6d846a.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_041c7d27-2a09-4856-a151-bc97c58a32f7.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-08-19_platform_RSA_SM8850-KAANAPALI_license_c5211d39-e3d3-46c8-9dd0-3775810af82f.pfm \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/2025-09-23_platform_RSA_SM8845_license_5114256b-d4ce-4cf4-8c4b-40f4c70ce6a5.pfm \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/HapticsPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/HapticsPolicy.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_cdp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_rx_tuning_0_cdp.bin \
@@ -43,7 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_vi_tuning_0_mtp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_vi_tuning_0_mtp.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/haptics_data/tuning_data/haptics_vi_tuning_0_qrd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/haptics_data/tuning_data/haptics_vi_tuning_0_qrd.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_5.6.0_enpuv6.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_5.6.0_enpuv6.pmd \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/acdbdata/wnr_models/wind_filter__1.0__48k__2ch__16b__eai_5.5.eai:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/wnr_models/wind_filter__1.0__48k__2ch__16b__eai_5.5.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/android.hardware.security.onekeymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/android.hardware.security.onekeymint-service-qti.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/audio/sku_alor/plugin_manager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/plugin_manager.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/audio/sku_alor/quasar_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_alor/quasar_config.xml \
@@ -60,7 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU1310.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU1310.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU13__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU13__.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU880.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU880.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU970.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU970.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU980.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU980.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
@@ -135,7 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.memory.pasrmanager-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.psiclient@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.psiclient@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.qspmhal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.smp2p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.smp2p.rc \
@@ -144,7 +138,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/lm/PinnerFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PinnerFeature.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/lm/PreKillFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PreKillFeature.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/lm/PrefAppsFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/PrefAppsFeature.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/lm/ProCompFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/ProCompFeature.xml \
@@ -158,7 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_canoe_sku3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_sku3/video_system_specs.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_canoe_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v1/video_system_specs.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_canoe_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v2/video_system_specs.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_canoe_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_canoe_v3/video_system_specs.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_sku2.xml \
@@ -169,8 +161,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v2_vendor.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_canoe_v3_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_sku1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_sku1_vendor.xml \
@@ -182,15 +172,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v1_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_v2_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v2_vendor.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v3.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_codecs_performance_canoe_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_canoe_v3_vendor.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_sku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_sku1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_sku2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_sku2.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_sku3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_sku3.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v1.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v2.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/media_profiles_canoe_v3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_canoe_v3.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/conv_detection.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/conv_detection.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
@@ -210,7 +197,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/factorsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/factorsconfig.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/pinnerconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/pinnerconfigstore.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/qapeboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/qapeboostsconfig.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/qapeconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/qapeconfigstore.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/qapegameconfig.txt:$(TARGET_COPY_OUT_VENDOR)/etc/perf/qapegameconfig.txt \
@@ -218,7 +204,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/pwr/CameraPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/CameraPowerOptFeature.xml \
@@ -247,7 +232,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/chre_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/chre_dynamic_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/kaanapali_bu52053nvx_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_bu52053nvx_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/kaanapali_ccd_base.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/kaanapali_ccd_base.json \
@@ -291,60 +275,40 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_default_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_dynamic_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_dynamic_sensors.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_fcal_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_fcal_mmc56x3x_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_hdk_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_hdk_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_hdk_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_hdk_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_irq.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_irq.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lps22df_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lps22df_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mmc56x3x_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mtp_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mtp_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_mtp_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_mtp_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_power_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_power_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_default_sensors.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_default_sensors.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_lsm6dsv_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_mmc56x3x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_qrd_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_qrd_tmd3765_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_sht4x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_sht4x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_sx932x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_sx932x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_tmd3765_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_tmd3765_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_lsm6dsv_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_lsm6dsv_0.json \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_lsm6dsv_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_lsm6dsv_1.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/molokai_vertigo_mmc56x3x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/molokai_vertigo_mmc56x3x_0.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/oplus_camera_aon.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/oplus_camera_aon.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_ble.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_ble.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_common.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_common_sm8845.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_common_sm8845.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_fairladyExfront_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_fairladyExfront_3.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_fairladyfront_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_fairladyfront_3.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_imx688_6_actuator.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_infinitifront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_infinitifront_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_lafafront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_lafafront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_lighthousefront_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_lighthousefront_1.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_macanExFront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_macanExFront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_macanFront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_macanFront_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_ov32c4c_4_sm8845.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_s5kjn5_3_actuator.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_swangoosefrontmain_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_swangoosefrontmain_3.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_swangoosefrontsub_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_swangoosefrontsub_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_u9bfront_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_u9bfront_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/qsh_camera_u9front_4.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qsh_camera_u9front_4.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_diag_filter.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_diag_filter.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_direct_channel.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_direct_channel.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_distance_bound.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_distance_bound.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_flight_md.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_flight_md.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_offbody_detect_phone.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_offbody_detect_phone.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/config/sns_transport_ppe.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_transport_ppe.json \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/javalibs/odpmanagerlib-aar:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/javalibs/odpmanagerlib-aar \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/ssg/c2pa_enroll_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/c2pa_enroll_config.json \
@@ -357,7 +321,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dcp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/dcp.bin \
     vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dpAP_full.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_full.mbn \
     vendor/oneplus/sm8850-common/proprietary/vendor/firmware/dpAP_mini.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/dpAP_mini.mbn \
     vendor/oneplus/sm8850-common/proprietary/vendor/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/qsn1nrt430.bin \
@@ -392,11 +355,11 @@ PRODUCT_PACKAGES += \
     libaudiocorehal.default \
     libaudiocorehal.qti \
     libaudioeffecthal.qti \
+    libbcs \
     libqtigatekeeper \
     libsoundtriggerhal.qti \
     mapper.qti \
     mbedtls_qti \
-    qc_bcs_lib \
     vendor.qti.hardware.alarm-impl \
     vendor.qti.hardware.bluetooth.btavsprovider-impl-qti \
     vendor.qti.hardware.bluetooth.finder-impl-qti \
@@ -407,7 +370,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     vendor.qti.hardware.servicetrackeraidl-impl \
-    vendor.qti.memory.pasrmanager-impl \
     vulkan.adreno \
     libAVFVirtClientInterface \
     libAlacSwDec \
@@ -433,6 +395,7 @@ PRODUCT_PACKAGES += \
     libQshSession \
     libTxPwrJni \
     libVirtClientInterface \
+    libVoiceSdk \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
@@ -546,7 +509,6 @@ PRODUCT_PACKAGES += \
     libhistogram \
     libhwcsensor \
     libidl \
-    libidv \
     libintervmipc \
     libkcl \
     libkernelmanager \
@@ -604,7 +566,6 @@ PRODUCT_PACKAGES += \
     libperfdb \
     libperfioctl \
     libperipheral_client \
-    libpinner \
     libplatformconfig \
     libpowercallback \
     libpowercore \
@@ -612,12 +573,11 @@ PRODUCT_PACKAGES += \
     libprekill \
     libprocomp \
     libpsmoptfeature \
-    libpwirisfeature_vendor \
+    libpwirisfeature \
     libpwirishal \
     libpwirishalwrapper \
     libpwirishardware_ext \
     libq-perflog \
-    libqape_oem_ext \
     libqasr \
     libqc2audio_base \
     libqc2audio_basecodec \
@@ -666,7 +626,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiextservices \
     libqmiservices \
-    libqpt \
     libqrtr \
     libqrtrclient \
     libqseed3 \
@@ -774,13 +733,15 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libsystem_health_mon2 \
     libtaautoload \
-    libtensorflowlite_c_qcom \
+    libtensorflowlite_c_vendor \
     libtestutils \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
+    libui-stock \
+    libutils-stock \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
@@ -821,12 +782,12 @@ PRODUCT_PACKAGES += \
     sva_plugin \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
-    vendor.pixelworks.hardware.display@1.0_vendor \
-    vendor.pixelworks.hardware.display@1.1_vendor \
-    vendor.pixelworks.hardware.display@1.2_vendor \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.display@1.2 \
     vendor.pixelworks.hardware.feature-V2-ndk \
-    vendor.pixelworks.hardware.feature@1.0_vendor \
-    vendor.pixelworks.hardware.feature@1.1_vendor \
+    vendor.pixelworks.hardware.feature@1.0 \
+    vendor.pixelworks.hardware.feature@1.1 \
     vendor.pixelworks.hardware.feature@1.2 \
     vendor.qti.MemHal-V1-ndk \
     vendor.qti.diaghal-V1-ndk_vendor \
@@ -884,6 +845,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-V1-ndk \
     vendor.qti.qspmhal-impl \
     vendor.qti.qvirt-V2-ndk \
+    vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices-V2-ndk \
     vendor.qti.snapdragonServices.qape-V1-ndk \
     vendor.qti.syshealthmon-V1-ndk \
@@ -937,10 +899,12 @@ PRODUCT_PACKAGES += \
     libGaiaClient_vnd \
     libPanelChaplin \
     libc2filterplugin \
+    libdisplayadfr2minfps_qcom \
     libdisplayaidlapis \
     libdisplayfossfeature_nature \
     libdolbydecoderprocessor \
     libdolbyeglcore \
+    libdolbyencoderprocessor \
     libdolbyottcameracontrol \
     libdolbyproxyandroid \
     libdpaservice \
@@ -948,16 +912,12 @@ PRODUCT_PACKAGES += \
     liboplus_service \
     libosenseaidlhalclient \
     libosensenativeproxy_client \
-    libpwirisfeature \
     libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
     libsensorbridge \
+    libsharebuffer_impl \
     libstc_color_feature \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
-    vendor.pixelworks.hardware.display@1.0 \
-    vendor.pixelworks.hardware.display@1.1 \
-    vendor.pixelworks.hardware.display@1.2 \
-    vendor.pixelworks.hardware.feature@1.0 \
-    vendor.pixelworks.hardware.feature@1.1 \
     com.google.android.widevine.nonupdatable \
     TimeService \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
@@ -967,9 +927,7 @@ PRODUCT_PACKAGES += \
     WfdCommon \
     com.android.hotwordenrollment.common.util \
     Manifest_IAGM.xml \
-    Manifest_IListenSoundModel.xml \
     Manifest_IPAL.xml \
-    Manifest_IPALEventNotifier.xml \
     android.hardware.drm-service.xml \
     android.hardware.gatekeeper-service-qti.xml \
     android.hardware.powerstats-service.xml \
@@ -990,7 +948,6 @@ PRODUCT_PACKAGES += \
     manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
     mapper.qti.xml \
-    qasr_vintf.xml \
     snapdragon_services.xml \
     soundtrigger.qti.xml \
     vendor.qti.MemHal.xml \
@@ -1013,7 +970,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.vpp-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
-    vendor.qti.memory.pasrmanager-service.xml \
     vendor.qti.qccvndhal_aidl-service.xml \
     vendor.qti.qspmhal-service.xml \
     vendor.qti.syshealthmon-service.xml \
@@ -1058,7 +1014,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
-    vendor.qti.memory.pasrmanager-service \
     vendor.qti.psiclient@1.0-service \
     init.kernel.init_boot-memory \
     init.kernel.post_boot-alor \
@@ -1162,6 +1117,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/esim@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/esim@1.0-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.modem.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.modem.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/init.network.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.network.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/lowi-server.rc:$(TARGET_COPY_OUT_ODM)/etc/init/lowi-server.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/mdm_feature.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mdm_feature.rc \

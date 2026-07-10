@@ -136,7 +136,6 @@
         <App5>com.android.systemui</App5>
         <App6>com.netease.cloudmusic</App6>
         <App7>com.tencent.mm</App7>
-        <App8>com.miHoYo.Yuanshen</App8>
     </IgnoredApps>
     <Trigger>
         <AsyncId>0x000015E0, 0x000015E1, 0x00001001, 0x00001002, 0x00001003, 0x00001004, 0x00001040, 0x00001087</AsyncId>

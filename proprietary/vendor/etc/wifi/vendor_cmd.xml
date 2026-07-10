@@ -420,8 +420,8 @@
 		<Attribute name="CONFIG_ANT_DIV_WLAN_RSSI_DIFF" ID="128" TYPE="u16"/>
 		<Attribute name="CONFIG_ANT_DIV_BT_RSSI_DIFF" ID="129" TYPE="u16"/>
 		<Attribute name="CONFIG_DFS_NO_WAIT_SUPPORT" ID="131" TYPE="u8"/>
-		<Attribute name="CONFIG_TX_CHAIN_MASK_2GHZ" ID="137" TYPE="u8"/>
-		<Attribute name="CONFIG_TX_CHAIN_MASK_5GHZ" ID="138" TYPE="u8"/>
+		<Attribute name="CONFIG_TX_CHAIN_MASK_2GHZ" ID="136" TYPE="u8"/>
+		<Attribute name="CONFIG_TX_CHAIN_MASK_5GHZ" ID="137" TYPE="u8"/>
 	</VendorCmd>
 	<!-- QCA_NL80211_VENDOR_SUBCMD_GET_WIFI_CONFIGURATION = 75 -->
 	<VendorCmd name="GET_WIFI_CONFIG" ID="75">
@@ -1050,20 +1050,6 @@
 				<Attribute name="MDNS_OFFLOAD_ANSWER_RESOURCE_RECORDS_COUNT" ID="5" TYPE="u16"/>
 				<Attribute name="MDNS_OFFLOAD_ANSWER_PAYLOAD" ID="6" TYPE="blob"/>
 			</Attribute>
-		</Attribute>
-	</VendorCmd>
-
-	<VendorCmd name="ADJUST_TX_POWER" ID="241">
-		<Attribute name="BAND_CONFIG" ID="1" TYPE="NESTED" ATTR_MAX="3">
-		<Attribute name="BAND_INDEX" ID="1" TYPE="U8"/>
-		<Attribute name="BAND_CHAIN_CONFIG" ID="2" TYPE="NESTED" ATTR_MAX="12">
-		<Attribute name="CHAIN_INDEX" ID="1" TYPE="U8"/>
-		<Attribute name="CHAIN_RATE_CONFIG" ID="2" TYPE="NESTED" ATTR_MAX="288">
-		<Attribute name="RATE_TYPE" ID="1" TYPE="U8"/>
-		<Attribute name="RATE_VALUE" ID="2" TYPE="U8"/>
-		<Attribute name="RATE_POWER_VALUE" ID="3" TYPE="U8"/>
-		</Attribute>
-		</Attribute>
 		</Attribute>
 	</VendorCmd>
 </WCN_VenTool>

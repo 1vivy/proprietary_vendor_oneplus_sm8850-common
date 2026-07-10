@@ -51,14 +51,6 @@
             <Limit name="measured-frame-rate-1920x1080" range="592-915" />
             <Limit name="measured-frame-rate-3840x2160" range="226-302" />
         </MediaCodec>
-        <!-- Yuxuan.Zhang@MULTIMEDIA.MEDIASERVER 2025/10/20 remove mvhevc.decode support
-        <MediaCodec name="c2.qti.mvhevc.decoder" type="video/x-mvhevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="465-1900" />
-            <Limit name="measured-frame-rate-720x480" range="370-1550" />
-            <Limit name="measured-frame-rate-1280x720" range="644-789" />
-            <Limit name="measured-frame-rate-1920x1080" range="260-1200" />
-            <Limit name="measured-frame-rate-3840x2160" range="67-505" />
-        </MediaCodec> -->
         <!-- WeiHu@MULTIMEDIA.MEDIASERVER 2025/09/18 remove apv support on infiniti
         <MediaCodec name="c2.qti.apv.decoder" type="video/apv" update="true">
             <Limit name="measured-frame-rate-352x288" range="625-1900" />
@@ -121,17 +113,9 @@
             <Limit name="measured-frame-rate-1920x1080" range="82-125" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
-            <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-            <!-- SunQinhua@MULTIMEDIA.MEDIASERVER.PLAYER, 2025/12/31, lighthouse measured frt [553,617] -->
-            <!-- <Limit name="measured-frame-rate-352x288" range="1384-2711" /> -->
-            <Limit name="measured-frame-rate-352x288" range="1000-1800" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-352x288" range="1384-2711" />
             <!-- measured 98%:77-220 med:165/169 FLAKY(mn=74.9 < 75 - 338) -->
-            <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
-            <!-- Yuxuan.Zhang@MULTIMEDIA.MEDIASERVER.PLAYER, 2025/10/13, Adjust parameters to match actual performance -->
-            <!-- <Limit name="measured-frame-rate-640x360" range="887-1234" /> -->
-            <Limit name="measured-frame-rate-640x360" range="296-793" />
-            <!-- #endif OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-640x360" range="120-830" />
             <!-- measured 98%:85-223 med:194/186 FLAKY(mn=80.8 < 85 - 372) -->
             <Limit name="measured-frame-rate-720x480" range="370-1018" />
             <Limit name="measured-frame-rate-1280x720" range="251-362" />

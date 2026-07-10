@@ -48,6 +48,11 @@
                 "owner": "suid",
                 "id": { "type": "int", "ver": "0", "data": "19" },
                 "val": { "type": "int", "ver": "0", "data": "0" }
+            },
+            ".attr_1": {
+                "owner": "suid",
+                "id": { "type": "int", "ver": "0", "data": "0" },
+                "val": { "type": "str", "ver": "0", "data": "lsm6dsv" }
             }
         },
 

@@ -254,16 +254,21 @@ enable_cnss_uwb_bt_traces()
     fi
 
     if [ -d $tracefs ] && [ "$(getprop persist.vendor.tracing.enabled)" -eq "1" ]; then
-        #UWB SPI
         create_instance $tracefs/instances/spi_cnss
+        #SPI
         echo 800 > $tracefs/instances/spi_cnss/buffer_size_kb
         echo 1 > $tracefs/instances/spi_cnss/events/spi_cnss_trace/enable
         echo 1 > $tracefs/instances/spi_cnss/tracing_on
-        #BT SPI
-        create_instance $tracefs/instances/btspi
-        echo 800 > $tracefs/instances/btspi/buffer_size_kb
-        echo 1 > $tracefs/instances/btspi/events/btspi_trace/enable
-        echo 1 > $tracefs/instances/btspi/tracing_on
+
+    fi
+}
+
+init_qpt()
+{
+    qptfs=/sys/class/powercap/qpt
+    #enable power telemetry
+    if [ -d $qptfs ]; then
+       echo 1 > $qptfs/enabled
     fi
 }
 
@@ -288,6 +293,7 @@ enable_debug()
     enable_cpuss_register
     cpuss_spr_setup
     sf_tracing_disablement
+    init_qpt
 }
 
 enable_debug

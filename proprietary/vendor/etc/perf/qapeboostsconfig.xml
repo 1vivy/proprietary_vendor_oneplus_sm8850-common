@@ -50,17 +50,9 @@
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT -->
-        <!-- CPU_BIG_MIN_FREQ -->
-        <!-- CPU_PRIME_MIN_FREQ -->
-        <!-- MPCTLV3_GPU_NON_LINEAR_RAMP_UP -->
-        <!-- MPCTLV3_GPU_PENALTY_UP -->
-        <!-- MPCTLV3_GPU_PENALTY_DOWN -->
-        <!-- DISABLE QFPS -->
         <Config
             Id="0x1" Package="com.epicgames.fortnite" Enable="true" Target="canoe" Fps="120" TargetFps="120"
-            Resources="0X43C18000, 3, 0x43C40000, 1024, 0x6081C000, 2, 2611200, 80, 0x40800000, 998, 0x40800200, 1017, 0X4285C000, 1, 0X42844000, 85, 0X42848000, 85"
-            GamePowerOptResources="0, 250, 0, 0, 1, 0, 90, 1, 1, 1, 0, 2, 2, 1, 1, 85, 85"/>
+            Resources="0X43C18000, 3, 0x43C40000, 1024" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
@@ -87,16 +79,17 @@
             Id="0x1" Package="com.miHoYo.Yuanshen" Enable="true" Timeout="0" Target="canoe"
             Resources="0x43c18000, 3, 0x43C40000, 1024,
             0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600, 0x40808000, 787200, 0x4080c000, 998400,
-            0x63C5C000, 10, 4, 2035200, 5, 2035200, 6, 2035200, 7, 2035200, 8, 2035200,
-            0x63C5C200, 10, 4, 2131200, 5, 2131200, 6, 2131200, 7, 2131200, 8, 2131200" />
+            0x63C5C000, 12, 0, 2035200, 4, 2035200, 5, 2035200, 6, 2035200, 7, 2035200, 8, 2035200,
+            0x63C5C200, 12, 0, 2131200, 4, 2131200, 5, 2131200, 6, 2131200, 7, 2131200, 8, 2131200" />
 
         <!-- Genshin Global -->
         <Config
             Id="0x1" Package="com.miHoYo.GenshinImpact" Enable="true" Timeout="0" Target="canoe"
             Resources="0x43c18000, 3, 0x43C40000, 1024,
             0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600, 0x40808000, 787200, 0x4080c000, 998400,
-            0x63C5C000, 10, 4, 2035200, 5, 2035200, 6, 2035200, 7, 2035200, 8, 2035200,
-            0x63C5C200, 10, 4, 2131200, 5, 2131200, 6, 2131200, 7, 2131200, 8, 2131200" />
+            0x63C5C000, 12, 0, 2035200, 4, 2035200, 5, 2035200, 6, 2035200, 7, 2035200, 8, 2035200,
+            0x63C5C200, 12, 0, 2131200, 4, 2131200, 5, 2131200, 6, 2131200, 7, 2131200, 8, 2131200" />
+
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- SCHED_PIPELINE_BUSY_BOOST_PCT -->
@@ -118,18 +111,18 @@
             Resources="0x43c18000, 3, 0x43C3C000, 10, 0x43C38000, 0x50000000, 0x43C38200, 0x40000000,
             0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
             0x40808200, 883000, 0x4080c200, 1017600,
-            0x63C5C000, 10, 4, 2112000, 5, 2112000, 6, 2112000, 7, 2112000, 8, 2112000,
-            0x63C5C200, 10, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
+            0x63C5C000, 12, 0, 2112000, 4, 2112000, 5, 2112000, 6, 2112000, 7, 2112000, 8, 2112000,
+            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
             0x4441C000, 4, 0x44418000, 1, 0x43C84000, 2" />
         <!-- SR Global -->
         <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
         <Config
-            Id="0x1" Package="com.HoYoverse.hkrpgoversea" Enable="true" Timeout="0" Target="canoe"
+            Id="0x1" Package="com.HoYoverse.hkrpgoversea" Enable="true" Target="canoe"
             Resources="0x43c18000, 3, 0x43C3C000, 10, 0x43C38000, 0x50000000, 0x43C38200, 0x40000000,
             0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
             0x40808200, 883000, 0x4080c200, 1017600,
-            0x63C5C000, 10, 4, 2112000, 5, 2112000, 6, 2112000, 7, 2112000, 8, 2112000,
-            0x63C5C200, 10, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
+            0x63C5C000, 12, 0, 2112000, 4, 2112000, 5, 2112000, 6, 2112000, 7, 2112000, 8, 2112000,
+            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
             0x4441C000, 4, 0x44418000, 1, 0x43C84000, 2" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
@@ -150,8 +143,8 @@
             Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="canoe" Fps="120"
             Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
             0x40808000, 787200, 0x4080c000, 883200,
-            0x63C5C000, 10, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
-            0x63C5C200, 10, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
+            0x63C5C000, 12, 0, 1785600, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
+            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
             0x6081C000, 4, 1113600, 90, 1555200, 85, 0x6081C200, 4, 1267200, 90, 2227200, 85,
             0x41874000, 60, 0x41878000, 60, 0x43048000, 60" />
 
@@ -167,56 +160,26 @@
         <Config
             Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="canoe" Fps="60"
             Resources="0x43c18000, 2, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
-            0x63C5C000, 10, 4, 1881600, 5, 1881600, 6, 1881600, 7, 1881600, 8, 1881600,
+            0x63C5C000, 12, 0, 1881600, 4, 1881600, 5, 1881600, 6, 1881600, 7, 1881600, 8, 1881600,
             0x6081C000, 4, 998400, 90, 1324800, 85, 0x41834000, 180, 0x43020000, 180" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
+        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
         <Config
             Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="canoe" Fps="120"
-            Resources="0x43c18000, 3, 0x43C6C000, 1" />
+            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
-        <Config
-            Id="0x1" Package="com.tencent.ig" Enable="true" Timeout="0" Target="alor" Fps="120"
-            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
-            0x43C6C000, 1" />
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
-        <!-- MPCTLV3_SCHED_FRAME_RATE -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS BIG -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS PRIME -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="canoe" Fps="144"
-            Resources="0x43c18000, 3, 0x43C6C000, 1, 0x42C60000, 144, 0x41444000, 1, 0x41444200, 0,
-            0x40818000, 3840000, 0x40818200, 4185600, 0x40808000, 1228800, 0x4080c000, 1440000,
-            0x40808200, 1017600, 0x4080c200, 1267200, 0x63C5C200, 8, 0, 1747200, 6, 1747200, 7, 1747200, 8,
-            1747200, 0x63C5C000, 8, 0, 1670400, 6, 1670400, 7, 1670400, 8, 1670400" />
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <Config
             Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="canoe" Fps="90"
-            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
-            0x43C6C000, 1" />
+            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
@@ -227,12 +190,11 @@
         <!-- MPCTLV3_ZONE_MAX_UTIL_PCT_BIG -->
         <!-- MPCTLV3_CPU_LLCC_BW_IO_PERCENT -->
         <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT -->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <Config
             Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="canoe" Fps="60"
             Resources="0x43c18000, 2, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
-            0x63C5C000, 10, 4, 1881600, 5, 1881600, 6, 1881600, 7, 1881600, 8, 1881600,
-            0x6081C000, 4, 998400, 90, 1324800, 85, 0x41834000, 180, 0x43020000, 180, 0x43C6C000, 1" />
+            0x63C5C000, 12, 0, 1881600, 4, 1881600, 5, 1881600, 6, 1881600, 7, 1881600, 8, 1881600,
+            0x6081C000, 4, 998400, 90, 1324800, 85, 0x41834000, 180, 0x43020000, 180" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
@@ -250,14 +212,11 @@
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME -->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
+        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
         <Config
             Id="0x1" Package="com.miHoYo.Nap" Enable="true" Target="canoe" Fps="60"
-            Resources="0x43c18000, 3, 0x41444000, 1, 0x41444200, 1, 0x40808000, 1228800, 0x4080c000, 1440000,
-            0x40808200, 1017600, 0x4080c200, 1267200" />
+            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600" />
 
         <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
@@ -268,7 +227,7 @@
             Id="0x1" Package="com.kurogame.mingchao" Enable="true" Target="canoe" Fps="60"
             Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600" />
 
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
+        <!-- MPCTLV3_SCHED_HEAVY_NR -->
         <!-- MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
         <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
@@ -278,341 +237,6 @@
             Id="0x1" Package="com.tencent.jkchess" Enable="true" Target="canoe"
             Resources="0x43c18000, 3, 0x43C84000, 2, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600" />
 
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!--  MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG  -->
-        <!--  MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME  -->
-        <!--  MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LARGE  -->
-        <!--  MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LARGE  -->
-        <!--  MPCTLV3_SCHED_PIPELINE_FORCE_CONFIG  -->
-        <Config
-            Id="0x1" Package="com.netease.yyslscn" Enable="true" Target="canoe" Fps="60"
-            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x40808200, 1017600, 0x4080c200, 1267200, 0x43C84000, 2" />
-
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <Config
-            Id="0x1" Package="com.tencent.mf.uam" Enable="true" Timeout="0" Target="canoe" Fps="165"
-            Resources="0x43c18000, 3, 0x40818000, 3840000, 0x40818200, 4185600" />
-
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.dfm" Enable="true" Timeout="0" Target="canoe" Fps="144"
-            Resources="0x43c18000, 3, 0x40818000, 3840000, 0x40818200, 4185600" />
-
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.cf" Enable="true" Timeout="0" Target="canoe" Fps="165"
-            Resources="0x43c18000, 3, 0x40818000, 3840000, 0x40818200, 4185600" />
-
-	<!-- Game Play Specific Profiles for Alor -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG_CLUSTER_GOLD -->
-        <!-- SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE -->
-        <!-- SR Global -->
-        <Config
-            Id="0x1" Package="com.HoYoverse.hkrpgoversea" Enable="true" Timeout="0" Target="alor"
-            Resources="0x43c18000, 3, 0x43c58000, 1, 0X43C40000, 1024, 0X42808000, 1, 0x41444000, 1,
-            0x41444200, 1, 0x4143c000, 0, 0x4143c200, 0, 0X42854000, 2, 0X42844000, 98, 0X42848000, 95,
-            0X42838000, 3, 0X4283c000, 2, 0X4285C000, 0" />
-        <!-- Genshin Global -->
-        <Config
-            Id="0x1" Package="com.miHoYo.GenshinImpact" Enable="true" Timeout="0" Target="alor"
-            Resources="0x43c18000, 3, 0X42808000, 1, 0x41444000, 1, 0x41444200, 1, 0x4143c000, 0,
-            0x4143c200, 0 " />
-
-        <!-- Fortnite -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_GPU_MAX_POWER_LEVEL -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_PRIME -->
-        <!-- MPCTLV3_GPU_MIN_POWER_LEVEL -->
-        <Config
-            Id="0x1" Package="com.epicgames.fortnite" Enable="true" Timeout="0" Target="alor"
-            Resources="0x43c18000, 3, 0X42808000, 1, 0x41444000, 1, 0x41444200, 1, 0x4143c000, 0,
-            0x4143c200, 0, 0X42804000, 10" />
-
-        <!-- SR China -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_MEDIUM-->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_LARGE-->
-        <!-- MPCTLV3_MPAM_CLUSTER_NOC_BW_SCHEMATA_BIG -->
-        <!-- MPCTLV3_GPU_NUM_SAMPLES_DOWN -->
-        <!-- MPCTLV3_GPU_PENALTY_UP -->
-        <!-- MPCTLV3_GPU_PENALTY_DOWN -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_MINGAP -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_NUMBUSY-->
-        <!-- MPCTLV3_GPU_NON_LINEAR_RAMP_UP-->
-        <!-- MPCTLV3_LLCC_DDR_BW_AB_SCALE -->
-        <!-- MPCTLV3_CPU_LLCC_BW_AB_SCALE -->
-        <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT -->
-        <!-- MPCTLV3_GOLD_CPU_LLCC_BW_AB_SCALE -->
-        <!-- MPCTLV3_GOLD_CPU_LLCC_BW_IO_PERCENT -->
-        <!-- MPCTLV3_SCHED_IPC_LEVELS_BIG-->
-        <!-- MPCTLV3_SCHED_IPC_LEVELS_PRIME-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE-->
-        <!-- MPCTLV3_LLCC_DDR_BW_MAX_FREQ_V2-->
-        <!-- MPCTLV3_LLCC_DDR_BW_MIN_FREQ_V2-->
-        <Config
-            Id="0x1" Package="com.miHoYo.hkrpg" Enable="true" Timeout="0" Target="alor"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x41444000, 0,
-            0x41444200, 0, 0x4143c000, 0, 0x4143c200, 0, 0x43C38000, 0x10000000, 0x43C38200, 0, 0x44418000, 3, 0x4441C000, 4,
-            0x42854000, 2, 0x42844000, 98, 0x42848000, 98, 0x42838000, 3, 0x4283c000, 2, 0x4285C000, 0,
-            0x43048000, 80, 0x41878000, 80, 0x43020000, 100, 0x41874000, 80, 0x41854000, 100,
-            0x63C50000, 5, 2476800, 2476800, 2476800, 2476800, 2476800,
-            0x63C50200, 5, 1862400, 1862400, 1862400, 1862400, 1862400,
-            0x63C5C000, 12, 0, 2476800, 4, 2476800, 5, 2476800, 6, 2476800, 7, 2476800, 8, 2476800,
-            0x63C5C200, 12, 0, 1862400, 4, 1862400, 5, 1862400, 6, 1862400, 7, 1862400, 8, 1862400,
-            0x40CF8200, 0x81B320, 0x40CF8210, 0x81B320, 0x40CF8000, 0x81B320,
-            0x40CF8010, 0x81B320, 0x40CF8020, 0x81B320, 0x40CF8030, 0x81B320, 0x40CF8040, 0x81B320,
-            0x40CF8050, 0x81B320, 0x43C68200, 0, 0x43C68210, 0, 0x43C68000, 0,
-            0x43C68010, 0, 0x43C68020, 0, 0x43C68030, 0, 0x43C68040, 0, 0x43C68050, 0" />
-
-        <!-- Genshin China -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- GPU_MAX_POWER_LEVEL -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_PRIME -->
-        <!-- MPCTLV3_GPU_NUM_SAMPLES_DOWN -->
-        <!-- MPCTLV3_GPU_PENALTY_UP -->
-        <!-- MPCTLV3_GPU_PENALTY_DOWN -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_MINGAP -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_NUMBUSY-->
-        <!-- MPCTLV3_GPU_NON_LINEAR_RAMP_UP-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_MEDIUM -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_LARGE -->
-        <!-- MPCTLV3_MPAM_CLUSTER_NOC_BW_SCHEMATA_BIG -->
-        <!-- MPCTLV3_LLCC_DDR_BW_AB_SCALE -->
-        <!-- MPCTLV3_CPU_LLCC_BW_AB_SCALE-->
-        <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT-->
-        <!-- MPCTLV3_GOLD_CPU_LLCC_BW_AB_SCALE-->
-        <!-- MPCTLV3_GOLD_CPU_LLCC_BW_IO_PERCENT-->
-
-        <Config
-            Id="0x1" Package="com.miHoYo.Yuanshen" Enable="true" Timeout="0" Target="alor"
-            Resources="0x43c18000, 2, 0x42808000, 2, 0x43C40000, 1024, 0x41444000, 0, 0x41444200, 0, 0x4143c000, 0, 0x4143c200, 0,
-            0x42854000, 2, 0x42844000, 98, 0x42848000, 98, 0x42838000, 3, 0x4283c000, 2, 0x4285C000, 0,
-            0x63C5C000, 12, 0, 1785600, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
-            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
-            0x43C38000, 0x10000000, 0x43C38200, 0, 0x44418000, 3,
-            0x43048000, 60, 0x41878000, 60, 0x43020000, 150, 0x41874000, 60, 0x41854000, 150,
-            0x40CF8200, 0x81B320, 0x40CF8210, 0x81B320, 0x40CF8000, 0x81B320,
-            0x40CF8010, 0x81B320, 0x40CF8020, 0x81B320, 0x40CF8030, 0x81B320, 0x40CF8040, 0x81B320,
-            0x40CF8050, 0x81B320, 0x43C68200, 0, 0x43C68210, 0, 0x43C68000, 0,
-            0x43C68010, 0, 0x43C68020, 0, 0x43C68030, 0, 0x43C68040, 0, 0x43C68050, 0" />
-
-        <!-- HOK China -->
-        <!-- MPCTLV3_MAX_FREQ_CLUSTER_BIG_CORE_0-->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_MEDIUM -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_LARGE -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_HISPEED_FREQ_CLUSTER_PRIME -->
-        <!-- MPCTLV3_GPU_NUM_SAMPLES_DOWN -->
-        <!-- MPCTLV3_GPU_PENALTY_UP -->
-        <!-- MPCTLV3_GPU_PENALTY_DOWN -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_MINGAP -->
-        <!-- MPCTLV3_GPU_DCVS_TUNING_NUMBUSY-->
-        <!-- MPCTLV3_GPU_NON_LINEAR_RAMP_UP-->
-        <!-- MPCTLV3_SCHED_IPC_LEVELS_BIG-->
-        <!-- MPCTLV3_SCHED_IPC_LEVELS_PRIME-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE-->
-        <!-- MPCTLV3_MPAM_CLUSTER_NOC_BW_SCHEMATA_BIG-->
-        <!-- MPCTLV3_MPAM_CLUSTER_NOC_BW_SCHEMATA_PRIME-->
-        <!-- MPCTLV3_MPAM_CPU_SLC_PART0_SCHEMATA-->
-        <!-- MPCTLV3_MPAM_CPU_SLC_PART1_SCHEMATA-->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="alor" Fps="120"
-            Resources="0x43C3C000, 25, 0x43c18000, 3, 0x43C40000, 1024, 0x43C38000, 0x10000000, 0x43C38200, 0,
-            0x41444000, 0, 0x41444200, 0, 0x4143c000, 1900, 0x4143c200, 0,
-            0x63C50000, 2, 0, 1785600, 0x63C50200, 2, 0, 2227200,
-            0x63C5C000, 12, 0, 1785600, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
-            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
-            0x44418000, 4, 0x44418200, 4, 0x44408000, 10, 0x4440c000, 10" />
-
-        <!-- GP China -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="alor" Fps="120"
-            Resources="0x43c18000, 3, 0x43c40000, 1024, 0x41444000, 0, 0x41444200, 0, 0x43C6C000, 1,
-            0x40808000, 806400, 0x4080c000, 1036800, 0x40808200, 806400, 0x4080c200, 1017600,
-            0x63C5C000, 12, 0, 2476800, 4, 2476800, 5, 2476800, 6, 2476800, 7, 2476800, 8, 2476800,
-            0x44418000, 4, 0x44418200, 4, 0x44408000, 10, 0x4440c000, 10" />
-
-        <!-- HOK 60-->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="0" Target="alor" Fps="60"
-            Resources="0x43c18000, 2, 0x41444000, 0, 0x41444200, 0, 0x40818000, 3840000, 0x40818200, 4185600,
-            0x63C5C000, 12, 0, 1881600, 4, 1881600, 5, 1881600, 6, 1881600, 7, 1881600, 8, 1881600" />
-
-        <!-- Justice Online-->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE -->
-        <Config
-            Id="0x1" Package="com.netease.nshm" Enable="true" Timeout="0" Target="alor" Fps="60"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x40808000, 1228800, 0x4080c000, 1440000,
-            0x63C5C000, 12, 0, 1785600, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
-            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200" />
-
-        <!-- GP 60 -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="alor" Fps="60"
-            Resources="0x43c18000, 2, 0x41444000, 0, 0x41444200, 0, 0x40808000, 691200, 0x4080c000, 902400,
-            0x63C5C000, 12, 0, 2476800, 4, 2476800, 5, 2476800, 6, 2476800, 7, 2476800, 8, 2476800" />
-
-        <!-- QQSPEED 120 -->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_ZONE_MAX_UTIL_PCT -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.speedmobile" Enable="true" Target="alor" Fps="120"
-            Resources="0x43c18000, 3, 0x41444000, 0, 0x41444200, 0, 0x6081C200, 4, 1267200, 85, 2227200, 85" />
-
-        <!-- WW 60-->
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS_LARGE -->
-        <!-- MPCTLV3_LLCC_DDR_BW_IO_PERCENT -->
-        <!-- MPCTLV3_GOLD_CPU_LLCC_BW_IO_PERCENT -->
-        <Config
-            Id="0x1" Package="com.kurogame.mingchao" Enable="true" Target="alor" Fps="60"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x41444000, 0, 0x41444200, 0,
-            0x63C5C000, 12, 0, 1785600, 4, 1785600, 5, 1785600, 6, 1785600, 7, 1785600, 8, 1785600,
-            0x63C5C200, 12, 0, 2227200, 4, 2227200, 5, 2227200, 6, 2227200, 7, 2227200, 8, 2227200,
-            0x43020000, 60, 0x41854000, 60" />
-
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <!-- dfm has self-affinity behavior, and needs to use taskset WA to move Gamethread to M core, waiting for the studio to fix it -->
-        <!-- <Config
-            Id="0x1" Package="com.tencent.tmgp.dfm" Enable="true" Timeout="0" Target="alor" Fps="144"
-            Resources="0x43c18000, 3, 0x40818000, 3840000, 0x40818200, 4185600" /> -->
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
-        <!-- MPCTLV3_SCHED_FRAME_RATE -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME-->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS BIG -->
-        <!-- MPCTLV3_SCHED_LEGACY_FREQ_LEVELS PRIME -->
-        <!-- MPAM_CLUSTER_NOC_BW_SCHEMATA_BIG -->
-        <!-- MPAM_CLUSTER_NOC_BW_SCHEMATA_PRIME -->
-        <!-- MPAM_CPU_SLC_PART0_SCHEMATA -->
-        <!-- MPAM_CPU_SLC_PART1_SCHEMATA -->
-        <Config
-            Id="0x1" Package="com.tencent.tmgp.pubgmhd" Enable="true" Timeout="0" Target="alor" Fps="144"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x43C6C000, 1, 0x42C60000, 144, 0x41444000, 1, 0x41444200, 0,
-            0x40808000, 1228800, 0x4080c000, 1440000, 0x40808200, 1017600, 0x4080c200, 1267200, 0x63C5C200, 8, 0, 1862400, 6, 1862400, 7, 1862400, 8,
-            1862400, 0x63C5C000, 8, 0, 2016000, 6, 2016000, 7, 2016000, 8, 2016000, 0x44418000, 4, 0x44418200, 4, 0x44408000, 10, 0x4440c000, 10" />
-
-        <!--  MPCTLV3_SCHED_HEAVY_NR -->
-        <!--  MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_LARGE  -->
-        <!--  MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_LARGE  -->
-        <Config
-            Id="0x1" Package="com.netease.yyslscn" Enable="true" Target="alor" Fps="60"
-            Resources="0x43c18000, 3, 0x40808200, 1017600, 0x4080c200, 1267200" />
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME-->
-        <Config
-            Id="0x1" Package="com.tencent.jkchess" Enable="true" Target="alor" Fps="120"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x41444000, 1, 0x41444200, 1,
-            0x40808000, 1228800, 0x4080c000, 1440000, 0x40808200, 1017600, 0x4080c200, 1267200" />
-
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME-->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_MEDIUM -->
-        <!-- MPCTLV3_SCHED_CLUSTER_LOAD_SYNC_SETTINGS_LARGE -->
-        <Config
-            Id="0x1" Package="com.miHoYo.Nap" Enable="true" Target="alor" Fps="60"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x41444000, 0, 0x41444200, 0,
-            0x40818000, 3840000, 0x40818200, 4185600, 0x43C38000, 0x50000000, 0x43C38200, 0x40000000" />
-
-        <!-- MPCTLV3_SCHED_HEAVY_NR -->
-        <!-- MPCTLV3_SCHED_PIPELINE_SPECIAL -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_BIG -->
-        <!-- MPCTLV3_SCHEDUTIL_PREDICTIVE_LOAD_CLUSTER_PRIME -->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_BIG-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_LOW_FREQ_PRIME-->
-        <!-- MPCTLV3_WALT_ADAPTIVE_HIGH_FREQ_PRIME-->
-        <Config
-            Id="0x1" Package="com.netease.l22" Enable="true" Target="alor" Fps="60"
-            Resources="0x43c18000, 3, 0x43C40000, 1024, 0x41444000, 1, 0x41444200, 1,
-            0x40808000, 1228800, 0x4080c000, 1440000, 0x40808200, 1017600, 0x4080c200, 1267200" />
         <!-- Minimalistic Jank Rescuer Profiles-->
         <!-- CPU_BIG_MIN_FREQ, CPU_PRIME_MIN_FREQ, PRIME_SMART_FREQ_UNCAP-->
         <!-- Reference Minimalistic jnak profiles (disabled)-->
@@ -627,6 +251,7 @@
         <!-- Game Play Generic Profiles for alor-->
         <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_SCHED_SINGLE_THREAD_PIPELINE -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME -->
         <!-- MPCTLV3_SCHED_MANY_WAKEUP_THRESHOLD -->
@@ -638,7 +263,7 @@
         <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
         <Config
             Id="0x1" Enable="true" Timeout="0" Target="alor" Class="0"
-            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x40818000, 1400, 0x40818200, 1250,
+            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x43C60000, 0x1, 0x40818000, 1400, 0x40818200, 1250,
             0x40C9C000, 4, 0X42838000, 3, 0X42840000, 2, 0X43C34000, 250,
             0x63C5C000, 14, 0, 2840000, 2, 3120000, 3, 3120000, 4, 2840000, 6, 2840000, 7, 2840000, 8, 2840000,
             0x63C5C200, 14, 0, 1990000, 2, 2230000, 3, 1990000, 4, 1990000, 6, 1990000, 7, 1990000, 8, 1990000,
@@ -646,6 +271,7 @@
 
         <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_SCHED_SINGLE_THREAD_PIPELINE -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME -->
         <!-- MPCTLV3_SCHED_MANY_WAKEUP_THRESHOLD -->
@@ -657,7 +283,7 @@
         <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
         <Config
             Id="0x1" Enable="true" Timeout="0" Target="alor" Class="1"
-            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x40818000, 1750, 0x40818200, 1250,
+            Resources="0x43C6C000, 1, 0X43C40000, 0, 0x43C60000, 0x1, 0x40818000, 1750, 0x40818200, 1250,
             0x40C9C000, 4, 0X42838000, 3, 0X42840000, 2, 0X43C34000, 250,
             0x63C5C000, 14, 0, 3120000, 2, 3120000, 3, 3120000, 4, 3120000, 6, 3120000, 7, 3120000, 8, 3120000,
             0x63C5C200, 14, 0, 2230000, 2, 2460000, 3, 2230000, 4, 2230000, 6, 2230000, 7, 2230000, 8, 2230000,
@@ -665,6 +291,7 @@
 
         <!-- MPCTLV3_SCHED_FORCE_FREQUENT_YIELDER -->
         <!-- MPCTLV3_SCHED_PIPELINE_SPEC_TASK_UTIL_THRES -->
+        <!-- MPCTLV3_SCHED_SINGLE_THREAD_PIPELINE -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_BIG -->
         <!-- MPCTLV3_WALT_HISPEED_COND_FREQ_PRIME -->
         <!-- MPCTLV3_SCHED_UTIL_BUSY_HYST_CPU_NS_PRIME -->
@@ -676,7 +303,7 @@
         <!-- MPCTLV3_SCHED_PIPELINE_REARRAGE_DELAY_MS -->
         <Config
             Id="0x1" Enable="true" Timeout="0" Target="alor" Class="2"
-            Resources="0x43C6C000, 1, 0x43C40000, 0, 0x40818000, 2010,
+            Resources="0x43C6C000, 1, 0x43C40000, 0, 0x43C60000, 0x1, 0x40818000, 2010,
             0x40818200, 1990, 0x40CF8200, 0x3D0900, 0x43C68200, 1, 0X43C34000, 250, 0x40C9C000, 4,
             0x63C5C000, 10, 0, 3120000, 4, 3120000, 6, 3120000, 7, 3120000, 8, 3120000,
             0x63C5C200, 14, 0, 2230000, 2, 2980000, 3, 2980000, 4, 2230000, 6, 2230000, 7, 2230000, 8, 2230000,
@@ -703,69 +330,6 @@
                        0x41848000, 0x149970, 0x41844000, 0x149970, 0x42C10000, 0x1,
                        0x43488000, 0x516008, 0x42834000, 1, 0x4100C000, 0x3,
                        0x40C74000, 0xFF, 0x40408000, 0x63" />
-        <Config
-            Id="0x3" Package="com.tencent.mm" Enable="true" Timeout="2000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x5,
-                      0x40C74000, 0xFF, 0x40408000, 0x10,
-                      0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x4080C000, 3302400, 0x4080C200, 4070400,
-                      0x40808000, 748800, 0x40808200, 1017600, 0x42C10000, 0x1,
-                      0x42834000, 1, 0x4100C000, 0x3, 0x43C88000, 12" />
-        <Config
-            Id="0x3" Package="com.tencent.qqlive" Enable="true" Timeout="2000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x5,
-                      0x40C74000, 0xFF, 0x40408000, 0x10,
-                      0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x4080C000, 3302400, 0x4080C200, 4070400,
-                      0x40808000, 748800, 0x40808200, 1017600, 0x42C10000, 0x1,
-                      0x42834000, 1, 0x4100C000, 0x3, 0x43C88000, 12" />
-        <Config
-            Id="0x3" Package="com.whatsapp" Enable="true" Timeout="2000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x5,
-                      0x40C74000, 0xFF, 0x40408000, 0x10,
-                      0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x4080C000, 3302400, 0x4080C200, 4070400,
-                      0x40808000, 748800, 0x40808200, 1017600, 0x42C10000, 0x1,
-                      0x42834000, 1, 0x4100C000, 0x3, 0x43C88000, 12" />
-        <Config
-            Id="0x3" Package="com.twitter.android" Enable="true" Timeout="2000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x5,
-                      0x40C74000, 0xFF, 0x40408000, 0x10,
-                      0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x4080C000, 3302400, 0x4080C200, 4070400,
-                      0x40808000, 748800, 0x40808200, 1017600, 0x42C10000, 0x1,
-                      0x42834000, 1, 0x4100C000, 0x3, 0x43C88000, 12" />
-        <Config
-            Id="0x3" Package="com.android.chrome" Enable="true" Timeout="2000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x5,
-                      0x40C74000, 0xFF, 0x40408000, 0x10,
-                      0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x43488000, 0x14A528,
-                      0x4080C000, 3302400, 0x4080C200, 4070400,
-                      0x40808000, 748800, 0x40808200, 1017600, 0x42C10000, 0x1,
-                      0x42834000, 1, 0x4100C000, 0x3, 0x43C88000, 12" />
-        <Config
-            Id="0x3" Package="com.tencent.tmgp.sgame" Enable="true" Timeout="15000" Target="canoe,alor"
-            LaunchResources="0x40C00000, 0x1,
-                       0x40C74000, 0xFF, 0x40408000, 0x63,
-                       0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028, 0x42C10000, 0x1,
-                       0x41844000, 0x927C0,
-                       0x4080C000, 3302400, 0x4080C200, 4070400,
-                       0x40808000, 748800, 0x40808200, 1017600,
-                       0x63C5C000, 16, 1, 3033600, 2, 3033600, 3, 3033600, 4, 3033600, 5, 3033600, 6, 3033600, 7, 3033600, 8, 3033600,
-                       0x63C5C200, 16, 1, 3398400, 2, 3398400, 3, 3398400, 4, 3398400, 5, 3398400, 6, 3398400, 7, 3398400, 8, 3398400,
-                       0x63C50000, 5, 3033600, 3302400, 2147483647, 2147483647, 2147483647,
-                       0x63C50200, 5, 3398400, 3859200, 4070400, 4300800, 2147483647,
-                       0x63C8C000, 5, 100, 180, 220, 260, 300,
-                       0x63C8C200, 5, 150, 200, 260, 320, 400,
-                       0x43C88000, 12" />
-	<Config
-            Id="0x3" Package="com.coinbase.android" Enable="true" Timeout="15000" Target="alor"
-            LaunchResources="0x40C00000, 0x0, 0x40408000, 0x10 , 0x43488000, 0x14A528,
-                        0x40C74000, 0, 0x43C74000, 0x003C0028, 0x43C78000, 0x003C0028, 0x43C7C000, 0x003C0028, 0x43C80000, 0x003C0028,
-                        0x4080C000, 2361600, 0x4080C200, 2476800,
-                        0x40808000, 1824000, 0x40808200, 1651200, 0x40814000, 1401600 , 0x40814200, 1248000,
-                        0x4100C000, 0x3 , 0x42C10000, 0x1, 0x42834000, 1" />
-
 
         <GssProfiles Enable="true" Target="canoe,alor">
             <GssSpecificPkg Enable="true" Package="com.miHoYo.Yuanshen">
@@ -803,16 +367,6 @@
 
                 <GssBoostProfiles BoostType="GSS_HOME_SCENE_LOADING_BOOST"
                     Resources="0x40C68000,25,0x40C68200,25" />
-
-                <GssBoostProfiles BoostType="GSS_GAME_SCENE_LOADING_BOOST"
-                    Resources="0x40C68000,30,0x40C68200,30" />
-            </GssSpecificPkg>
-            <GssSpecificPkg Enable="true" Package="com.miHoYo.hkrpgcb">
-                <GssThreadProfiles ManualPipelineNum="3" />
-
-                <!-- Golden Hour corresponds to the following region ID (3,1030101) -->
-                <GssRegionProfiles RegionId="3" SubId="1030101"
-                    Resources="0x40C68000,40,0x40C68200,40,0X42828000,50" />
 
                 <GssBoostProfiles BoostType="GSS_GAME_SCENE_LOADING_BOOST"
                     Resources="0x40C68000,30,0x40C68200,30" />

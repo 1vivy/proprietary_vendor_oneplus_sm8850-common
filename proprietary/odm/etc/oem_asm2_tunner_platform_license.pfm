@@ -2,20 +2,20 @@
     "INCLUDE_EXPIRATION_EXTENSION": 1,
     "cbor_extension": "ojoAAVfFoRkLVfU6AAFXxIIBAA==",
     "chipset_labels": [
-        "SM8845 (0xA022)"
+        "SM8850 - KAANAPALI (0xA01B)"
     ],
     "chipset_names": [
-        "SM8845"
+        "SM8850 - KAANAPALI"
     ],
-    "deviceFileName": "2901-2901-no-exp-1613457588.pfm",
-    "extraDataBinaryValue": "TWluTnVtUUFUIDI7IE1heE51bUdlblR1bmVyIDQ=",
-    "extraDataString": "MinNumQAT 2; MaxNumGenTuner 4",
+    "deviceFileName": "2901-2901-no-exp-1970117989.pfm",
+    "extraDataBinaryValue": "TWluTnVtUUFUIDI7IE1heE51bUdlblR1bmVyIDU=",
+    "extraDataString": "MinNumQAT 2; MaxNumGenTuner 5",
     "featureBundles": [],
     "featureRanges": [],
     "features": [
         "Antenna Tuner Extended Software"
     ],
-    "filename": "platform_RSA_SM8845_license_dc1cca31-e91c-4586-9f16-cbd5a7bb60ce",
+    "filename": "platform_RSA_SM8850 - KAANAPALI_license_eee4da35-4825-41c1-a182-cfe6d3751cf1",
     "graceCount": 0,
     "gracePeriod": 0,
     "licenseCategory": "CHIPSET_OEM",
@@ -23,11 +23,11 @@
         "2901"
     ],
     "licenseHardwareVersions": [
-        "0xA022"
+        "0xA01B"
     ],
     "licenseOEMIDs": 51,
     "licensePKHashes": [
-        "0xdfaeb50ab002eca931c2b672ac26016d35a1e5d88b0c9c40a9c126288face870b618dbd5ca751e2414099981df937efd"
+        "0x31313ec6f0c237b69004d153b2ec2d3ddf1d826d0f60a952d039d5ded862ab0e515e4819d1844fdc91242304c685f202"
     ],
     "licenseType": "PRODUCTION",
     "licenseeName": "Guangdong OPPO Mobile Telecommunications Corp., Ltd.",
@@ -39,7 +39,7 @@
 }
 
 -----BEGIN CERTIFICATE-----
-MIIFGDCCA8ygAwIBAgIUTOoWD+ciHUopRlY/AAABmNODo2QwQQYJKoZIhvcNAQEK
+MIIFGDCCA8ygAwIBAgIUFa01Qllo1YR42iqtAAABlxLnIZAwQQYJKoZIhvcNAQEK
 MDSgDzANBglghkgBZQMEAgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEF
 AKIDAgEgMG8xJDAiBgNVBAoMG1F1YWxjb21tIFRlY2hub2xvZ2llcywgSW5jLjEq
 MCgGA1UECwwhUXVhbGNvbW0gQ3J5cHRvZ3JhcGhpYyBPcGVyYXRpb25zMRswGQYD
@@ -47,26 +47,26 @@ VQQDDBJDSExTRSBTaWduaW5nIENlcnQwIBcNNzAwMTAxMDAwMDAxWhgPOTk5OTEy
 MzEyMzU5NTlaMIGRMT0wOwYDVQQDDDRHdWFuZ2RvbmcgT1BQTyBNb2JpbGUgVGVs
 ZWNvbW11bmljYXRpb25zIENvcnAuLCBMdGQuMSQwIgYDVQQKDBtRdWFsY29tbSBU
 ZWNobm9sb2dpZXMsIEluYy4xKjAoBgNVBAsMIVF1YWxjb21tIENyeXB0b2dyYXBo
-aWMgT3BlcmF0aW9uczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKrr
-cDCVoocP53irJfBMruppf3DN3sXEEF3ySqWhUPo8qEpE5Xzr0rrlAaNmonTEIZ1k
-XYk/Izr5SWnex+DqRSoA1ayFIONvlPzQ0bf3Sw+cSltz96VflKeVSGcKVqt/kESX
-6baARvsqRSIwGpMrkY64oqERCy4BuGKdSQEcqapKHj/iHMRniW8eYglLHFzN/bpo
-tDIhQ5xyNv7zs/pO9SPolSNeYlTeGNkW2EYrfDUWcLJd42pRaBK5Jxm3DNFysgZT
-niv4BGwbvy3RezMGHQK0k2UjDKCvGC4uZwKESQW6v/qCtVTPA/fSb2PA49rKcKJk
-gBL/VlE3EOXOBRmeqUsCAwEAAaOCAR0wggEZMB8GA1UdIwQYMBaAFIcU6Tcyfr22
+aWMgT3BlcmF0aW9uczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANFB
+gjyufhur/wBki942nreALECWqMkJ3gVaR7lfztJeltffx+KOmJfX5e3Fsgy8YgDO
+OTkdxPEtB0tRnTsVm/0gdk1T+2H76im+BtI1+BWVBMwO8b1ZJgaxVqQt24XOPhDF
+Dyekzbksu9b3j0cBV2oS/VcwPekspX2zkyQPRawZQ3HmiMz+8sMkiA3Zk7nWPyTL
+RfI7RG/sxivDUHsxePsQDhQbv90ANSzxRE0S5gj0FTK+SrsAwFCH+EMvIVU2WWUO
+gBw9LMdwXDShyz2BgKQ7bqnTEEzJwfFLH/eJRkBHJ4WwIIUm267ob9XtgFrNfC0e
+9ON8tE7yFfP2LFik6kUCAwEAAaOCAR0wggEZMB8GA1UdIwQYMBaAFIcU6Tcyfr22
 KPwwamAkEDDYveduMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgWgMBUGCSsG
 AQQBiykMAQQIAAAAAAAAC1UwFgYKKwYBBAGLKQsBAQQIAAAAAAAAAFEwHwYIKwYB
 BAGLKQ0EE6I6AAFXxaEZC1X1OgABV8SCAQAwKgYJKwYBBAGLKQwGBB1NaW5OdW1R
-QVQgMjsgTWF4TnVtR2VuVHVuZXIgNDAWBgorBgEEAYspCwECBAgAAAAAAACgIjAt
-BgkrBgEEAYspDAUEIN+utQqwAuypMcK2cqwmAW01oeXYiwycQKnBJiiPrOhwMBUG
-CSsGAQQBiykMCQQIAAAAAGio1ewwQQYJKoZIhvcNAQEKMDSgDzANBglghkgBZQME
-AgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEFAKIDAgEgA4IBAQBmecb1
-LWe81kDnGoM48qcjpt32yNG5z5dbOJiKMzlxUp24NJ9H3LXv4hjZxsWYQqhmbJ14
-VGdqlZtav0KehCjDqQCd/q4BcyhXaCuX8urymi6+vDzc3tljtN7Gqj/ASkhwZAUs
-lvlA1dobsDvirPr3znkJyYw/eHdWMeVkDTwHJEHUioo3ohAp2iDezzckB8rQhe0+
-59KsmVBzvxeUD+FcZlpe3KTQ1vLAh360Puknk+hSJ4QAdRH3QsVMO4xnBvO+MVsV
-/eU7i5LRxpa8onC6KmDNKS2rToO6dDkafgF00gg+QhbtwZvwZf6P1uHtLowWRPqD
-2k20WoIfyFwrLNkM
+QVQgMjsgTWF4TnVtR2VuVHVuZXIgNTAWBgorBgEEAYspCwECBAgAAAAAAACgGzAt
+BgkrBgEEAYspDAUEIDExPsbwwje2kATRU7LsLT3fHYJtD2CpUtA51d7YYqsOMBUG
+CSsGAQQBiykMCQQIAAAAAGg1/bowQQYJKoZIhvcNAQEKMDSgDzANBglghkgBZQME
+AgEFAKEcMBoGCSqGSIb3DQEBCDANBglghkgBZQMEAgEFAKIDAgEgA4IBAQAkCK90
+1kkCxh36YIXxqCJGJdGZrdKT9gMPANTLG/7L4OsuCciu6/iL1NCAmVc1v6Ei3eGk
+lqh4g+Zq/b3+BSXm20NKshN3sstFe7KExVV7awOIIZDDFCYizxwh5H9FHcbEQ1FQ
+xVeJq+ozfm7NpIYMefOu9y1M6d8MEMLTW/cfrvRFMYS7ZmoVxXxQwW2Og28dvAt2
+gajSNVNadkadtiDexoyPDFB/cSGRslkljCVMkHasn1aStLPndFSJ5g3H6kjR7kwW
+IyCcur7MjrENhWlIL1oS3h+HPCLiSidVibgFMmIw07LYsCxSKKXoxm9lP1v4qHjd
+updt0buFWbcA+mtl
 -----END CERTIFICATE-----
 
 -----BEGIN CERTIFICATE-----
