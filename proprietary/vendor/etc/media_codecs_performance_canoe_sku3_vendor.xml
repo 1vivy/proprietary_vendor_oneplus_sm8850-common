@@ -134,7 +134,7 @@
             <Limit name="measured-frame-rate-1280x720" range="164-232" />
         </MediaCodec>
         <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
-            <Limit name="measured-frame-rate-352-288" range="1350-1898" />
+            <Limit name="measured-frame-rate-352x288" range="1350-1898" />
             <Limit name="measured-frame-rate-640x360" range="466-978" />
             <Limit name="measured-frame-rate-1280x720" range="360-764" />
             <Limit name="measured-frame-rate-1920x1080" range="205-338" />
@@ -190,7 +190,11 @@
         <!-- C2 SW encoders -->
         <MediaCodec name="c2.android.h263.encoder" type="video/3gpp" update="true">
             <!-- measured 95%:144-637 med:343/343 FLAKY(mn=40.8 < 144 - 808 < mx=916.6) variance:2.1 -->
-            <Limit name="measured-frame-rate-176x144" range="287-459" /> <!-- TWEAKED N=224 -->
+            <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+            <!-- PengJianliang@MULTIMEDIA.MEDIASERVER.PLAYER, 2026/6/22, Adjust parameters to match actual performance -->
+            <!-- <Limit name="measured-frame-rate-176x144" range="287-459" /> -->
+            <Limit name="measured-frame-rate-176x144" range="1426-2528" />
+            <!-- #endif OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true">
             <!-- measured 90%:42-420 med:146/160 FLAKY(mn=39.0 < 42 - 368 < mx=569.5) RG.VARIANCE:2.2 -->
@@ -204,7 +208,11 @@
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.encoder" type="video/mp4v-es" update="true">
             <!-- measured 90%:29-451 med:208/206 FLAKY(mn=19.2 < 47 - 412 < mx=888.9) RG.VARIANCE:2.5 -->
-            <Limit name="measured-frame-rate-176x144" range="203-445" /> <!-- SHOULDN'T HAVE TWEAKED N=220 v90%=4.0 -->
+            <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+            <!-- PengJianliang@MULTIMEDIA.MEDIASERVER.PLAYER, 2026/6/22, Adjust parameters to match actual performance -->
+            <!-- <Limit name="measured-frame-rate-176x144" range="203-445" /> -->
+            <Limit name="measured-frame-rate-176x144" range="1296-2312" />
+            <!-- #endif OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.android.vp8.encoder" type="video/x-vnd.on2.vp8" update="true">
             <!-- measured 90%:6-36 med:30/29 FLAKY(mn=0.0 < 7 - 58) variance:2.5 -->
@@ -230,8 +238,12 @@
             <Limit name="measured-frame-rate-1280x720" range="19-41" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
-             <Limit name="measured-frame-rate-320x240" range="38-47" />
-             <Limit name="measured-frame-rate-720x480" range="8-15" />
+            <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+            <!-- PengJianliang@MULTIMEDIA.MEDIASERVER.PLAYER, 2026/6/22, Adjust parameters to match actual performance -->
+            <!-- <Limit name="measured-frame-rate-320x240" range="38-47" /> -->
+            <Limit name="measured-frame-rate-320x240" range="229-405" />
+            <!-- #endif OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-720x480" range="8-15" />
         </MediaCodec>
     </Encoders>
 </MediaCodecs>

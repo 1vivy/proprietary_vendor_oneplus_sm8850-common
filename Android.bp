@@ -4510,7 +4510,7 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libbinder_ndk",
                 "android.frameworks.stats-V1-ndk",
-                "libolc_vnd",
+                "libolc_vnd_vendor",
                 "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
                 "libc++",
                 "libc",
@@ -16940,7 +16940,7 @@ cc_prebuilt_library_shared {
                 "libutilscallstack",
                 "libbinder_ndk",
                 "libqservice",
-                "vendor.oplus.hardware.display.MixLut3D-V1-ndk",
+                "vendor.oplus.hardware.display.MixLut3D-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -21123,12 +21123,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.oplus.hardware.charger-V10-service",
+    name: "vendor.oplus.hardware.charger-V11-service",
     owner: "oneplus",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V10-service",
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.charger-V11-service",
             ],
             shared_libs: [
                 "libcutils",
@@ -21142,7 +21142,7 @@ cc_prebuilt_binary {
                 "android.hardware.sensors@1.0",
                 "libsensorndkbridge",
                 "libm",
-                "vendor.oplus.hardware.charger-V10-ndk",
+                "vendor.oplus.hardware.charger-V11-ndk",
                 "vendor.oplus.hardware.osense.client-V1-ndk",
                 "libosenseaidlhalclient",
                 "libjsoncpp",

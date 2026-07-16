@@ -225,8 +225,8 @@
             <Limit name="measured-frame-rate-1280x720" range="19-41" />
         </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
-             <Limit name="measured-frame-rate-320x240" range="38-47" />
-             <Limit name="measured-frame-rate-720x480" range="8-15" />
+            <Limit name="measured-frame-rate-320x240" range="38-47" />
+            <Limit name="measured-frame-rate-720x480" range="8-15" />
         </MediaCodec>
     </Encoders>
 </MediaCodecs>
