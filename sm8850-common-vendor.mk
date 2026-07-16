@@ -818,7 +818,6 @@ PRODUCT_PACKAGES += \
     libquasar \
     libvolumelistener \
     sva_plugin \
-    vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.pixelworks.hardware.display-V3-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
     vendor.pixelworks.hardware.display@1.1_vendor \
@@ -951,7 +950,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbydecoderfilter \
     libsensorbridge \
     libstc_color_feature \
-    vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
     vendor.pixelworks.hardware.display@1.2 \

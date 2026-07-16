@@ -10339,7 +10339,7 @@ cc_prebuilt_library_shared {
                 "libhwcsensor",
                 "android.frameworks.sensorservice-V1-ndk",
                 "libsensorndkbridge",
-                "vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor",
+                "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
                 "libbinder",
                 "libbinder_ndk",
                 "libdtlm",
@@ -13699,32 +13699,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblx-osal",
                 "libvui_utils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor",
-    stem: "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -17464,31 +17438,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
                 "libdisplayfossfeature_nature",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
