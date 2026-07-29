@@ -74,6 +74,7 @@ case "$target" in
         setprop vendor.display.refresh_rate_changeable 1
         setprop vendor.display.enable_brightness_drm_prop 0 # oplus display set to 0
         setprop vendor.display.enable_idle_content_fps_hint 1
+        setprop vendor.display.libscale_version_override 10
         ;;
     esac
     ;;

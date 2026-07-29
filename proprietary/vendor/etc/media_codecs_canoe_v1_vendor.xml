@@ -281,6 +281,7 @@
             <Limit name="performance-point-7680x4320" value="30" />
             <Limit name="performance-point-8192x4320" value="29" />
         </MediaCodec>
+        <!--
         <MediaCodec name="c2.qti.dv.decoder" type="video/dolby-vision" >
             <Limit name="size" min="96x96" max="8192x8192" />
             <Limit name="alignment" value="2x2" />
@@ -313,6 +314,7 @@
             <Limit name="performance-point-3840x2160" value="120" />
             <Limit name="performance-point-4096x2304" value="120" />
         </MediaCodec>
+        -->
     </Decoders>
     <Encoders>
         <!-- C2 encoders -->
@@ -466,6 +468,7 @@
             <Limit name="performance-point-7680x4320" value="30" />
         </MediaCodec>
         -->
+        <!--
         <MediaCodec name="c2.qti.dv.encoder" type="video/dolby-vision">
             <Limit name="size" min="96x96" max="8192x8192" />
             <Limit name="alignment" value="2x2" />
@@ -486,6 +489,7 @@
             <Limit name="performance-point-3840x2160" value="120" />
             <Limit name="performance-point-7680x4320" value="30" />
         </MediaCodec>
+        -->
     </Encoders>
     <Include href="media_codecs_google_c2.xml" />
 </MediaCodecs>
