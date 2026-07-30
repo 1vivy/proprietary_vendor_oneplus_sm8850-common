@@ -936,7 +936,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
-    vendor.dolby.dvs-V1-ndk \
     libGaiaClient_vnd \
     libPanelChaplin \
     libc2filterplugin \
@@ -956,6 +955,7 @@ PRODUCT_PACKAGES += \
     libsensorbridge \
     libsharebuffer_impl \
     libstc_color_feature \
+    vendor.dolby.dvs-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
     vendor.pixelworks.hardware.display@1.2 \
