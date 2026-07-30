@@ -952,7 +952,6 @@ PRODUCT_PACKAGES += \
     libosensenativeproxy_client \
     libpwirisfeature \
     libqcodec2_dolbydecoderfilter \
-    libsensorbridge \
     libsharebuffer_impl \
     libstc_color_feature \
     vendor.dolby.dvs-V1-ndk \
