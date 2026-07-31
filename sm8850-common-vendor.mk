@@ -782,8 +782,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtinyxml2_1 \
     libtrustedapploader \
-    libui-stock \
-    libutils-stock \
     libvideooptfeature \
     libvideotxr \
     libvideoutils \
