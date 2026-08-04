@@ -27500,6 +27500,59 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.cryptoeng-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.oplus.hardware.cryptoeng-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.cryptoeng@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.oplus.hardware.cryptoeng@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.ImsRtpService-V1-ndk",
     owner: "oneplus",
     strip: {
@@ -27724,6 +27777,38 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libprotobuf-cpp-lite-21.12-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_cryptoeng_api",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/lib_cryptoeng_api.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libbinder_ndk",
+                "libhardware",
+                "libbase",
+                "libutils",
+                "liblog",
+                "vendor.oplus.hardware.cryptoeng-V1-ndk",
+                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -28338,6 +28423,59 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.cryptoeng-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.cryptoeng-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.cryptoeng@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
 android_app_import {
     name: "CACertService",
     owner: "oneplus",
@@ -28544,6 +28682,24 @@ dex_import {
     owner: "oneplus",
     jars: [
         "proprietary/system_ext/framework/qcrilhook.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.oplus.hardware.cryptoeng-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.oplus.hardware.cryptoeng-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.oplus.hardware.cryptoeng-V1.0-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -28903,6 +29059,15 @@ prebuilt_etc_xml {
     name: "device_manifest_subsys.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/device_manifest_subsys.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_oplus_cryptoeng.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cryptoeng.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -30245,6 +30410,61 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk",
                 "libsecurity_event_dcs_vnd",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.cryptoeng@1.0-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.cryptoeng@1.0-service",
+            ],
+            shared_libs: [
+                "libesesbprovision",
+                "libkeymasterprovision",
+                "libqmi_cci",
+                "libqmiservices",
+                "libkeymasterutils",
+                "libkeymasterdeviceutils",
+                "libqtikeymaster4",
+                "libQSEEComAPI",
+                "libqsee_keybox_ca",
+                "vendor.qti.hardware.soter-V1-ndk",
+                "libGPTEE_vendor",
+                "vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk",
+                "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+                "libsecurity_event_dcs_vnd",
+                "libbase",
+                "libbinder",
+                "liblog",
+                "libhidlbase",
+                "libutils",
+                "libhardware",
+                "libcrypto",
+                "libcutils",
+                "libjsoncpp",
+                "vendor.oplus.hardware.cryptoeng@1.0",
+                "libbinder_ndk",
+                "vendor.oplus.hardware.cryptoeng-V1-ndk",
+                "vendor.oplus.hardware.commondcs-V1-ndk",
+                "librpmbengclient",
+                "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+                "libsecurity_event_olc_vnd",
                 "libc++",
                 "libc",
                 "libm",
