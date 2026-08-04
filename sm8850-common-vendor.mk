@@ -1178,6 +1178,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm \
@@ -1187,8 +1188,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_q_tunner_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_trail_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oplusdycnvbk_items.xml:$(TARGET_COPY_OUT_ODM)/etc/oplusdycnvbk_items.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-cryptoeng.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-cryptoeng.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b00 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b01 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b02 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b03:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b03 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b04:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b04 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b05:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b05 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b06:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b06 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b07 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b08 \
+    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.mdt \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -1203,6 +1215,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor-oplus-hardware-cryptoeng.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor-oplus-hardware-cryptoeng.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdatachannel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdatachannel.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
@@ -1530,6 +1543,8 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
+    vendor.oplus.hardware.cryptoeng-V1-ndk \
+    vendor.oplus.hardware.cryptoeng@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
@@ -1539,6 +1554,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     lib-virtual-modem-protos \
+    lib_cryptoeng_api \
     libcommcenterfw \
     libcommcenterutils \
     libdmtp-protos-lite \
@@ -1559,6 +1575,8 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
+    vendor.oplus.hardware.cryptoeng-V1-ndk \
+    vendor.oplus.hardware.cryptoeng@1.0 \
     CACertService \
     CneApp \
     IWlanService \
@@ -1579,6 +1597,8 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
+    vendor.oplus.hardware.cryptoeng-V1-java \
+    vendor.oplus.hardware.cryptoeng-V1.0-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V2-java \
@@ -1619,6 +1639,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
     device_manifest_subsys.xml \
+    manifest_oplus_cryptoeng.xml \
     manifest_oplus_esim.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
@@ -1664,6 +1685,7 @@ PRODUCT_PACKAGES += \
     subsys_daemon \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
+    vendor.oplus.hardware.cryptoeng@1.0-service \
     vendor.oplus.hardware.esim@1.0-service \
     init.subsys
 
