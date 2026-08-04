@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sensor/oplus_sys_sensor_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sensor/oplus_sys_sensor_config.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sys_charger_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sys_charger_config.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm \
@@ -1196,6 +1197,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_q_tunner_platform_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_q_tunner_platform_trail_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oplusdycnvbk_items.xml:$(TARGET_COPY_OUT_ODM)/etc/oplusdycnvbk_items.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-cryptoeng.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-cryptoeng.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
@@ -1209,10 +1212,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b07 \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b08 \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.mdt \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b00 \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b01 \
     vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b02 \
@@ -1247,9 +1246,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
-    vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor-oplus-hardware-cryptoeng.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor-oplus-hardware-cryptoeng.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml \
+    vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor-oplus-hardware-cryptoeng.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor-oplus-hardware-cryptoeng.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdatachannel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdatachannel.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/vendor.qti.imsdcservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.imsdcservice.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
@@ -1613,10 +1612,10 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
-    vendor.oplus.hardware.cryptoeng-V1-ndk \
-    vendor.oplus.hardware.cryptoeng@1.0 \
-    vendor.oplus.hardware.fido.fido2ca-V1-ndk \
-    vendor.oplus.hardware.fido.fidoca-V1-ndk \
+    vendor.oplus.hardware.cryptoeng-V1-ndk_odm \
+    vendor.oplus.hardware.cryptoeng@1.0_odm \
+    vendor.oplus.hardware.fido.fido2ca-V1-ndk_odm \
+    vendor.oplus.hardware.fido.fidoca-V1-ndk_odm \
     CACertService \
     CneApp \
     IWlanService \

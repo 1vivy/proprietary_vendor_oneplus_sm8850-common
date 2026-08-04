@@ -27704,7 +27704,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.cryptoeng-V1-ndk",
-    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -27713,7 +27712,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/system_ext/lib64/vendor.oplus.hardware.cryptoeng-V1-ndk.so",
-                "proprietary/system_ext/lib64/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -27731,7 +27729,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.oplus.hardware.cryptoeng@1.0",
-    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -27746,6 +27743,52 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
                 "proprietary/system_ext/lib64/vendor.oplus.hardware.fido.fidoca-V1-ndk.so",
             ],
             shared_libs: [
@@ -28017,7 +28060,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libutils",
                 "liblog",
-                "vendor.oplus.hardware.cryptoeng-V1-ndk",
+                "vendor.oplus.hardware.cryptoeng-V1-ndk_odm",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -28692,8 +28735,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cryptoeng-V1-ndk",
-    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+    name: "vendor.oplus.hardware.cryptoeng-V1-ndk_odm",
+    stem: "vendor.oplus.hardware.cryptoeng-V1-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -28702,6 +28745,60 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/odm/lib64/vendor.oplus.hardware.cryptoeng-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.cryptoeng@1.0_odm",
+    stem: "vendor.oplus.hardware.cryptoeng@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk_odm",
+    stem: "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
                 "proprietary/odm/lib64/vendor.oplus.hardware.fido.fido2ca-V1-ndk.so",
             ],
             shared_libs: [
@@ -28719,8 +28816,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cryptoeng@1.0",
-    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk_odm",
+    stem: "vendor.oplus.hardware.fido.fidoca-V1-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -28728,13 +28825,6 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/vendor.oplus.hardware.cryptoeng@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "proprietary/odm/lib64/vendor.oplus.hardware.fido.fidoca-V1-ndk.so",
             ],
             shared_libs: [
@@ -28966,10 +29056,6 @@ dex_import {
     owner: "oneplus",
     jars: [
         "proprietary/system_ext/framework/vendor.oplus.hardware.cryptoeng-V1-java.jar",
-    name: "vendor.oplus.hardware.fido.fido2ca-V1-java",
-    owner: "oneplus",
-    jars: [
-        "proprietary/system_ext/framework/vendor.oplus.hardware.fido.fido2ca-V1-java.jar",
     ],
     system_ext_specific: true,
 }
@@ -28979,6 +29065,20 @@ dex_import {
     owner: "oneplus",
     jars: [
         "proprietary/system_ext/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.oplus.hardware.fido.fido2ca-V1-java",
+    owner: "oneplus",
+    jars: [
+        "proprietary/system_ext/framework/vendor.oplus.hardware.fido.fido2ca-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
     name: "vendor.oplus.hardware.fido.fidoca-V1-java",
     owner: "oneplus",
     jars: [
@@ -30748,7 +30848,7 @@ cc_prebuilt_binary {
                 "vendor.qti.hardware.soter-V1-ndk",
                 "libGPTEE_vendor",
                 "vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk",
-                "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+                "vendor.oplus.hardware.fido.fidoca-V1-ndk_odm",
                 "libsecurity_event_dcs_vnd",
                 "libbase",
                 "libbinder",
@@ -30759,12 +30859,12 @@ cc_prebuilt_binary {
                 "libcrypto",
                 "libcutils",
                 "libjsoncpp",
-                "vendor.oplus.hardware.cryptoeng@1.0",
+                "vendor.oplus.hardware.cryptoeng@1.0_odm",
                 "libbinder_ndk",
-                "vendor.oplus.hardware.cryptoeng-V1-ndk",
+                "vendor.oplus.hardware.cryptoeng-V1-ndk_odm",
                 "vendor.oplus.hardware.commondcs-V1-ndk",
                 "librpmbengclient",
-                "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+                "vendor.oplus.hardware.fido.fido2ca-V1-ndk_odm",
                 "libsecurity_event_olc_vnd",
                 "libc++",
                 "libc",
@@ -30837,7 +30937,7 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "libfido2_factory",
                 "libbinder_ndk",
-                "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+                "vendor.oplus.hardware.fido.fido2ca-V1-ndk_odm",
                 "libsecurity_event_dcs_vnd",
                 "libc++",
                 "libm",
@@ -30872,7 +30972,7 @@ cc_prebuilt_binary {
                 "libQSEEComAPI",
                 "libfido_factory",
                 "libbinder_ndk",
-                "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+                "vendor.oplus.hardware.fido.fidoca-V1-ndk_odm",
                 "libc++",
                 "libm",
                 "libdl",
