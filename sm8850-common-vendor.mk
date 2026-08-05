@@ -17,9 +17,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-hbp5-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V11-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V11-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.urcc-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.urcc-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
     vendor/oneplus/sm8850-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8850-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/display_brightness_config_common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/display_brightness_config_common.xml \
@@ -961,8 +959,6 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbydecoderfilter \
     libsharebuffer_impl \
     libstc_color_feature \
-    libuahcore \
-    liburcccore \
     vendor.dolby.dvs-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
@@ -1037,7 +1033,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cwb_aidl.xml \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_touch_aidl.xml \
-    vendor.oplus.hardware.urcc-service.xml \
     vintf_manifext_aidl_panelchaplin.xml \
     C2PAInternetService \
     adsprpcd \
@@ -1151,7 +1146,6 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-touch-V2-hbp5-service \
     vendor.oplus.hardware.charger-V11-service \
     vendor.oplus.hardware.displaypanelfeature-service \
-    vendor.oplus.hardware.urcc-service \
     wlschgd \
     init.oplus.wifi \
     oldc_vnd \
