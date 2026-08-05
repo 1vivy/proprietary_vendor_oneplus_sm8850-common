@@ -1,0 +1,2 @@
+proprietary/odm/lib64/libsensorbridge.so filter=lfs diff=lfs merge=lfs -text
+protobuf_shim/**/*.so filter=lfs diff=lfs merge=lfs -text

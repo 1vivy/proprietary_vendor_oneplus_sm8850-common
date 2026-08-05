@@ -17387,7 +17387,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsensorbridge",
+    name: "libsharebuffer_impl",
     owner: "oneplus",
     strip: {
         none: true,
@@ -17395,14 +17395,15 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/libsensorbridge.so",
+                "proprietary/odm/lib64/libsharebuffer_impl.so",
             ],
             shared_libs: [
-                "libbase",
-                "libbinder_ndk",
+                "libdmabufheap",
+                "libnativewindow",
+                "libui",
                 "libutils",
-                "android.frameworks.sensorservice-V1-ndk",
-                "android.hardware.sensors-V3-ndk",
+                "libcutils",
+                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -17438,6 +17439,31 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
                 "libdisplayfossfeature_nature",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby.dvs-V1-ndk",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby.dvs-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -18143,6 +18169,15 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "dvs-aidl-service.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/dvs-aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -20974,6 +21009,37 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "dvs-aidl-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/dvs-aidl-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libdolbyottcameracontrol",
+                "libsensorndkbridge",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
     device_specific: true,
 }
 
