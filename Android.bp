@@ -13508,6 +13508,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libeffectproxy",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libeffectproxy.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libeffects",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqcompostprocbundle",
     owner: "oneplus",
     strip: {
@@ -17218,6 +17247,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboplus_audiox",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liboplus_audiox.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libdl",
+                "libm",
+                "liblog",
+                "libMNN",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liboplus_service",
     owner: "oneplus",
     strip: {
@@ -17447,6 +17501,100 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusAudioxAidl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libOplusAudioxAidl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libc",
+                "libc++_shared",
+                "libdl",
+                "liblog",
+                "libm",
+                "libfmq",
+                "libaudioutils",
+                "libcutils",
+                "liboplus_audiox",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libOplusSpatializerAidl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libOplusSpatializerAidl.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libhidlbase",
+                "libbinder_ndk",
+                "libc",
+                "libc++_shared",
+                "libdl",
+                "liblog",
+                "libm",
+                "libfmq",
+                "libaudioutils",
+                "libcutils",
+                "liboplus_audiox",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboplusupmixeffect",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/liboplusupmixeffect.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
     prefer: true,
     device_specific: true,
 }

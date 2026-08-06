@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8850-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8850-common/proprietary/odm/etc/audio_effects_config.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects_config.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/dvs-aidl-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dvs-aidl-service.rc \
@@ -814,6 +815,7 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     qti.video.utils.videobufferlayout \
     sensors.qsh \
+    libeffectproxy \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -945,6 +947,7 @@ PRODUCT_PACKAGES += \
     libdolbyproxyandroid \
     libdpaservice \
     libolc_vnd \
+    liboplus_audiox \
     liboplus_service \
     libosenseaidlhalclient \
     libosensenativeproxy_client \
@@ -952,6 +955,9 @@ PRODUCT_PACKAGES += \
     libqcodec2_dolbydecoderfilter \
     libsharebuffer_impl \
     libstc_color_feature \
+    libOplusAudioxAidl \
+    libOplusSpatializerAidl \
+    liboplusupmixeffect \
     vendor.dolby.dvs-V1-ndk \
     vendor.pixelworks.hardware.display@1.0 \
     vendor.pixelworks.hardware.display@1.1 \
