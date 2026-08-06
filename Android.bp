@@ -18732,14 +18732,6 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qti.display_boot",
-    owner: "oneplus",
-    src: "proprietary/vendor/bin/init.qti.display_boot.sh",
-    filename: "init.qti.display_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qti.kernel.debug-alor",
     owner: "oneplus",
     src: "proprietary/vendor/bin/init.qti.kernel.debug-alor.sh",

@@ -1044,7 +1044,6 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot \
     init.qcom.class_core \
     init.qcom.sensors \
-    init.qti.display_boot \
     init.qti.kernel.debug-alor \
     init.qti.kernel.debug-canoe \
     init.qti.kernel.debug-ftrace \
