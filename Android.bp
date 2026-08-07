@@ -28735,7 +28735,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cryptoeng-V1-ndk",
+    name: "vendor.oplus.hardware.cryptoeng-V1-ndk.odm",
     owner: "oneplus",
     strip: {
         none: true,
@@ -28760,7 +28760,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.cryptoeng@1.0",
+    name: "vendor.oplus.hardware.cryptoeng@1.0.odm",
     owner: "oneplus",
     strip: {
         none: true,
@@ -28788,7 +28788,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk",
+    name: "vendor.oplus.hardware.fido.fido2ca-V1-ndk.odm",
     owner: "oneplus",
     strip: {
         none: true,
@@ -28813,7 +28813,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk",
+    name: "vendor.oplus.hardware.fido.fidoca-V1-ndk.odm",
     owner: "oneplus",
     strip: {
         none: true,

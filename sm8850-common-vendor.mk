@@ -1613,10 +1613,10 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
-    vendor.oplus.hardware.cryptoeng-V1-ndk \
-    vendor.oplus.hardware.cryptoeng@1.0 \
-    vendor.oplus.hardware.fido.fido2ca-V1-ndk \
-    vendor.oplus.hardware.fido.fidoca-V1-ndk \
+    vendor.oplus.hardware.cryptoeng-V1-ndk.odm \
+    vendor.oplus.hardware.cryptoeng@1.0.odm \
+    vendor.oplus.hardware.fido.fido2ca-V1-ndk.odm \
+    vendor.oplus.hardware.fido.fidoca-V1-ndk.odm \
     CACertService \
     CneApp \
     IWlanService \
