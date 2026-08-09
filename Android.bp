@@ -28544,15 +28544,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_oplus_cryptoeng.xml",
-    owner: "oneplus",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cryptoeng.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "manifest_oplus_esim.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_esim.xml",
