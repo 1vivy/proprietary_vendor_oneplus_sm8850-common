@@ -1179,7 +1179,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/subsys_daemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/subsys_daemon.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm \
