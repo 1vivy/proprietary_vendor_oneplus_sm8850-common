@@ -1180,8 +1180,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.fido.fido2ca@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.fido.fido2ca@1.0-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/init/vendor.oplus.hardware.fido.fidoca@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.fido.fidoca@1.0-service.rc \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_license.pfm \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_TDD-BYPASS_platfrom_trail_license.pfm \
@@ -1572,10 +1570,6 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libimscamera_jni \
     libimsmedia_jni \
-    vendor.oplus.hardware.cryptoeng-V1-ndk \
-    vendor.oplus.hardware.cryptoeng@1.0 \
-    vendor.oplus.hardware.fido.fido2ca-V1-ndk \
-    vendor.oplus.hardware.fido.fidoca-V1-ndk \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.ImsRtpService-V2-ndk \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
@@ -1585,14 +1579,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
     lib-virtual-modem-protos \
-    lib_cryptoeng_api \
     libcommcenterfw \
     libcommcenterutils \
     libdmtp-protos-lite \
     libdmtp \
     libdmtpclient \
-    libfido2_factory \
-    libfido_factory \
     libifaa_factory \
     libimsortcapis \
     libmindroid-app \
@@ -1608,10 +1599,6 @@ PRODUCT_PACKAGES += \
     libsubsys-service \
     libsubsys-utils \
     libvasapi \
-    vendor.oplus.hardware.cryptoeng-V1-ndk.odm \
-    vendor.oplus.hardware.cryptoeng@1.0.odm \
-    vendor.oplus.hardware.fido.fido2ca-V1-ndk.odm \
-    vendor.oplus.hardware.fido.fidoca-V1-ndk.odm \
     CACertService \
     CneApp \
     IWlanService \
@@ -1632,8 +1619,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    vendor.oplus.hardware.cryptoeng-V1-java \
-    vendor.oplus.hardware.cryptoeng-V1.0-java \
     vendor.oplus.hardware.fido.fido2ca-V1-java \
     vendor.oplus.hardware.fido.fidoca-V1-java \
     vendor.qti.ims.connection-V1.0-java \
@@ -1678,7 +1663,6 @@ PRODUCT_PACKAGES += \
     device_manifest_subsys.xml \
     manifest_oplus_cryptoeng.xml \
     manifest_oplus_esim.xml \
-    manifest_oplus_fido.xml \
     manifest_oplus_fido2.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
@@ -1724,10 +1708,7 @@ PRODUCT_PACKAGES += \
     subsys_daemon \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
-    vendor.oplus.hardware.cryptoeng@1.0-service \
     vendor.oplus.hardware.esim@1.0-service \
-    vendor.oplus.hardware.fido.fido2ca@1.0-service \
-    vendor.oplus.hardware.fido.fidoca@1.0-service \
     init.subsys
 
 PRODUCT_PACKAGES += \
