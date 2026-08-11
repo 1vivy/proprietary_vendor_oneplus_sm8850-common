@@ -820,6 +820,7 @@ PRODUCT_PACKAGES += \
     libwfdutils_proprietary \
     qti.video.utils.videobufferlayout \
     sensors.qsh \
+    libeffectproxy \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
