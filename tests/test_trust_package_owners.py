@@ -33,6 +33,28 @@ TRUST_MANIFESTS = {
     "proprietary/vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service-qti.xml",
 }
 
+SYSTEM_EXT_PERMISSION_ROOT = Path("proprietary/system_ext/etc/permissions")
+ODM_PERMISSION_ROOT = Path("proprietary/odm/etc/permissions")
+COMMON_FIDO_LIBRARIES = {
+    "vendor.oplus.hardware.fido.fidoca-V1-java": (
+        SYSTEM_EXT_PERMISSION_ROOT / "vendor-oplus-hardware-biometrics-fido.xml",
+        "vendor-oplus-hardware.fido.fidoca-V1.0",
+    ),
+    "vendor.oplus.hardware.fido.fido2ca-V1-java": (
+        SYSTEM_EXT_PERMISSION_ROOT / "vendor-oplus-hardware-biometrics-fido2.xml",
+        "vendor-oplus-hardware.fido.fido2ca-V1.0",
+    ),
+}
+RETIRED_ODM_FIDO_REGISTRATIONS = {
+    ODM_PERMISSION_ROOT / "vendor-oplus-hardware-biometrics-fido.xml",
+    ODM_PERMISSION_ROOT / "vendor-oplus-hardware-biometrics-fido2.xml",
+}
+RETIRED_TA_PATHS = {
+    ROOT / f"proprietary/odm/firmware/secure_ta/{family}.{suffix}"
+    for family in ("cryptoeng", "fidoctap", "fidotap")
+    for suffix in (*[f"b0{index}" for index in range(9)], "mdt")
+}
+
 
 def product_packages() -> list[str]:
     packages: list[str] = []
@@ -66,6 +88,30 @@ class TrustPackageOwnersTest(unittest.TestCase):
                 rf'^\s*name:\s*"{re.escape(package)}"', ANDROID_BP, re.MULTILINE
             )
             self.assertEqual(1, len(definitions), package)
+
+    def test_common_fido_libraries_have_one_system_ext_owner(self) -> None:
+        selected = product_packages()
+        for module, (relative_xml, library_name) in COMMON_FIDO_LIBRARIES.items():
+            self.assertEqual(1, selected.count(module), module)
+            definitions = re.findall(
+                rf'^\s*name:\s*"{re.escape(module)}"', ANDROID_BP, re.MULTILINE
+            )
+            self.assertEqual(1, len(definitions), module)
+
+            library = ET.parse(ROOT / relative_xml).getroot().find("library")
+            self.assertIsNotNone(library, relative_xml)
+            if library is None:
+                raise AssertionError(f"missing library declaration: {relative_xml}")
+            self.assertEqual(library_name, library.attrib.get("name"))
+            self.assertEqual(
+                f"/system/system_ext/framework/{module}.jar",
+                library.attrib.get("file"),
+            )
+
+        for relative_xml in RETIRED_ODM_FIDO_REGISTRATIONS:
+            self.assertFalse((ROOT / relative_xml).exists(), relative_xml)
+        for path in RETIRED_TA_PATHS:
+            self.assertFalse(path.exists(), str(path.relative_to(ROOT)))
 
     def test_common_trust_vintf_instances_are_singletons(self) -> None:
         owners: dict[tuple[str, str, str, str], list[str]] = {}

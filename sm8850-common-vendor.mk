@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sensor/oplus_sys_sensor_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sensor/oplus_sys_sensor_config.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/sys_charger_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sys_charger_config.xml \
     vendor/oneplus/sm8850-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/058eb5c6-666d-4d06-b996-522410412877_2026-01-12_platform_RSA_license_75992976805022424249809535731023317112.pfm \
@@ -957,6 +958,7 @@ PRODUCT_PACKAGES += \
     libosensenativeproxy_client \
     libpwirisfeature \
     libqcodec2_dolbydecoderfilter \
+    libsensorbridge \
     libsharebuffer_impl \
     libstc_color_feature \
     vendor.dolby.dvs-V1-ndk \
@@ -1187,40 +1189,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/oplusdycnvbk_items.xml:$(TARGET_COPY_OUT_ODM)/etc/oplusdycnvbk_items.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
     vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b00 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b01 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b02 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b03:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b03 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b04:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b04 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b05:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b05 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b06:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b06 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b07 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b08 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/cryptoeng.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.mdt \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/plugin_config.xml:$(TARGET_COPY_OUT_ODM)/etc/plugin_config.xml \
-    vendor/oneplus/sm8850-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b00 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b01 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b02 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b03:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b03 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b04:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b04 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b05:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b05 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b06:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b06 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b07 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.b08 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidoctap.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidoctap.mdt \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b00 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b01 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b02 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b03:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b03 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b04:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b04 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b05:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b05 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b06:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b06 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b07 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.b08 \
-    vendor/oneplus/sm8850-common/proprietary/odm/firmware/secure_ta/fidotap.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/fidotap.mdt \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/oneplus/sm8850-common/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
