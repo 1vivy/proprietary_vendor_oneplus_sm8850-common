@@ -1655,9 +1655,7 @@ PRODUCT_PACKAGES += \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
     device_manifest_subsys.xml \
-    manifest_oplus_cryptoeng.xml \
     manifest_oplus_esim.xml \
-    manifest_oplus_fido2.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_ifaa.xml \
     secure_element-service.xml \
