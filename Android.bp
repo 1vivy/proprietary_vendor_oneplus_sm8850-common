@@ -18333,15 +18333,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_oplus_displaypanelfeature_aidl.xml",
-    owner: "oneplus",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_displaypanelfeature_aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "manifest_touch_aidl.xml",
     owner: "oneplus",
     src: "proprietary/odm/etc/vintf/manifest/manifest_touch_aidl.xml",
@@ -21289,46 +21280,6 @@ cc_prebuilt_binary {
                 "libGaiaClient_vnd",
                 "libc++",
                 "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.oplus.hardware.displaypanelfeature-service",
-    owner: "oneplus",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service",
-            ],
-            shared_libs: [
-                "vendor.oplus.hardware.cwb-V2-ndk",
-                "libqservice",
-                "vendor.qti.hardware.display.postproc-V1-ndk",
-                "libdpaservice",
-                "libbinder",
-                "libbinder_ndk",
-                "libhidlbase",
-                "libhidltransport",
-                "liblog",
-                "libhwbinder",
-                "libutils",
-                "libcutils",
-                "libhardware",
-                "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
-                "libjsoncpp",
-                "libc++",
-                "libc",
-                "libm",
                 "libdl",
             ],
         },
