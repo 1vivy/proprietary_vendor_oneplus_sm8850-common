@@ -130,7 +130,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.color-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.color-service.rc \
-    vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp-service.rc \
     vendor/oneplus/sm8850-common/proprietary/vendor/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.minkipcbinder@1.0-service.rc \
@@ -1011,7 +1010,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.c2pa-aidl-service.xml \
     vendor.qti.hardware.capabilityconfigstore-service.xml \
     vendor.qti.hardware.display.allocator-service.xml \
-    vendor.qti.hardware.display.composer-service3_v4.xml \
     vendor.qti.hardware.display.demura-service.xml \
     vendor.qti.hardware.dsp-service.xml \
     vendor.qti.hardware.hexlp-service.xml \
@@ -1060,7 +1058,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-service \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.color-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.minkipcbinder@1.0-service \
     vendor.qti.hardware.perf2-hal-service \
