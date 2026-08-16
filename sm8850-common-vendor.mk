@@ -975,7 +975,6 @@ PRODUCT_PACKAGES += \
     fm_hci.xml \
     manifest_audiocorehal_default.xml \
     manifest_btaudiocoreservices_qti.xml \
-    mapper.qti.xml \
     qasr_vintf.xml \
     snapdragon_services.xml \
     soundtrigger.qti.xml \
